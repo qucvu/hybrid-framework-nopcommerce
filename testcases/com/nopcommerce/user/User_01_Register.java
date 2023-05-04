@@ -24,7 +24,7 @@ public class User_01_Register {
 		driver = new FirefoxDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-		emailAddress = "afc" + getRandomNumber() + "@acb.com";
+		emailAddress = "afc" + generateFakeNumber() + "@acb.com";
 		driver.get("https://demo.nopcommerce.com/");
 	}
 
@@ -116,7 +116,7 @@ public class User_01_Register {
 
 
 
-	public int getRandomNumber() {
+	public int generateFakeNumber() {
 		return new Random().nextInt(99999);
 	}
 
