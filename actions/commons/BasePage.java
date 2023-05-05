@@ -17,9 +17,13 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class BasePage {
 	private final long longTimeout = 30;
-	private final long shortTimeout = 5;
 
-	// common function
+	
+	public static BasePage getBasePageObject() {
+		return new BasePage();
+	}
+	
+	
 	public void openPageUrl(WebDriver driver, String pageUrl) {
 		driver.get(pageUrl);
 	}
@@ -101,15 +105,15 @@ public class BasePage {
 		driver.switchTo().window(parentId);
 	}
 
-	public By getByXpath(String xpathLocator) {
+	private By getByXpath(String xpathLocator) {
 		return By.xpath(xpathLocator);
 	}
 
-	public WebElement getWebElement(WebDriver driver, String xpathLocator) {
+	private WebElement getWebElement(WebDriver driver, String xpathLocator) {
 		return driver.findElement(getByXpath(xpathLocator));
 	}
 
-	public List<WebElement> getListElements(WebDriver driver, String xpathLocator) {
+	private List<WebElement> getListElements(WebDriver driver, String xpathLocator) {
 		return driver.findElements(getByXpath(xpathLocator));
 	}
 
@@ -327,6 +331,14 @@ public class BasePage {
 		WebDriverWait explicitWait = new WebDriverWait(driver, longTimeout);
         explicitWait.until(ExpectedConditions.invisibilityOfAllElements(getListElements(driver, xpathLocator)));
 	}
+	
+	public void waitForAllElementInVisibility(WebDriver driver, String ... xpathLocator) {
+		WebDriverWait explicitWait = new WebDriverWait(driver, longTimeout);
+		for (String string : xpathLocator) {
+	        explicitWait.until(ExpectedConditions.invisibilityOfAllElements(getWebElement(driver, string)));
+		}
+	}
+
 
 	public void waitForElementClickable(WebDriver driver, String xpathLocator) {
 		WebDriverWait explicitWait = new WebDriverWait(driver, longTimeout);
