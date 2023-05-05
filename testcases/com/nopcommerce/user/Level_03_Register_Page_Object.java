@@ -76,7 +76,6 @@ public class Level_03_Register_Page_Object {
 	public void TC_03_Register_Success() {
 		System.out.println("Home page - Step 01: Click to register link");
 		homePage.clickToRegisterLink();
-
 		System.out.println("Register page - Step 02: Input to required fields");
 		registerPage.inputToFirstNameTextBox(firstName);
 		registerPage.inputToLastNameTextBox(lastName);

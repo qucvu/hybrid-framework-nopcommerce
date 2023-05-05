@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.AfterClass;
 
-public class User_03_Address {
+public class User_04_MyAccount {
   @Test
   public void f() {
   }
