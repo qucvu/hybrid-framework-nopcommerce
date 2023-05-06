@@ -25,6 +25,7 @@ public class HomePageObject extends BasePage {
 	}
 	
 	public boolean isMyAccountDisplayed() {
+		waitForElementVisibility(driver, HomePageUI.MY_ACCOUNT_LINK);
 		return isElemenetDisplayed(driver, HomePageUI.MY_ACCOUNT_LINK);
 	}
 

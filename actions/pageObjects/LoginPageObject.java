@@ -15,13 +15,11 @@ public class LoginPageObject extends BasePage {
 	public void clickToLoginButton() {
 		waitForElementClickable(driver, LoginPageUI.LOGIN_BUTTON);
 		clickToElement(driver, LoginPageUI.LOGIN_BUTTON);
-		
 	}
 
 	public void inputToEmailTextBox(String email) {
 		waitForElementVisibility(driver, LoginPageUI.EMAIL_TEXTBOX);
 		sendkeyToElement(driver, LoginPageUI.EMAIL_TEXTBOX, email);
-		
 	}
 
 	public void inputToPasswordTextBox(String password) {
@@ -30,14 +28,19 @@ public class LoginPageObject extends BasePage {
 	}
 
 	public String getErrorLoginMessage() {
-		waitForElementVisibility(driver, LoginPageUI.LOGIN_FAIL_ERROR_MESSAGE);
-		return getElementText(driver, LoginPageUI.LOGIN_FAIL_ERROR_MESSAGE);
+		waitForElementVisibility(driver, LoginPageUI.UNSUCCESSFUL_ERROR_MESSAGE);
+		return getElementText(driver, LoginPageUI.UNSUCCESSFUL_ERROR_MESSAGE);
 	}
 	
 	public String getErrorMessageAtEmailTextBox() {
 		waitForElementVisibility(driver, LoginPageUI.EMAIL_ERROR_MESSAGE);
 		return getElementText(driver, LoginPageUI.EMAIL_ERROR_MESSAGE);
-
+	}
+	
+	public void loginToSystem(String email, String password) {
+		inputToEmailTextBox(email);
+        inputToPasswordTextBox(password);
+        clickToLoginButton();
 	}
 
 
