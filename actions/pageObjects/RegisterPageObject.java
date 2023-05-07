@@ -89,5 +89,10 @@ public class RegisterPageObject extends BasePage {
 		clickToElement(driver, RegisterPageUI.CONTINUE_BUTTON);
 	}
 
+	public void clickToLogoutLink() {
+		waitForElementClickable(driver, RegisterPageUI.LOGOUT_lINK);
+		clickToElement(driver, RegisterPageUI.LOGOUT_lINK);
+	}
+
 
 }

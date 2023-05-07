@@ -16,6 +16,7 @@ public class RegisterPageUI {
 	public static final String EXISTING_EMAIL_ERROR_MESSAGE = "//div[contains(@class, 'message-error')]";
 	public static final String WRONG_EMAIL_ERROR_MESSAGE = "//div[contains(@class, 'message-error')]";
 	public static final String CONTINUE_BUTTON = "//a[contains(@class, 'register-continue-button')]";
-	
+	public static final String LOGOUT_lINK = "//a[@class='ico-logout']";
+
 
 }

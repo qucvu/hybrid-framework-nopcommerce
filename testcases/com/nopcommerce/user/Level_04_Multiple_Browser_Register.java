@@ -19,13 +19,12 @@ public class Level_04_Multiple_Browser_Register extends BaseTest {
 	private RegisterPageObject registerPage;
 	private String firstName, lastName, password, emailAddress;
 	
-	@Parameters("browsers")
+	@Parameters("browser")
 	@BeforeClass
 	public void beforeClass(String browserName) {
 		driver = getBrowserDriver(browserName);
 		homePage = new HomePageObject(driver);
-		
-		
+
 		firstName = "Geni";
 		lastName = "Nguyen";
 		password = "123456";
@@ -90,8 +89,9 @@ public class Level_04_Multiple_Browser_Register extends BaseTest {
 		System.out.println("Register_03 - Step 04: Verify success registration");
 		Assert.assertEquals(registerPage.getSuccessRegisterMessage(), "Your registration completed");
 		
-
-
+//		System.out.println("Register_03 - Step 05: Click to logout link");
+//		registerPage.clickToLogoutLink();
+//		homePage = new HomePageObject(driver);
 	}
 
 	@Test
@@ -110,7 +110,7 @@ public class Level_04_Multiple_Browser_Register extends BaseTest {
 
 		System.out.println("Register_04 - Step 03: Click to register button");
 		registerPage.clickToRegisterButton();
-
+	
 		System.out.println("Register_04 - Step 04: Verify error message of email field");
 		Assert.assertEquals(registerPage.getErrorExistingEmailMessage(), "The specified email already exists");
 
