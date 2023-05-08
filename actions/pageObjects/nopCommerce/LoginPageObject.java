@@ -1,9 +1,9 @@
-package pageObjects;
+package pageObjects.nopCommerce;
 
 import org.openqa.selenium.WebDriver;
 
 import commons.BasePage;
-import pageUIs.LoginPageUI;
+import pageUIs.nopCommerce.LoginPageUI;
 
 public class LoginPageObject extends BasePage {
 	private WebDriver driver;
@@ -11,10 +11,14 @@ public class LoginPageObject extends BasePage {
 	public LoginPageObject(WebDriver driver) {
 		this.driver = driver;
 	}
+	
 
-	public void clickToLoginButton() {
+
+	public HomePageObject clickToLoginButton() {
 		waitForElementClickable(driver, LoginPageUI.LOGIN_BUTTON);
 		clickToElement(driver, LoginPageUI.LOGIN_BUTTON);
+//		return new HomePageObject(driver);: cách 2
+		return PageGeneratorManager.getHomePage(driver);
 	}
 
 	public void inputToEmailTextBox(String email) {

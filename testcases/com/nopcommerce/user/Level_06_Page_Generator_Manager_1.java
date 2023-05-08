@@ -1,36 +1,31 @@
 package com.nopcommerce.user;
 
-
 import java.util.Random;
-import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import commons.BaseTest;
 import pageObjects.nopCommerce.HomePageObject;
 import pageObjects.nopCommerce.LoginPageObject;
 import pageObjects.nopCommerce.RegisterPageObject;
 
-public class Level_03_Login_Page_Object {
+public class Level_06_Page_Generator_Manager_1 extends BaseTest {
 	private WebDriver driver;
-	private String projectPath = System.getProperty("user.dir");
 	private LoginPageObject loginPage;
 	private HomePageObject homePage;
 	private RegisterPageObject registerPage;
 
 	private String firstName, lastName, validPassword,invalidPassword, validEmail, invalidEmail, notFoundEmail;
 	
+	@Parameters("browser")
 	@BeforeClass
-	public void beforeClass()  {
-		System.setProperty("webdriver.chrome.driver", projectPath + "\\browserDrivers\\chromedriver.exe");
-		driver = new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-		driver.manage().window().maximize();
-
+	public void beforeClass(String browserName) {
+		driver = getBrowserDriver(browserName);
 		
 		firstName = "Geni";
 		lastName = "Nguyen";
@@ -102,8 +97,6 @@ public class Level_03_Login_Page_Object {
 
 	@Test
 	public void Login_04_Valid_Email_Empty_Password() {
-		// từ trang home --> click login link --> qua trang login
-		loginPage = new LoginPageObject(driver);
 
 		loginPage.inputToEmailTextBox(validEmail);
 		loginPage.inputToPasswordTextBox("");
@@ -114,9 +107,6 @@ public class Level_03_Login_Page_Object {
 
 	@Test
 	public void Login_05_Valid_Email_Wrong_Password() {
-		// từ trang home --> click login link --> qua trang login
-		loginPage = new LoginPageObject(driver);
-
 		loginPage.inputToEmailTextBox(validEmail);
 		loginPage.inputToPasswordTextBox(invalidPassword);
 		loginPage.clickToLoginButton();
@@ -126,9 +116,6 @@ public class Level_03_Login_Page_Object {
 
 	@Test
 	public void Login_06_Login_Success() {
-		// từ trang home --> click login link --> qua trang login
-		loginPage = new LoginPageObject(driver);
-
 		loginPage.inputToEmailTextBox(validEmail);
 		loginPage.inputToPasswordTextBox(validPassword);
 		loginPage.clickToLoginButton();
@@ -137,10 +124,10 @@ public class Level_03_Login_Page_Object {
 		Assert.assertEquals(loginPage.getTitle(driver), "nopCommerce demo store");
 		Assert.assertTrue(homePage.isMyAccountDisplayed());
 	}
-	public  int generateRandomNumber() {
+
+	public int generateRandomNumber() {
 		return new Random().nextInt(99999);
 	}
-
 
 	@AfterClass
 	public void afterClass() {

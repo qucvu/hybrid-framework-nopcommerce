@@ -1,36 +1,32 @@
 package com.nopcommerce.user;
 
-
 import java.util.Random;
-import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import commons.BaseTest;
 import pageObjects.nopCommerce.HomePageObject;
 import pageObjects.nopCommerce.LoginPageObject;
+import pageObjects.nopCommerce.PageGeneratorManager;
 import pageObjects.nopCommerce.RegisterPageObject;
 
-public class Level_03_Login_Page_Object {
+public class Level_06_Page_Generator_Manager_2 extends BaseTest {
 	private WebDriver driver;
-	private String projectPath = System.getProperty("user.dir");
 	private LoginPageObject loginPage;
 	private HomePageObject homePage;
 	private RegisterPageObject registerPage;
 
 	private String firstName, lastName, validPassword,invalidPassword, validEmail, invalidEmail, notFoundEmail;
 	
+	@Parameters("browser")
 	@BeforeClass
-	public void beforeClass()  {
-		System.setProperty("webdriver.chrome.driver", projectPath + "\\browserDrivers\\chromedriver.exe");
-		driver = new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-		driver.manage().window().maximize();
-
+	public void beforeClass(String browserName) {
+		driver = getBrowserDriver(browserName);
 		
 		firstName = "Geni";
 		lastName = "Nguyen";
@@ -41,11 +37,10 @@ public class Level_03_Login_Page_Object {
 		invalidPassword = validPassword + "123";
 		
 		driver.get("https://demo.nopcommerce.com/");
-		homePage = new HomePageObject(driver);
+		homePage = PageGeneratorManager.getHomePage(driver);
 		
 		System.out.println("Pre-conditions - Step 01: Click to register link");
-		homePage.clickToRegisterLink();
-		registerPage = new RegisterPageObject(driver);
+		registerPage = homePage.clickToRegisterLink();
 		
 		System.out.println("Pre-conditions - Step 02: Input to required fields");
 		registerPage.inputToFirstNameTextBox(firstName);
@@ -65,10 +60,8 @@ public class Level_03_Login_Page_Object {
 	@Test
 	public void Login_01_Empty_Data() {
 		System.out.println("Login_01_Empty_Data - Step 01: Click to login link");
-		homePage.clickToLoginLink();
-		// từ trang home --> click login link --> qua trang login
-		loginPage = new LoginPageObject(driver);
-		
+		loginPage = homePage.clickToLoginLink();
+
 		System.out.println("Login_01_Empty_Data - Step 02: Click to login button");
 		loginPage.clickToLoginButton();
 		
@@ -78,9 +71,8 @@ public class Level_03_Login_Page_Object {
 
 	@Test
 	public void Login_02_Invalid_Email() {
-		homePage.clickToLoginLink();
+		loginPage = homePage.clickToLoginLink();
 		// từ trang home --> click login link --> qua trang login
-		loginPage = new LoginPageObject(driver);
 		
 		loginPage.inputToEmailTextBox(invalidEmail);
 		loginPage.inputToPasswordTextBox(validPassword);
@@ -90,8 +82,7 @@ public class Level_03_Login_Page_Object {
 
 	@Test
 	public void Login_03_Unregistered_Email() {
-		homePage.clickToLoginLink();
-		loginPage = new LoginPageObject(driver);
+		loginPage = homePage.clickToLoginLink();
 
 		loginPage.inputToEmailTextBox(notFoundEmail);
 		loginPage.inputToPasswordTextBox(validPassword);
@@ -102,8 +93,7 @@ public class Level_03_Login_Page_Object {
 
 	@Test
 	public void Login_04_Valid_Email_Empty_Password() {
-		// từ trang home --> click login link --> qua trang login
-		loginPage = new LoginPageObject(driver);
+		loginPage = homePage.clickToLoginLink();
 
 		loginPage.inputToEmailTextBox(validEmail);
 		loginPage.inputToPasswordTextBox("");
@@ -114,8 +104,7 @@ public class Level_03_Login_Page_Object {
 
 	@Test
 	public void Login_05_Valid_Email_Wrong_Password() {
-		// từ trang home --> click login link --> qua trang login
-		loginPage = new LoginPageObject(driver);
+		loginPage = homePage.clickToLoginLink();
 
 		loginPage.inputToEmailTextBox(validEmail);
 		loginPage.inputToPasswordTextBox(invalidPassword);
@@ -126,21 +115,20 @@ public class Level_03_Login_Page_Object {
 
 	@Test
 	public void Login_06_Login_Success() {
-		// từ trang home --> click login link --> qua trang login
-		loginPage = new LoginPageObject(driver);
-
+		loginPage = homePage.clickToLoginLink();
+		
 		loginPage.inputToEmailTextBox(validEmail);
 		loginPage.inputToPasswordTextBox(validPassword);
-		loginPage.clickToLoginButton();
-		
-		homePage = new HomePageObject(driver);
+
+		homePage = loginPage.clickToLoginButton();
+
 		Assert.assertEquals(loginPage.getTitle(driver), "nopCommerce demo store");
 		Assert.assertTrue(homePage.isMyAccountDisplayed());
 	}
-	public  int generateRandomNumber() {
+
+	public int generateRandomNumber() {
 		return new Random().nextInt(99999);
 	}
-
 
 	@AfterClass
 	public void afterClass() {

@@ -10,8 +10,8 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import commons.BaseTest;
-import pageObjects.HomePageObject;
-import pageObjects.RegisterPageObject;
+import pageObjects.nopCommerce.HomePageObject;
+import pageObjects.nopCommerce.RegisterPageObject;
 
 public class Level_04_Multiple_Browser_Register extends BaseTest {
 	private WebDriver driver;
@@ -23,6 +23,7 @@ public class Level_04_Multiple_Browser_Register extends BaseTest {
 	@BeforeClass
 	public void beforeClass(String browserName) {
 		driver = getBrowserDriver(browserName);
+		driver.get("https://demo.nopcommerce.com/");
 		homePage = new HomePageObject(driver);
 
 		firstName = "Geni";
