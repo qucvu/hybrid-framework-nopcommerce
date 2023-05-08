@@ -10,11 +10,11 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import commons.BaseTest;
-import pageObjects.nopCommerce.HomePageObject;
-import pageObjects.nopCommerce.LoginPageObject;
-import pageObjects.nopCommerce.CustomerInfoPageObject;
-import pageObjects.nopCommerce.PageGeneratorManager;
-import pageObjects.nopCommerce.RegisterPageObject;
+import commons.PageGeneratorManager;
+import pageObjects.nopCommerce.user.UserCustomerInfoPageObject;
+import pageObjects.nopCommerce.user.UserHomePageObject;
+import pageObjects.nopCommerce.user.UserLoginPageObject;
+import pageObjects.nopCommerce.user.UserRegisterPageObject;
 
 public class Level_06_Page_Generator_Manager_3 extends BaseTest {
 
@@ -32,7 +32,7 @@ public class Level_06_Page_Generator_Manager_3 extends BaseTest {
 		invalidPassword = validPassword + "123";
 
 		driver.get("https://demo.nopcommerce.com/");
-		homePage = PageGeneratorManager.getHomePage(driver);
+		homePage = PageGeneratorManager.getUserHomePage(driver);
 
 		System.out.println("Pre-conditions - Step 01: Click to register link");
 		registerPage = homePage.openRegisterPage();
@@ -121,7 +121,7 @@ public class Level_06_Page_Generator_Manager_3 extends BaseTest {
 		Assert.assertTrue(homePage.isMyAccountDisplayed());
 		
 		// click to my account
-		myAccountPage = homePage.openCustomerInfoPage();
+		myAccountPage = homePage.openMyAccountPage();
 		
 		// verify data
 		Assert.assertEquals(myAccountPage.getValueAtFirstNameTextbox(), firstName);
@@ -139,10 +139,10 @@ public class Level_06_Page_Generator_Manager_3 extends BaseTest {
 	}
 
 	private WebDriver driver;
-	private LoginPageObject loginPage;
-	private HomePageObject homePage;
-	private RegisterPageObject registerPage;
-	private CustomerInfoPageObject myAccountPage;
+	private UserLoginPageObject loginPage;
+	private UserHomePageObject homePage;
+	private UserRegisterPageObject registerPage;
+	private UserCustomerInfoPageObject myAccountPage;
 	private String firstName, lastName, validPassword, invalidPassword, validEmail, invalidEmail, notFoundEmail;
 
 	

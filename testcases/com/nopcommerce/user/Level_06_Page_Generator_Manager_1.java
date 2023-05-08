@@ -10,15 +10,15 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import commons.BaseTest;
-import pageObjects.nopCommerce.HomePageObject;
-import pageObjects.nopCommerce.LoginPageObject;
-import pageObjects.nopCommerce.RegisterPageObject;
+import pageObjects.nopCommerce.user.UserHomePageObject;
+import pageObjects.nopCommerce.user.UserLoginPageObject;
+import pageObjects.nopCommerce.user.UserRegisterPageObject;
 
 public class Level_06_Page_Generator_Manager_1 extends BaseTest {
 	private WebDriver driver;
-	private LoginPageObject loginPage;
-	private HomePageObject homePage;
-	private RegisterPageObject registerPage;
+	private UserLoginPageObject loginPage;
+	private UserHomePageObject homePage;
+	private UserRegisterPageObject registerPage;
 
 	private String firstName, lastName, validPassword,invalidPassword, validEmail, invalidEmail, notFoundEmail;
 	
@@ -36,11 +36,11 @@ public class Level_06_Page_Generator_Manager_1 extends BaseTest {
 		invalidPassword = validPassword + "123";
 		
 		driver.get("https://demo.nopcommerce.com/");
-		homePage = new HomePageObject(driver);
+		homePage = new UserHomePageObject(driver);
 		
 		System.out.println("Pre-conditions - Step 01: Click to register link");
 		homePage.openRegisterPage();
-		registerPage = new RegisterPageObject(driver);
+		registerPage = new UserRegisterPageObject(driver);
 		
 		System.out.println("Pre-conditions - Step 02: Input to required fields");
 		registerPage.inputToFirstNameTextBox(firstName);
@@ -62,7 +62,7 @@ public class Level_06_Page_Generator_Manager_1 extends BaseTest {
 		System.out.println("Login_01_Empty_Data - Step 01: Click to login link");
 		homePage.openLoginPage();
 		// từ trang home --> click login link --> qua trang login
-		loginPage = new LoginPageObject(driver);
+		loginPage = new UserLoginPageObject(driver);
 		
 		System.out.println("Login_01_Empty_Data - Step 02: Click to login button");
 		loginPage.clickToLoginButton();
@@ -75,7 +75,7 @@ public class Level_06_Page_Generator_Manager_1 extends BaseTest {
 	public void Login_02_Invalid_Email() {
 		homePage.openLoginPage();
 		// từ trang home --> click login link --> qua trang login
-		loginPage = new LoginPageObject(driver);
+		loginPage = new UserLoginPageObject(driver);
 		
 		loginPage.inputToEmailTextBox(invalidEmail);
 		loginPage.inputToPasswordTextBox(validPassword);
@@ -86,7 +86,7 @@ public class Level_06_Page_Generator_Manager_1 extends BaseTest {
 	@Test
 	public void Login_03_Unregistered_Email() {
 		homePage.openLoginPage();
-		loginPage = new LoginPageObject(driver);
+		loginPage = new UserLoginPageObject(driver);
 
 		loginPage.inputToEmailTextBox(notFoundEmail);
 		loginPage.inputToPasswordTextBox(validPassword);
@@ -120,7 +120,7 @@ public class Level_06_Page_Generator_Manager_1 extends BaseTest {
 		loginPage.inputToPasswordTextBox(validPassword);
 		loginPage.clickToLoginButton();
 		
-		homePage = new HomePageObject(driver);
+		homePage = new UserHomePageObject(driver);
 		Assert.assertEquals(loginPage.getTitle(driver), "nopCommerce demo store");
 		Assert.assertTrue(homePage.isMyAccountDisplayed());
 	}

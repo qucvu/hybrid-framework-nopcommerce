@@ -70,11 +70,22 @@ public class BaseTest {
 //		}else {
 //			throw new RuntimeException("Browser name invalid");
 //		}
+//		driver.get(getDomainUrl("production"));
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-//		driver.get("https://demo.nopcommerce.com/");
 
 		return driver;
+	}
+	
+	protected String getDomainUrl(String env) {
+		switch (env) {
+		case "production":
+			env =  GlobalConstants.PORTAL_PAGE_URL;
+			break;
+		default:
+			break;
+		}
+		return env;
 	}
 	
 	protected int generateRandomNumber() {
