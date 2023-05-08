@@ -84,9 +84,10 @@ public class RegisterPageObject extends BasePage {
 		waitForElementVisibility(driver, RegisterPageUI.WRONG_EMAIL_ERROR_MESSAGE);
 		return getElementText(driver, RegisterPageUI.WRONG_EMAIL_ERROR_MESSAGE);
 	}
-	public void clickToContinueButton() {
+	public HomePageObject clickToContinueButton() {
 		waitForElementClickable(driver, RegisterPageUI.CONTINUE_BUTTON);
 		clickToElement(driver, RegisterPageUI.CONTINUE_BUTTON);
+		return PageGeneratorManager.getHomePage(driver);
 	}
 
 	public void clickToLogoutLink() {

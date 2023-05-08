@@ -39,7 +39,7 @@ public class Level_06_Page_Generator_Manager_1 extends BaseTest {
 		homePage = new HomePageObject(driver);
 		
 		System.out.println("Pre-conditions - Step 01: Click to register link");
-		homePage.clickToRegisterLink();
+		homePage.openRegisterPage();
 		registerPage = new RegisterPageObject(driver);
 		
 		System.out.println("Pre-conditions - Step 02: Input to required fields");
@@ -60,7 +60,7 @@ public class Level_06_Page_Generator_Manager_1 extends BaseTest {
 	@Test
 	public void Login_01_Empty_Data() {
 		System.out.println("Login_01_Empty_Data - Step 01: Click to login link");
-		homePage.clickToLoginLink();
+		homePage.openLoginPage();
 		// từ trang home --> click login link --> qua trang login
 		loginPage = new LoginPageObject(driver);
 		
@@ -73,7 +73,7 @@ public class Level_06_Page_Generator_Manager_1 extends BaseTest {
 
 	@Test
 	public void Login_02_Invalid_Email() {
-		homePage.clickToLoginLink();
+		homePage.openLoginPage();
 		// từ trang home --> click login link --> qua trang login
 		loginPage = new LoginPageObject(driver);
 		
@@ -85,7 +85,7 @@ public class Level_06_Page_Generator_Manager_1 extends BaseTest {
 
 	@Test
 	public void Login_03_Unregistered_Email() {
-		homePage.clickToLoginLink();
+		homePage.openLoginPage();
 		loginPage = new LoginPageObject(driver);
 
 		loginPage.inputToEmailTextBox(notFoundEmail);
