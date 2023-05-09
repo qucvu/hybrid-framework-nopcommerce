@@ -24,7 +24,7 @@ import pageObjects.nopCommerce.user.UserRewardPointPageObject;
 import pageUIs.nopCommerce.user.BasePageUI;
 
 public class BasePage {
-	private final long longTimeout = 30;
+	private final long longTimeout = GlobalConstants.LONG_TIMEOUT;
 
 	
 	public static BasePage getBasePageObject() {

@@ -52,7 +52,12 @@ public class BaseTest {
 		case "coccoc":
 			WebDriverManager.chromedriver().driverVersion("109.0.5414.25").setup();
 			ChromeOptions optionsCocCoc = new ChromeOptions();
-			optionsCocCoc.setBinary("C:\\Program Files (x86)\\CocCoc\\Browser\\Application\\browser.exe");
+			if(GlobalConstants.OS_NAME.contains("windows")) {
+				optionsCocCoc.setBinary("C:\\Program Files (x86)\\CocCoc\\Browser\\Application\\browser.exe");				
+			}else {
+				optionsCocCoc.setBinary("...");				
+
+			}
 			driver = new ChromeDriver(optionsCocCoc);
 			break;
 		default:
@@ -72,7 +77,7 @@ public class BaseTest {
 //		}
 //		driver.get(getDomainUrl("production"));
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(GlobalConstants.LONG_TIMEOUT, TimeUnit.SECONDS);
 
 		return driver;
 	}
