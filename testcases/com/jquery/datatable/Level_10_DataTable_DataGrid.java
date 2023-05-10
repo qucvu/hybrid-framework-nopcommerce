@@ -25,7 +25,7 @@ public class Level_10_DataTable_DataGrid extends BaseTest {
 
 	}
 
-	 @Test
+	// @Test
 	public void Table_01() {
 		homePage.openPagingByPageNumber("1");
 		Assert.assertTrue(homePage.isPageNumberActive("1"));
@@ -48,7 +48,7 @@ public class Level_10_DataTable_DataGrid extends BaseTest {
 
 	}
 
-//	 @Test
+	// @Test
 	public void Table_02() {
 		homePage.refreshCurrentPage(driver);
 
@@ -59,14 +59,63 @@ public class Level_10_DataTable_DataGrid extends BaseTest {
 
 	}
 
-//	@Test
+	// @Test
 	public void Table_03() {
-		 homePage.refreshCurrentPage(driver);
+		homePage.refreshCurrentPage(driver);
 
 		List<String> allCountryData = homePage.getValueEachRowAtAllPage();
 		for (String value : allCountryData) {
 			System.out.println(value);
 		}
+	}
+	@Test
+	public void Table_04() {
+		homePage.clickToLoadData();
+		homePage.sleepInSecond(2);
+
+		homePage.enterToTextboxAtRowNumberByColumnName("Company", "1", "Axon");
+		homePage.sleepInSecond(2);
+		homePage.enterToTextboxAtRowNumberByColumnName("Contact Person", "2", "Geni");
+		homePage.sleepInSecond(2);
+
+		homePage.enterToTextboxAtRowNumberByColumnName("Order Placed", "3", "50");
+		homePage.sleepInSecond(2);
+
+	}
+	
+	@Test
+	public void Table_05() {
+		homePage.selectToDropdownAtRowNumberByColumnName("Country", "4", "Japan");
+		homePage.sleepInSecond(3);
+
+		homePage.selectToDropdownAtRowNumberByColumnName("Country", "6", "Malaysia");
+		homePage.sleepInSecond(3);
+
+		homePage.checkToCheckboxAtRowNumberByColumnName("NPO?", "7");
+		homePage.sleepInSecond(3);
+
+		homePage.unCheckToCheckboxAtRowNumberByColumnName("NPO?", "5");
+
+		homePage.sleepInSecond(3);
+
+		homePage.clickToIconAction("7", "Move Up");
+		homePage.sleepInSecond(3);
+
+		homePage.clickToIconAction("6", "Move Down");
+		homePage.sleepInSecond(3);
+
+		homePage.clickToIconAction("7", "Insert Row Above");
+		homePage.sleepInSecond(3);
+
+		homePage.clickToIconAction("8", "Remove Current Row");
+		homePage.sleepInSecond(3);
+		
+		homePage.clickToIconActionByContactName("Glori Spellecy", "Move Up");
+		homePage.sleepInSecond(3);
+
+		homePage.clickToIconActionByContactName("Glori Spellecy", "Move Down");
+		homePage.sleepInSecond(3);
+
 	}
 
 	public int generateRandomNumber() {
@@ -75,7 +124,7 @@ public class Level_10_DataTable_DataGrid extends BaseTest {
 
 	@AfterClass
 	public void afterClass() {
-		driver.quit();
+		 driver.quit();
 	}
 
 	private WebDriver driver;

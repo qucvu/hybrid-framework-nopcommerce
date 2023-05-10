@@ -278,6 +278,14 @@ public class BasePage {
 			element.click();
 		}
 	}
+	
+	protected void checkToDefaultCheckboxRadio(WebDriver driver, String locatorType, String... dynamicValues) {
+		WebElement element = getWebElement(driver, locatorType, dynamicValues);
+		if (!element.isSelected()) {
+			element.click();
+		}
+	}
+
 
 	protected void unCheckToDefaultCheckbox(WebDriver driver, String locatorType) {
 		WebElement element = getWebElement(driver, locatorType);
@@ -285,6 +293,14 @@ public class BasePage {
 			element.click();
 		}
 	}
+	
+	protected void unCheckToDefaultCheckbox(WebDriver driver, String locatorType, String... dynamicValues) {
+		WebElement element = getWebElement(driver, locatorType, dynamicValues);
+		if (element.isSelected()) {
+			element.click();
+		}
+	}
+
 
 	protected boolean isElemenetDisplayed(WebDriver driver, String locatorType) {
 		return getWebElement(driver, locatorType).isDisplayed();
