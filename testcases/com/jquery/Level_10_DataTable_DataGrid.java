@@ -1,4 +1,4 @@
-package com.jquery.datatable;
+package com.jquery;
 
 import java.util.List;
 import java.util.Random;
@@ -11,9 +11,9 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import commons.BaseTest;
-import pageObjects.jQuery.HomePageObject;
-import pageObjects.jQuery.PageGeneratorManager;
-import pageUIs.jQuery.HomePageUI;
+import pageObjects.jQuery.dataTable.HomePageObject;
+import pageObjects.jQuery.dataTable.PageGeneratorManager;
+import pageUIs.jQuery.dataTable.HomePageUI;
 
 public class Level_10_DataTable_DataGrid extends BaseTest {
 	@Parameters({ "browser", "url" })

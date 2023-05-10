@@ -8,7 +8,7 @@ public class GlobalConstants {
 
 	public static final String PROJECT_PATH = System.getProperty("user.dir");
 	public static final String OS_NAME = System.getProperty("os.name");
-	public static final String UPLOAD_FILE_FOLDER = PROJECT_PATH + File.separator + "uploadFiles";
+	public static final String UPLOAD_FILE_FOLDER = PROJECT_PATH + File.separator + "uploadFiles" + File.separator;
 	public static final String DOWNLOAD_FILE_FOLDER = PROJECT_PATH + File.separator + "downloadFiles";
 	public static final String BROWSER_LOG_FOLDER = PROJECT_PATH + File.separator + "browserLogs";
 	public static final String DRAG_DROG_HTML5 = PROJECT_PATH + File.separator + "DragAndDrop";
@@ -22,5 +22,7 @@ public class GlobalConstants {
 	public static final String DB_DEV_URL = "127.0.0.125:9860";
 	public static final String DB_DEV_USER = "127.0.0.125:9860";
 	public static final String DB_DEV_PASS = "P@ssWor1d1";
-
+	public static void main(String[] args) {
+		System.out.println(UPLOAD_FILE_FOLDER);
+	}
 }

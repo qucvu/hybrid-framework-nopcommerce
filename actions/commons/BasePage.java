@@ -22,6 +22,7 @@ import pageObjects.nopCommerce.user.UserCustomerInfoPageObject;
 import pageObjects.nopCommerce.user.UserHomePageObject;
 import pageObjects.nopCommerce.user.UserMyProductReviewPageObject;
 import pageObjects.nopCommerce.user.UserRewardPointPageObject;
+import pageUIs.jQuery.uploadFile.HomePageUI;
 import pageUIs.nopCommerce.user.BasePageUI;
 
 public class BasePage {
@@ -144,7 +145,7 @@ public class BasePage {
 
 	}
 
-	private WebElement getWebElement(WebDriver driver, String locatorType) {
+	public WebElement getWebElement(WebDriver driver, String locatorType) {
 		return driver.findElement(getByLocator(locatorType));
 	}
 
@@ -407,12 +408,16 @@ public class BasePage {
 		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
 		boolean status = (boolean) jsExecutor.executeScript("return arguments[0].complete && typeof arguments[0].naturalWidth != \"undefined\" && arguments[0].naturalWidth > 0",
 			getWebElement(driver, locator));
-		if (status) {
-			return true;
-		} else {
-			return false;
-		}
+		return status;
 	}
+	
+	protected boolean isImageLoaded(WebDriver driver, String locator, String... dynamicValues) {
+		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+		boolean status = (boolean) jsExecutor.executeScript("return arguments[0].complete && typeof arguments[0].naturalWidth != \"undefined\" && arguments[0].naturalWidth > 0",
+			getWebElement(driver, getDynamicXpath(locator, dynamicValues)));
+		return status;
+	}
+
 
 	protected void waitForElementVisibility(WebDriver driver, String locatorType) {
 		WebDriverWait explicitWait = new WebDriverWait(driver, longTimeout);
@@ -456,7 +461,7 @@ public class BasePage {
 		explicitWait.until(ExpectedConditions.invisibilityOfAllElements(getListElements(driver, locatorType, dynamicValues)));
 	}
 
-	// protected void waitForAllElementInVisibility(WebDriver driver, String ... locatorType) { : th này truyền vào một locator dc sử dụng ở nhiều vị trí
+	// protected void waitForAllElementInVisibility(WebDriver driver, String ... locatorType) { : truong hop này truyền vào một locator dc sử dụng ở nhiều vị trí
 	// WebDriverWait explicitWait = new WebDriverWait(driver, longTimeout);
 	// for (String string : locatorType) {
 	// explicitWait.until(ExpectedConditions.invisibilityOfAllElements(getWebElement(driver, string)));
@@ -535,5 +540,17 @@ public class BasePage {
 		return PageGeneratorManager.getAdminLoginPage(driver);
 
 	}
+	
+	public void uploadFilesByFileName(WebDriver driver, String... fileNames) {
+		String filePath = GlobalConstants.UPLOAD_FILE_FOLDER;
+		String fullName = "";
+		for (String fileName : fileNames) {
+			fullName += filePath + fileName + "\n";
+		}
+		fullName = fullName.trim();
+		getWebElement(driver, HomePageUI.UPLOAD_FILE).sendKeys(fullName);
+
+	}
+
 
 }

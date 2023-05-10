@@ -18,38 +18,39 @@ public class BaseTest {
 	
 	
 	protected WebDriver getBrowserDriver(String browserName) {
-		switch (browserName) {
-		case "firefox":
+		BrowserList browserList = BrowserList.valueOf(browserName.toUpperCase());
+		switch (browserList) {
+		case FIREFOX:
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
 			break;
-		case "h_firefox":
+		case H_FIREFOX:
 			WebDriverManager.firefoxdriver().setup();
 			FirefoxOptions options = new FirefoxOptions();
 			options.addArguments("-headless");
 			options.addArguments("window-size=1920x1080");
 			driver = new FirefoxDriver(options);
 			break;
-		case "chrome":
+		case CHROME:
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 			break;
-		case "h_chrome":
+		case H_CHROME:
 			WebDriverManager.chromedriver().setup();
 			ChromeOptions optionsChrome = new ChromeOptions();
 			optionsChrome.addArguments("-headless");
 			optionsChrome.addArguments("window-size=1920x1080");
 			driver = new ChromeDriver(optionsChrome);
 			break;
-		case "ie":
+		case IE:
 			WebDriverManager.iedriver().arch32().setup();
             driver = new InternetExplorerDriver();
             break;
-		case "edge":
+		case EDEG:
 			WebDriverManager.edgedriver().setup();
 			driver = new EdgeDriver();
 			break;
-		case "coccoc":
+		case COCCOC:
 			WebDriverManager.chromedriver().driverVersion("109.0.5414.25").setup();
 			ChromeOptions optionsCocCoc = new ChromeOptions();
 			if(GlobalConstants.OS_NAME.contains("windows")) {
