@@ -14,8 +14,8 @@ public class GlobalConstants {
 	public static final String DRAG_DROG_HTML5 = PROJECT_PATH + File.separator + "DragAndDrop";
 	public static final String AUTO_IT_SCRIPT = PROJECT_PATH + File.separator + "autoIT";
 
-	public static final int LONG_TIMEOUT = 30;
-	public static final int SHORT_TIMEOUT = 15;
+	public static final int LONG_TIMEOUT = 15;
+	public static final int SHORT_TIMEOUT = 5;
 	public static final int RETRY_TEST_FAIL = 15;
 	
 	
