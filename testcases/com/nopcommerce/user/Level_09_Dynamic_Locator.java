@@ -25,7 +25,6 @@ public class Level_09_Dynamic_Locator extends BaseTest {
 	@BeforeClass
 	public void beforeClass(String browserName) {
 		driver = getBrowserDriver(browserName);
-
 		firstName = "Geni";
 		lastName = "Nguyen";
 		emailAddress = "afc" + generateRandomNumber() + "@acb.com";

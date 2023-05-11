@@ -549,6 +549,7 @@ public class BasePage {
 		}
 		fullName = fullName.trim();
 		getWebElement(driver, HomePageUI.UPLOAD_FILE).sendKeys(fullName);
+//		sendkeyToElement(driver,HomePageUI.UPLOAD_FILE, fullName);
 
 	}
 

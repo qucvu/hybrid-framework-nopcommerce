@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE xml>
 <suite name="NopCommerce">
+	<listeners>
+		<listener class-name="commons.MethodListener" />
+	</listeners>
 	<!--<test name="Run on Coc Coc">
 		<parameter name="browser" value="coccoc" />
 		<classes>
@@ -22,7 +25,7 @@
 	<test name="Run on FIREFOX">
 		<parameter name="browser" value="firefox" />
 		<classes>
-			<class name="com.nopcommerce.user.Level_09_Dynamic_Locator" />
+			<class name="com.nopcommerce.user.Level_12_Custom_Assert" />
 		</classes>
 	</test>
 	-->-->
