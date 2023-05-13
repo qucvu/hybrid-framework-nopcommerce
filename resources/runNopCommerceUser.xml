@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE xml>
-<suite name="NopCommerce">
+<suite name="NopCommerce - User">
 	<listeners>
 		<listener class-name="commons.MethodListener" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
 	</listeners>
 	<!--<test name="Run on Coc Coc">
 		<parameter name="browser" value="coccoc" />
@@ -25,7 +27,7 @@
 	<test name="Run on FIREFOX">
 		<parameter name="browser" value="firefox" />
 		<classes>
-			<class name="com.nopcommerce.user.Level_12_Custom_Assert" />
+			<class name="com.nopcommerce.user.Level_14_Log_ReportNG" />
 		</classes>
 	</test>
 	-->-->

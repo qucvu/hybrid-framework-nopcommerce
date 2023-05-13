@@ -1,0 +1,42 @@
+[2023-05-13 11:00:18,159] Register - Step 01: Navigate to 'Register' page
+[2023-05-13 11:00:18,731] Register - Step 02: Enter to FirstName textbox with value is 'Geni'
+[2023-05-13 11:00:18,875] Register - Step 03: Enter to Lastname textbox with value is 'Nguyen'
+[2023-05-13 11:00:19,020] Register - Step 04: Enter to Email Address textbox with value is 'afc53291@acb.com'
+[2023-05-13 11:00:19,166] Register - Step 05: Enter to Password textbox with value is '123456'
+[2023-05-13 11:00:19,295] Register - Step 06: Enter to Confirm Password textbox with value is '123456'
+[2023-05-13 11:00:19,437] Register - Step 08: Click to 'Register' button
+[2023-05-13 11:00:20,209] Register - Step 09: Verify register success message is displayed
+[2023-05-13 11:00:20,281]  -------------------------- PASSED -------------------------- 
+[2023-05-13 11:00:20,281] Register - Step 10: Click to Continue button
+[2023-05-13 11:00:20,768] Login - Step 01: Navigate to Login page
+[2023-05-13 11:00:21,224] Login - Step 02: Enter to Email textbox with value is 'afc53291@acb.com'
+[2023-05-13 11:00:21,345] Login - Step 03: Enter to Password textbox with value is '123456'
+[2023-05-13 11:00:21,479] Login - Step 04: Click to Login button
+[2023-05-13 11:00:22,282] Login - Step 05: Verify the correct title of Home Page
+[2023-05-13 11:00:22,302]  -------------------------- FAILED -------------------------- 
+[2023-05-13 11:00:22,302] Login - Step 06: Verify the 'My Account' Link is displayed
+[2023-05-13 11:00:22,369]  -------------------------- PASSED -------------------------- 
+[2023-05-13 11:00:22,950]  -------------------------- PASSED -------------------------- 
+[2023-05-13 11:00:23,009]  -------------------------- PASSED -------------------------- 
+[2023-05-13 11:00:23,071]  -------------------------- PASSED -------------------------- 
+[2023-05-13 11:00:26,507] Register - Step 01: Navigate to 'Register' page
+[2023-05-13 11:00:27,584] Register - Step 02: Enter to FirstName textbox with value is 'Geni'
+[2023-05-13 11:00:27,694] Register - Step 03: Enter to Lastname textbox with value is 'Nguyen'
+[2023-05-13 11:00:27,792] Register - Step 04: Enter to Email Address textbox with value is 'afc80587@acb.com'
+[2023-05-13 11:00:27,891] Register - Step 05: Enter to Password textbox with value is '123456'
+[2023-05-13 11:00:27,980] Register - Step 06: Enter to Confirm Password textbox with value is '123456'
+[2023-05-13 11:00:28,063] Register - Step 08: Click to 'Register' button
+[2023-05-13 11:00:28,797] Register - Step 09: Verify register success message is displayed
+[2023-05-13 11:00:28,855]  -------------------------- PASSED -------------------------- 
+[2023-05-13 11:00:28,856] Register - Step 10: Click to Continue button
+[2023-05-13 11:00:29,286] Login - Step 01: Navigate to Login page
+[2023-05-13 11:00:29,757] Login - Step 02: Enter to Email textbox with value is 'afc80587@acb.com'
+[2023-05-13 11:00:29,857] Login - Step 03: Enter to Password textbox with value is '123456'
+[2023-05-13 11:00:29,937] Login - Step 04: Click to Login button
+[2023-05-13 11:00:30,643] Login - Step 05: Verify the correct title of Home Page
+[2023-05-13 11:00:30,653]  -------------------------- FAILED -------------------------- 
+[2023-05-13 11:00:30,653] Login - Step 06: Verify the 'My Account' Link is displayed
+[2023-05-13 11:00:30,740]  -------------------------- PASSED -------------------------- 
+[2023-05-13 11:00:31,313]  -------------------------- PASSED -------------------------- 
+[2023-05-13 11:00:31,390]  -------------------------- PASSED -------------------------- 
+[2023-05-13 11:00:31,455]  -------------------------- PASSED -------------------------- 

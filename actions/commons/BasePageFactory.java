@@ -2,6 +2,7 @@ package commons;
 
 import java.util.List;
 import java.util.Set;
+import java.util.function.Function;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
