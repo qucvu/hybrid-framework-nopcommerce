@@ -13,6 +13,8 @@ public class GlobalConstants {
 	public static final String BROWSER_LOG_FOLDER = PROJECT_PATH + File.separator + "browserLogs";
 	public static final String DRAG_DROG_HTML5 = PROJECT_PATH + File.separator + "DragAndDrop";
 	public static final String AUTO_IT_SCRIPT = PROJECT_PATH + File.separator + "autoIT";
+	public static final String REPORTNG_SCREENSHOT = PROJECT_PATH + File.separator + "ReportNGScreenShots" + File.separator;
+	public static final String EXTENT_PATH = PROJECT_PATH + File.separator + "ExtentReportV2ScreenShots" + File.separator;
 
 	public static final int LONG_TIMEOUT = 30;
 	public static final int SHORT_TIMEOUT = 5;
