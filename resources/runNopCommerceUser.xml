@@ -7,14 +7,15 @@
 		<!--		<listener class-name="reportConfig.ExtentReportListenerV2" />-->
 		<!--		<listener class-name="reportConfig.ExtentReportListenerV3" />-->
 		<!--		<listener class-name="reportConfig.ExtentReportListenerV4" />-->
-		<listener class-name="reportConfig.ExtentReportListenerV5" />
+		<!--		<listener class-name="reportConfig.ExtentReportListenerV5" />-->
+		<listener class-name="reportConfig.AllureTestListener" />
 		<listener class-name="org.uncommons.reportng.HTMLReporter" />
 		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
 	</listeners>
 	<test name="Run on FIREFOX">
 		<parameter name="browser" value="firefox" />
 		<classes>
-			<class name="com.nopcommerce.user.Level_16_ExtentReport_V5_Screenshot" />
+			<class name="com.nopcommerce.user.Level_17_Allure" />
 		</classes>
 	</test>
 </suite>
