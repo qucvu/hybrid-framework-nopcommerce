@@ -303,3 +303,35 @@
 [2023-05-13 23:24:07,191] Login - Step 06: Verify the 'My Account' Link is displayed
 [2023-05-13 23:49:05,604] Register - Step 01: Navigate to 'Register' page
 [2023-05-13 23:49:06,338] Login - Step 01: Navigate to Login page
+[2023-05-15 14:01:06,992] Login - Step 01: Navigate to Login page
+[2023-05-15 14:01:07,690] Login - Step 02: Enter to Email textbox with value is 'afc59376@acb.com'
+[2023-05-15 14:01:07,839] Login - Step 03: Enter to Password textbox with value is '123456'
+[2023-05-15 14:01:07,963] Login - Step 04: Click to Login button
+[2023-05-15 14:01:09,288] Login - Step 06: Verify the 'My Account' Link is displayed
+[2023-05-15 14:01:09,382]  -------------------------- PASSED -------------------------- 
+[2023-05-15 15:18:18,946] Pre-condition - Step 02: Set cookie and reload page
+[2023-05-15 15:18:19,780] Pre-condition - Step 04: Click to Login button
+[2023-05-15 15:21:28,425] Pre-condition - Step 02: Set cookie and reload page
+[2023-05-15 15:26:10,148] Pre-condition - Step 02: Set cookie and reload page
+[2023-05-15 15:26:11,497] Pre-condition - Step 06: Verify the 'My Account' Link is displayed
+[2023-05-15 15:26:11,613]  -------------------------- PASSED -------------------------- 
+[2023-05-15 15:27:49,762] Pre-condition - Step 02: Set cookie and reload page
+[2023-05-15 15:36:00,918] Pre-condition - Step 01: Navigate to Login page
+[2023-05-15 15:36:02,060] Pre-condition - Step 02: Set cookie and reload page
+[2023-05-15 15:36:05,483] Pre-condition - Step 03: Verify the 'My Account' Link is displayed
+[2023-05-15 15:36:05,592]  -------------------------- PASSED -------------------------- 
+[2023-05-15 15:40:22,485] Pre-condition - Step 02: Set cookie and reload page
+[2023-05-15 15:40:25,895] Pre-condition - Step 03: Verify the 'My Account' Link is displayed
+[2023-05-15 15:40:25,999]  -------------------------- PASSED -------------------------- 
+[2023-05-15 15:41:08,047] Pre-condition - Step 02: Set cookie and reload page
+[2023-05-15 15:41:43,007] Pre-condition - Step 02: Set cookie and reload page
+[2023-05-15 15:42:00,291] Pre-condition - Step 02: Set cookie and reload page
+[2023-05-15 15:43:14,143] Pre-condition - Step 02: Set cookie and reload page
+[2023-05-15 15:43:17,566] Pre-condition - Step 03: Verify the 'My Account' Link is displayed
+[2023-05-15 15:43:17,662]  -------------------------- PASSED -------------------------- 
+[2023-05-15 15:44:23,451] Pre-condition - Step 02: Set cookie and reload page
+[2023-05-15 15:44:25,606] Pre-condition - Step 03: Verify the 'My Account' Link is displayed
+[2023-05-15 15:44:26,662]  -------------------------- PASSED -------------------------- 
+[2023-05-15 15:45:41,119] Pre-condition - Step 02: Set cookie and reload page
+[2023-05-15 15:45:44,540] Pre-condition - Step 03: Verify the 'My Account' Link is displayed
+[2023-05-15 15:45:44,645]  -------------------------- PASSED -------------------------- 

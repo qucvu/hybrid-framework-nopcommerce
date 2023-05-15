@@ -1,0 +1,3 @@
+[2023-05-15 15:45:41,119] Pre-condition - Step 02: Set cookie and reload page
+[2023-05-15 15:45:44,540] Pre-condition - Step 03: Verify the 'My Account' Link is displayed
+[2023-05-15 15:45:44,645]  -------------------------- PASSED -------------------------- 
