@@ -15,8 +15,8 @@
 	<test name="Run on FIREFOX">
 		<parameter name="browser" value="firefox" />
 		<classes>
-			<class name="com.nopcommerce.common.Common_01_Register_Cookie" />
-			<class name="com.nopcommerce.user.Level_18_Share_Data_C" />
+<!--			<class name="com.nopcommerce.common.Common_01_Register_Cookie" />-->
+			<class name="com.nopcommerce.user.Level_19_Custom_Close_Driver" />
 		</classes>
 	</test>
 </suite>

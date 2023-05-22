@@ -335,3 +335,87 @@
 [2023-05-15 15:45:41,119] Pre-condition - Step 02: Set cookie and reload page
 [2023-05-15 15:45:44,540] Pre-condition - Step 03: Verify the 'My Account' Link is displayed
 [2023-05-15 15:45:44,645]  -------------------------- PASSED -------------------------- 
+[2023-05-22 11:34:56,624] Pre-condition - Step 01: Navigate to 'Register' page
+[2023-05-22 11:34:57,167] Pre-condition - Step 02: Enter to FirstName textbox with value is 'Geni'
+[2023-05-22 11:34:57,288] Pre-condition - Step 03: Enter to Lastname textbox with value is 'Nguyen'
+[2023-05-22 11:34:57,381] Pre-condition - Step 04: Enter to Email Address textbox with value is 'afc9911@acb.com'
+[2023-05-22 11:34:57,467] Pre-condition - Step 05: Enter to Password textbox with value is '123456'
+[2023-05-22 11:34:57,579] Pre-condition - Step 06: Enter to Confirm Password textbox with value is '123456'
+[2023-05-22 11:34:57,683] Pre-condition - Step 08: Click to 'Register' button
+[2023-05-22 11:34:58,465] Pre-condition - Step 09: Verify register success message is displayed
+[2023-05-22 11:34:58,538]  -------------------------- PASSED -------------------------- 
+[2023-05-22 11:34:58,539] Pre-condition - Step 10: Click to Continue button
+[2023-05-22 11:34:58,977] Pre-condition - Step 11: Navigate to Login page
+[2023-05-22 11:34:59,410] Pre-condition - Step 12: Enter to Email textbox with value is 'afc9911@acb.com'
+[2023-05-22 11:34:59,509] Pre-condition - Step 13: Enter to Password textbox with value is '123456'
+[2023-05-22 11:34:59,625] Pre-condition - Step 14: Click to Login button
+[2023-05-22 11:35:00,286] Pre-condition - Step 15: Verify the 'My Account' Link is displayed
+[2023-05-22 11:35:00,389]  -------------------------- PASSED -------------------------- 
+[2023-05-22 11:38:37,973] Pre-condition - Step 01: Navigate to 'Register' page
+[2023-05-22 11:38:39,104] Pre-condition - Step 02: Enter to FirstName textbox with value is 'Geni'
+[2023-05-22 11:38:39,226] Pre-condition - Step 03: Enter to Lastname textbox with value is 'Nguyen'
+[2023-05-22 11:38:39,337] Pre-condition - Step 04: Enter to Email Address textbox with value is 'afc61895@acb.com'
+[2023-05-22 11:38:39,448] Pre-condition - Step 05: Enter to Password textbox with value is '123456'
+[2023-05-22 11:38:39,540] Pre-condition - Step 06: Enter to Confirm Password textbox with value is '123456'
+[2023-05-22 11:38:39,630] Pre-condition - Step 08: Click to 'Register' button
+[2023-05-22 11:38:40,418] Pre-condition - Step 09: Verify register success message is displayed
+[2023-05-22 11:38:40,484]  -------------------------- FAILED -------------------------- 
+[2023-05-22 11:38:40,485] Pre-condition - Step 10: Click to Continue button
+[2023-05-22 11:38:40,995] Pre-condition - Step 11: Navigate to Login page
+[2023-05-22 11:38:41,453] Pre-condition - Step 12: Enter to Email textbox with value is 'afc61895@acb.com'
+[2023-05-22 11:38:41,549] Pre-condition - Step 13: Enter to Password textbox with value is '123456'
+[2023-05-22 11:38:41,651] Pre-condition - Step 14: Click to Login button
+[2023-05-22 11:38:42,340] Pre-condition - Step 15: Verify the 'My Account' Link is displayed
+[2023-05-22 11:38:42,459]  -------------------------- PASSED -------------------------- 
+[2023-05-22 11:51:17,887] Pre-condition - Step 01: Navigate to 'Register' page
+[2023-05-22 11:51:18,964] Pre-condition - Step 02: Enter to FirstName textbox with value is 'Geni'
+[2023-05-22 11:51:19,103] Pre-condition - Step 03: Enter to Lastname textbox with value is 'Nguyen'
+[2023-05-22 11:51:19,198] Pre-condition - Step 04: Enter to Email Address textbox with value is 'afc30215@acb.com'
+[2023-05-22 11:51:19,324] Pre-condition - Step 05: Enter to Password textbox with value is '123456'
+[2023-05-22 11:51:19,406] Pre-condition - Step 06: Enter to Confirm Password textbox with value is '123456'
+[2023-05-22 11:51:19,483] Pre-condition - Step 08: Click to 'Register' button
+[2023-05-22 11:51:20,180] Pre-condition - Step 09: Verify register success message is displayed
+[2023-05-22 12:06:49,677] Pre-condition - Step 01: Navigate to 'Register' page
+[2023-05-22 12:06:50,732] Pre-condition - Step 02: Enter to FirstName textbox with value is 'Geni'
+[2023-05-22 12:06:50,865] Pre-condition - Step 03: Enter to Lastname textbox with value is 'Nguyen'
+[2023-05-22 12:06:50,973] Pre-condition - Step 04: Enter to Email Address textbox with value is 'afc32650@acb.com'
+[2023-05-22 12:06:51,074] Pre-condition - Step 05: Enter to Password textbox with value is '123456'
+[2023-05-22 12:06:51,178] Pre-condition - Step 06: Enter to Confirm Password textbox with value is '123456'
+[2023-05-22 12:06:51,269] Pre-condition - Step 08: Click to 'Register' button
+[2023-05-22 12:06:52,120] Pre-condition - Step 09: Verify register success message is displayed
+[2023-05-22 12:07:30,582] Pre-condition - Step 01: Navigate to 'Register' page
+[2023-05-22 12:07:31,663] Pre-condition - Step 02: Enter to FirstName textbox with value is 'Geni'
+[2023-05-22 12:07:31,797] Pre-condition - Step 03: Enter to Lastname textbox with value is 'Nguyen'
+[2023-05-22 12:07:31,929] Pre-condition - Step 04: Enter to Email Address textbox with value is 'afc13316@acb.com'
+[2023-05-22 12:07:32,043] Pre-condition - Step 05: Enter to Password textbox with value is '123456'
+[2023-05-22 12:07:32,122] Pre-condition - Step 06: Enter to Confirm Password textbox with value is '123456'
+[2023-05-22 12:07:32,227] Pre-condition - Step 08: Click to 'Register' button
+[2023-05-22 12:07:32,961] Pre-condition - Step 09: Verify register success message is displayed
+[2023-05-22 12:23:09,474] Pre-condition - Step 01: Navigate to 'Register' page
+[2023-05-22 12:23:10,503] Pre-condition - Step 02: Enter to FirstName textbox with value is 'Geni'
+[2023-05-22 12:23:10,624] Pre-condition - Step 03: Enter to Lastname textbox with value is 'Nguyen'
+[2023-05-22 12:23:10,718] Pre-condition - Step 04: Enter to Email Address textbox with value is 'afc35753@acb.com'
+[2023-05-22 12:23:10,812] Pre-condition - Step 05: Enter to Password textbox with value is '123456'
+[2023-05-22 12:23:10,912] Pre-condition - Step 06: Enter to Confirm Password textbox with value is '123456'
+[2023-05-22 12:23:11,017] Pre-condition - Step 08: Click to 'Register' button
+[2023-05-22 12:23:11,836] Pre-condition - Step 09: Verify register success message is displayed
+[2023-05-22 12:23:12,074] OS name = Windows 10
+[2023-05-22 12:23:12,074] Driver instance name = firefoxdriver: firefox on windows (5a544464-1abe-4ab7-8774-9373386b9e36)
+[2023-05-22 12:25:20,817] Pre-condition - Step 01: Navigate to 'Register' page
+[2023-05-22 12:25:21,831] Pre-condition - Step 02: Enter to FirstName textbox with value is 'Geni'
+[2023-05-22 12:25:21,992] Pre-condition - Step 03: Enter to Lastname textbox with value is 'Nguyen'
+[2023-05-22 12:25:22,086] Pre-condition - Step 04: Enter to Email Address textbox with value is 'afc92783@acb.com'
+[2023-05-22 12:25:22,178] Pre-condition - Step 05: Enter to Password textbox with value is '123456'
+[2023-05-22 12:25:22,287] Pre-condition - Step 06: Enter to Confirm Password textbox with value is '123456'
+[2023-05-22 12:25:22,376] Pre-condition - Step 08: Click to 'Register' button
+[2023-05-22 12:25:23,095] Pre-condition - Step 09: Verify register success message is displayed
+[2023-05-22 12:39:33,726] Pre-condition - Step 01: Navigate to 'Register' page
+[2023-05-22 12:39:34,792] Pre-condition - Step 02: Enter to FirstName textbox with value is 'Geni'
+[2023-05-22 12:39:34,909] Pre-condition - Step 03: Enter to Lastname textbox with value is 'Nguyen'
+[2023-05-22 12:39:34,998] Pre-condition - Step 04: Enter to Email Address textbox with value is 'afc78347@acb.com'
+[2023-05-22 12:39:35,084] Pre-condition - Step 05: Enter to Password textbox with value is '123456'
+[2023-05-22 12:39:35,168] Pre-condition - Step 06: Enter to Confirm Password textbox with value is '123456'
+[2023-05-22 12:39:35,252] Pre-condition - Step 08: Click to 'Register' button
+[2023-05-22 12:39:35,979] Pre-condition - Step 09: Verify register success message is displayed
+[2023-05-22 12:39:36,298] OS name = Windows 10
+[2023-05-22 12:39:36,298] Driver instance name = firefoxdriver: firefox on windows (1d24f5e3-99a6-409c-a15c-7964a15df3ab)

@@ -404,6 +404,13 @@ public class BasePage {
 		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
 		jsExecutor.executeScript("arguments[0].scrollIntoView(true);", getWebElement(driver, locatorType));
 	}
+	
+	protected String getElementValueByJS(WebDriver driver, String xpathLocator) {
+		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+		xpathLocator = xpathLocator.substring(6);
+		return (String) jsExecutor.executeScript("$(document.evaluate(" + xpathLocator + ", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;).val");
+	}
+
 
 	protected void removeAttributeInDOM(WebDriver driver, String locatorType, String attributeRemove) {
 		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
@@ -605,7 +612,6 @@ public class BasePage {
 		}
 		fullName = fullName.trim();
 		getWebElement(driver, HomePageUI.UPLOAD_FILE).sendKeys(fullName);
-//		sendkeyToElement(driver,HomePageUI.UPLOAD_FILE, fullName);
 
 	}
 
