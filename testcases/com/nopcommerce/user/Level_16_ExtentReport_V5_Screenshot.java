@@ -65,6 +65,7 @@ public class Level_16_ExtentReport_V5_Screenshot extends BaseTest {
 		ExtentTestManager.getTest().log(Status.INFO, "Register - Step 09: Verify register success message is displayed");
 		Assert.assertEquals(registerPage.getSuccessRegisterMessage(), "Your registration completed");
 		
+		
 	}
 
 	@Test

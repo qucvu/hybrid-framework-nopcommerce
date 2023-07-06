@@ -15,7 +15,7 @@ public class ExtentManager {
 		reporter.config().setDocumentTitle("NopCommerce HTML Report");
 		reporter.config().setTimelineEnabled(true);
 		reporter.config().setEncoding("utf-8");
-		reporter.config().setTheme(Theme.STANDARD);
+		reporter.config().setTheme(Theme.DARK);
 
 		extentReports.attachReporter(reporter);
 		extentReports.setSystemInfo("Company", "Automation FC");

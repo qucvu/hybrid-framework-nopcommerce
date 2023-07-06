@@ -1,5 +1,6 @@
 package com.nopcommerce.user;
 
+import java.lang.reflect.Method;
 import java.util.Random;
 
 import org.openqa.selenium.WebDriver;
@@ -8,18 +9,20 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.Status;
 import com.nopcommerce.common.Common_01_Register_End_User;
 
 import commons.BaseTest;
 import commons.PageGeneratorManager;
 import pageObjects.nopCommerce.user.UserHomePageObject;
 import pageObjects.nopCommerce.user.UserLoginPageObject;
+import reportConfig.ExtentTestManager;
 
 public class Level_18_Share_Data_A extends BaseTest {
 
 	@Parameters("browser")
 	@BeforeClass
-	public void beforeClass(String browserName) {
+	public void beforeClass(Method method, String browserName) {
 
 
 		driver = getBrowserDriver(browserName, "https://demo.nopcommerce.com/");
@@ -28,30 +31,31 @@ public class Level_18_Share_Data_A extends BaseTest {
 		
 		emailAddress = Common_01_Register_End_User.emailAddress;
 		password = Common_01_Register_End_User.password;
+
 		
-		
-		log.info("Pre-condition - Step 01: Navigate to Login page");
+//		ExtentTestManager.getTest().log(Status.INFO,"Pre-condition - Step 01: Navigate to Login page");
 		loginPage = homePage.openLoginPage();
 
-		log.info("Pre-condition - Step 02: Enter to Email textbox with value is '" + emailAddress + "'");
+//		ExtentTestManager.getTest().log(Status.INFO,"Pre-condition - Step 02: Enter to Email textbox with value is '" + emailAddress + "'");
 		loginPage.inputToEmailTextBox(emailAddress);
 
-		log.info("Pre-condition - Step 03: Enter to Password textbox with value is '" + password + "'");
+//		ExtentTestManager.getTest().log(Status.INFO,"Pre-condition - Step 03: Enter to Password textbox with value is '" + password + "'");
 		loginPage.inputToPasswordTextBox(password);
 
-		log.info("Pre-condition - Step 04: Click to Login button");
+//		ExtentTestManager.getTest().log(Status.INFO,"Pre-condition - Step 04: Click to Login button");
 		homePage = loginPage.clickToLoginButton();
 
 
-		log.info("Pre-condition - Step 06: Verify the 'My Account' Link is displayed");
+//		ExtentTestManager.getTest().log(Status.INFO,"Pre-condition - Step 06: Verify the 'My Account' Link is displayed");
 		verifyTrue(homePage.isMyAccountDisplayed());
 
 	}
 
 
 	@Test
-	public void Search_01_() {
-
+	public void Search_01_(Method method) {
+		ExtentTestManager.startTest(method.getName(), "User_01_Register");
+		ExtentTestManager.getTest().log(Status.INFO,"Pre-condition - Step 06: Verify the 'My Account' Link is displayed");
 	}
 
 	@Test

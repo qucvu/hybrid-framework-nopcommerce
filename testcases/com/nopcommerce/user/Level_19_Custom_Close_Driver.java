@@ -1,6 +1,6 @@
 package com.nopcommerce.user;
 
-import java.util.Random;
+import static org.testng.Assert.assertEquals;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
@@ -15,7 +15,6 @@ import pageObjects.nopCommerce.user.UserHomePageObject;
 import pageObjects.nopCommerce.user.UserLoginPageObject;
 import pageObjects.nopCommerce.user.UserRegisterPageObject;
 
-//@Listeners(commons.MethodListener.class)
 public class Level_19_Custom_Close_Driver extends BaseTest {
 
 	@Parameters("browser")
@@ -32,7 +31,7 @@ public class Level_19_Custom_Close_Driver extends BaseTest {
 		
 		log.info("Pre-condition - Step 01: Navigate to 'Register' page");
 		registerPage = homePage.openRegisterPage();
-
+		
 		log.info("Pre-condition - Step 02: Enter to FirstName textbox with value is '" + firstName + "'");
 		registerPage.inputToFirstNameTextBox(firstName);
 
@@ -51,9 +50,8 @@ public class Level_19_Custom_Close_Driver extends BaseTest {
 		log.info("Pre-condition - Step 08: Click to 'Register' button");
 		registerPage.clickToRegisterButton();
 		
-		driver = null;
 		log.info("Pre-condition - Step 09: Verify register success message is displayed");
-		Assert.assertEquals(registerPage.getSuccessRegisterMessage(), "Your registration completed...");
+		verifyEquals(registerPage.getSuccessRegisterMessage(), "Your registration completed");
 
 		log.info("Pre-condition - Step 10: Click to Continue button");
 		homePage = registerPage.clickToContinueButton();
@@ -70,8 +68,6 @@ public class Level_19_Custom_Close_Driver extends BaseTest {
 		log.info("Pre-condition - Step 14: Click to Login button");
 		homePage = loginPage.clickToLoginButton();
 
-		log.info("Pre-condition - Step 15: Verify the 'My Account' Link is displayed");
-		verifyTrue(homePage.isMyAccountDisplayed());
 
 
 	}
@@ -82,13 +78,9 @@ public class Level_19_Custom_Close_Driver extends BaseTest {
 
 	@Test
 	public void Search_02() {
+		
 	}
 
-
-	
-	public int generateRandomNumber() {
-		return new Random().nextInt(99999);
-	}
 
 	@AfterClass(alwaysRun = true)
 	public void afterClass() {

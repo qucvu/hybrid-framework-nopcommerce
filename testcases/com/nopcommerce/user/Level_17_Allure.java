@@ -12,9 +12,9 @@ import org.testng.annotations.Test;
 
 import commons.BaseTest;
 import commons.PageGeneratorManager;
-import io.qameta.allure.Description;
-import io.qameta.allure.Severity;
-import io.qameta.allure.SeverityLevel;
+//import io.qameta.allure.Description;
+//import io.qameta.allure.Severity;
+//import io.qameta.allure.SeverityLevel;
 import pageObjects.nopCommerce.user.UserHomePageObject;
 import pageObjects.nopCommerce.user.UserLoginPageObject;
 import pageObjects.nopCommerce.user.UserRegisterPageObject;
@@ -37,8 +37,8 @@ public class Level_17_Allure extends BaseTest {
 
 	}
 	
-	@Description("User 01 - Register")
-	@Severity(SeverityLevel.NORMAL)
+//	@Description("User 01 - Register")
+//	@Severity(SeverityLevel.NORMAL)
 	@Test
 	public void User_01_Register(Method method) {
 		
@@ -61,8 +61,8 @@ public class Level_17_Allure extends BaseTest {
 	}
 	
 	
-	@Description("User 01 - Login")
-	@Severity(SeverityLevel.NORMAL)
+//	@Description("User 01 - Login")
+//	@Severity(SeverityLevel.NORMAL)
 	@Test
 	public void User_02_Login(Method method) {
 

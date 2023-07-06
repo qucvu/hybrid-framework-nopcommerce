@@ -320,8 +320,11 @@ public class BasePage {
 
 	protected boolean isElemenetDisplayed(WebDriver driver, String locatorType) {
 		try {
+			// displayed - có trong dom: true
+			// undisplayed - có trong dom: trả về false
 			return getWebElement(driver, locatorType).isDisplayed();
 		} catch (NoSuchElementException e) {
+			// undisplayed: k có trong dom --> Quá lâu
 			return false;
 		}
 	}
@@ -411,7 +414,6 @@ public class BasePage {
 		return (String) jsExecutor.executeScript("$(document.evaluate(" + xpathLocator + ", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;).val");
 	}
 
-
 	protected void removeAttributeInDOM(WebDriver driver, String locatorType, String attributeRemove) {
 		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
 		jsExecutor.executeScript("arguments[0].removeAttribute('" + attributeRemove + "');", getWebElement(driver, locatorType));
@@ -500,8 +502,10 @@ public class BasePage {
 	}
 
 	protected void waitForElementUnDisplayed(WebDriver driver, String locatorType, String... dynamicValues) {
-		WebDriverWait explicitWait = new WebDriverWait(driver, longTimeout);
+		WebDriverWait explicitWait = new WebDriverWait(driver, shortTimeout);
+		overrideImplicitTimeout(driver, shortTimeout);
 		explicitWait.until(ExpectedConditions.invisibilityOfElementLocated(getByLocator(getDynamicXpath(locatorType, dynamicValues))));
+		overrideImplicitTimeout(driver, longTimeout);
 	}
 
 	protected void waitForAllElementVisibility(WebDriver driver, String locatorType) {
@@ -534,7 +538,6 @@ public class BasePage {
 	private void overrideImplicitTimeout(WebDriver driver, long timeOut) {
 		driver.manage().timeouts().implicitlyWait(timeOut, TimeUnit.SECONDS);
 	}
-
 
 	protected void waitForElementClickable(WebDriver driver, String locatorType, String... dynamicValues) {
 		WebDriverWait explicitWait = new WebDriverWait(driver, longTimeout);

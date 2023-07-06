@@ -36,7 +36,7 @@ public class ExtentReportListenerV5 extends BaseTest implements ITestListener {
 	}
 
 	@Override
-	public void onTestFailure(ITestResult iTestResult) {
+	public void onTestFailure(ITestResult iTestResult) {		
 		Object testClass = iTestResult.getInstance();
 		WebDriver driver = ((BaseTest) testClass).getDriverInstance();
 		String base64Screenshot = "data:image/png;base64," + ((TakesScreenshot) driver).getScreenshotAs(OutputType.BASE64);

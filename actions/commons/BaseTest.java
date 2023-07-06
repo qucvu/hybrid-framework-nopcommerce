@@ -259,6 +259,7 @@ public class BaseTest {
 
 			if (osName.contains("window")) {
 				cmd = "taskkill /F /FI \"IMAGENAME eq " + browserDriverName + "*\"";
+				
 			} else {
 				cmd = "pkill " + browserDriverName;
 			}

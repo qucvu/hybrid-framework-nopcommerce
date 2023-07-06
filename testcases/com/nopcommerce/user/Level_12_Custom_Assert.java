@@ -1,7 +1,5 @@
 package com.nopcommerce.user;
 
-import java.util.Random;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
@@ -68,7 +66,7 @@ public class Level_12_Custom_Assert extends BaseTest {
 		verifyTrue(homePage.isMyAccountDisplayed());
 		
 		System.out.println("Assert 04 - Failed");
-		verifyEquals(loginPage.getTitle(driver), "nopCommerce");
+		verifyEquals(loginPage.getTitle(driver), "nopCommercee");
 
 
 
@@ -84,16 +82,8 @@ public class Level_12_Custom_Assert extends BaseTest {
 		verifyEquals(customerInfoPage.getValueAtFirstNameTextbox(), firstName);
 		verifyEquals(customerInfoPage.getValueAtLastNameTextbox(), lastName);
 		verifyEquals(customerInfoPage.getValueAtEmailTextbox(), emailAddress);
-
 	}
 
-	
-
-
-
-	public int generateRandomNumber() {
-		return new Random().nextInt(99999);
-	}
 
 	@AfterClass
 	public void afterClass() {

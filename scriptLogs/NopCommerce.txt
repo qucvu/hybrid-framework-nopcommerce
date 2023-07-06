@@ -1,10 +1,16 @@
-[2023-05-22 12:39:33,726] Pre-condition - Step 01: Navigate to 'Register' page
-[2023-05-22 12:39:34,792] Pre-condition - Step 02: Enter to FirstName textbox with value is 'Geni'
-[2023-05-22 12:39:34,909] Pre-condition - Step 03: Enter to Lastname textbox with value is 'Nguyen'
-[2023-05-22 12:39:34,998] Pre-condition - Step 04: Enter to Email Address textbox with value is 'afc78347@acb.com'
-[2023-05-22 12:39:35,084] Pre-condition - Step 05: Enter to Password textbox with value is '123456'
-[2023-05-22 12:39:35,168] Pre-condition - Step 06: Enter to Confirm Password textbox with value is '123456'
-[2023-05-22 12:39:35,252] Pre-condition - Step 08: Click to 'Register' button
-[2023-05-22 12:39:35,979] Pre-condition - Step 09: Verify register success message is displayed
-[2023-05-22 12:39:36,298] OS name = Windows 10
-[2023-05-22 12:39:36,298] Driver instance name = firefoxdriver: firefox on windows (1d24f5e3-99a6-409c-a15c-7964a15df3ab)
+[2023-07-06 22:22:54,541] Pre-condition - Step 01: Navigate to 'Register' page
+[2023-07-06 22:22:55,639] Pre-condition - Step 02: Enter to FirstName textbox with value is 'Geni'
+[2023-07-06 22:22:55,883] Pre-condition - Step 03: Enter to Lastname textbox with value is 'Nguyen'
+[2023-07-06 22:22:56,096] Pre-condition - Step 04: Enter to Email Address textbox with value is 'afc53996@acb.com'
+[2023-07-06 22:22:56,289] Pre-condition - Step 05: Enter to Password textbox with value is '123456'
+[2023-07-06 22:22:56,464] Pre-condition - Step 06: Enter to Confirm Password textbox with value is '123456'
+[2023-07-06 22:22:56,637] Pre-condition - Step 08: Click to 'Register' button
+[2023-07-06 22:22:57,364] Pre-condition - Step 09: Verify register success message is displayed
+[2023-07-06 22:22:57,429]  -------------------------- PASSED -------------------------- 
+[2023-07-06 22:22:57,429] Pre-condition - Step 10: Click to Continue button
+[2023-07-06 22:22:57,853] Pre-condition - Step 11: Navigate to Login page
+[2023-07-06 22:22:58,327] Pre-condition - Step 12: Enter to Email textbox with value is 'afc53996@acb.com'
+[2023-07-06 22:22:58,479] Pre-condition - Step 13: Enter to Password textbox with value is '123456'
+[2023-07-06 22:22:58,675] Pre-condition - Step 14: Click to Login button
+[2023-07-06 22:22:59,915] OS name = Windows 10
+[2023-07-06 22:22:59,915] Driver instance name = chromedriver: chrome on windows (ef8341e1d21f4a099b1b09a86ab2667d)

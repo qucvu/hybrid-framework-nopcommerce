@@ -76,7 +76,6 @@ public class Common_01_Register_Cookie extends BaseTest {
 	private UserHomePageObject homePage;
 	private UserRegisterPageObject registerPage;
 	private UserLoginPageObject loginPage;
-	private String firstName, lastName;
-	public static String password, emailAddress;
+	private String firstName, lastName, password, emailAddress;
 	public static Set<Cookie> loggedCookies;
 }

@@ -29,15 +29,14 @@ public class Level_13_Element_Undisplayed extends BaseTest {
 		verifyTrue(loginPage.isEmailAdddressTextboxDisplayed());
 
 		loginPage.enterToEmailTextbox("geni@gmail.com");
-		verifyFalse(loginPage.isConfirmEmailAdddressTextboxUnDisplayed());
-		// verifyTrue(loginPage.isEmailAdddressTextboxDisplayed());
+		verifyTrue(loginPage.isConfirmEmailAdddressTextboxDisplayed());
 
 	}
 
 	@Test
 	public void TC_02_Verify_Element_Undisplayed_In_Dom() {
 		loginPage.enterToEmailTextbox("");
-		verifyFalse(loginPage.isConfirmEmailAdddressTextboxUnDisplayed());
+		verifyTrue(loginPage.isConfirmEmailAdddressTextboxUnDisplayed());
 	}
 
 	@Test
