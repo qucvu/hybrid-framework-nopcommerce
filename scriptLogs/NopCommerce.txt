@@ -1,16 +1,30 @@
-[2023-07-06 22:22:54,541] Pre-condition - Step 01: Navigate to 'Register' page
-[2023-07-06 22:22:55,639] Pre-condition - Step 02: Enter to FirstName textbox with value is 'Geni'
-[2023-07-06 22:22:55,883] Pre-condition - Step 03: Enter to Lastname textbox with value is 'Nguyen'
-[2023-07-06 22:22:56,096] Pre-condition - Step 04: Enter to Email Address textbox with value is 'afc53996@acb.com'
-[2023-07-06 22:22:56,289] Pre-condition - Step 05: Enter to Password textbox with value is '123456'
-[2023-07-06 22:22:56,464] Pre-condition - Step 06: Enter to Confirm Password textbox with value is '123456'
-[2023-07-06 22:22:56,637] Pre-condition - Step 08: Click to 'Register' button
-[2023-07-06 22:22:57,364] Pre-condition - Step 09: Verify register success message is displayed
-[2023-07-06 22:22:57,429]  -------------------------- PASSED -------------------------- 
-[2023-07-06 22:22:57,429] Pre-condition - Step 10: Click to Continue button
-[2023-07-06 22:22:57,853] Pre-condition - Step 11: Navigate to Login page
-[2023-07-06 22:22:58,327] Pre-condition - Step 12: Enter to Email textbox with value is 'afc53996@acb.com'
-[2023-07-06 22:22:58,479] Pre-condition - Step 13: Enter to Password textbox with value is '123456'
-[2023-07-06 22:22:58,675] Pre-condition - Step 14: Click to Login button
-[2023-07-06 22:22:59,915] OS name = Windows 10
-[2023-07-06 22:22:59,915] Driver instance name = chromedriver: chrome on windows (ef8341e1d21f4a099b1b09a86ab2667d)
+[2023-07-08 16:08:35,610] Pre-condition - Step 01: Navigate to 'Register' page
+[2023-07-08 16:08:36,630] Pre-condition - Step 02: Click to radio Button
+[2023-07-08 16:08:36,774] Pre-condition - Step 03: Enter to FirstName textbox with value is 'Geni'
+[2023-07-08 16:08:36,926] Pre-condition - Step 04: Enter to Lastname textbox with value is 'Nguyen'
+[2023-07-08 16:08:37,054] Pre-condition - Step 05: Enter to dropdown DOB with value
+[2023-07-08 16:08:37,432] Pre-condition - Step 06: Enter to Email Address textbox with value is 'afc47170@acb.com'
+[2023-07-08 16:08:37,566] Pre-condition - Step 07: Check to checkbox NewsLetter
+[2023-07-08 16:08:37,613] Pre-condition - Step 08: Enter to Password textbox with value is '123456'
+[2023-07-08 16:08:37,738] Pre-condition - Step 06: Enter to Confirm Password textbox with value is '123456'
+[2023-07-08 16:08:37,884] Pre-condition - Step 08: Click to 'Register' button
+[2023-07-08 16:08:39,620] Pre-condition - Step 09: Verify register success message is displayed
+[2023-07-08 16:08:39,684]  -------------------------- PASSED -------------------------- 
+[2023-07-08 16:08:39,730] Login - Step 01: Click to Continue button
+[2023-07-08 16:08:40,177] Login - Step 02: Navigate to Login page
+[2023-07-08 16:08:44,393] Login - Step 12: Enter to Email textbox with value is 'afc47170@acb.com'
+[2023-07-08 16:08:44,542] Login - Step 13: Enter to Password textbox with value is '123456'
+[2023-07-08 16:08:44,675] Login - Step 14: Click to Login button
+[2023-07-08 16:08:45,409] Login - Step 15: Verify is 'My account' Link displayed
+[2023-07-08 16:08:45,491]  -------------------------- PASSED -------------------------- 
+[2023-07-08 16:08:45,559] Login - Step 01: Open to Customer Info Page
+[2023-07-08 16:08:45,945] Login - Step 02: Verify the data on Customer Info page
+[2023-07-08 16:08:46,006]  -------------------------- PASSED -------------------------- 
+[2023-07-08 16:08:46,067]  -------------------------- PASSED -------------------------- 
+[2023-07-08 16:08:46,130]  -------------------------- PASSED -------------------------- 
+[2023-07-08 16:08:46,182]  -------------------------- PASSED -------------------------- 
+[2023-07-08 16:08:46,320]  -------------------------- PASSED -------------------------- 
+[2023-07-08 16:08:46,453]  -------------------------- PASSED -------------------------- 
+[2023-07-08 16:08:46,912]  -------------------------- PASSED -------------------------- 
+[2023-07-08 16:08:46,916] OS name = Windows 10
+[2023-07-08 16:08:46,916] Driver instance name = chromedriver: chrome on windows (e67d027af79e4e6cff8f653bfebee2a6)

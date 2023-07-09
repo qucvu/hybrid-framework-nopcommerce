@@ -7,7 +7,7 @@
 		<!--				<listener class-name="reportConfig.ExtentReportListenerV2" />-->
 		<!--		<listener class-name="reportConfig.ExtentReportListenerV3" />-->
 		<!--		<listener class-name="reportConfig.ExtentReportListenerV4" />-->
-		<listener class-name="reportConfig.ExtentReportListenerV5" />
+		<!--		<listener class-name="reportConfig.ExtentReportListenerV5" />-->
 		<!--		<listener class-name="reportConfig.AllureTestListener" />-->
 		<!--		<listener class-name="org.uncommons.reportng.HTMLReporter" />-->
 		<!--		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />-->
@@ -16,7 +16,7 @@
 		<parameter name="browser" value="chrome" />
 		<classes>
 			<!--<class name="com.nopcommerce.common.Common_01_Register_Cookie" -->
-			<class name="com.nopcommerce.user.Level_19_Custom_Close_Driver" />
+			<class name="com.nopcommerce.user.Level_20_Pattern_Object" />
 		</classes>
 	</test>
 </suite>

@@ -300,3 +300,464 @@
 [2023-07-06 22:22:58,675] Pre-condition - Step 14: Click to Login button
 [2023-07-06 22:22:59,915] OS name = Windows 10
 [2023-07-06 22:22:59,915] Driver instance name = chromedriver: chrome on windows (ef8341e1d21f4a099b1b09a86ab2667d)
+[2023-07-06 23:59:49,560] Pre-condition - Step 01: Navigate to 'Register' page
+[2023-07-06 23:59:50,541] Pre-condition - Step 02: Enter to FirstName textbox with value is 'Geni'
+[2023-07-07 00:00:20,759] OS name = Windows 10
+[2023-07-07 00:00:20,759] Driver instance name = chromedriver: chrome on windows (dc2c99850226b0cdb32c967cc7ba03a5)
+[2023-07-07 00:01:59,674] Pre-condition - Step 01: Navigate to 'Register' page
+[2023-07-07 00:02:00,738] Pre-condition - Step 02: Enter to FirstName textbox with value is 'Geni'
+[2023-07-07 00:02:26,628] Pre-condition - Step 01: Navigate to 'Register' page
+[2023-07-07 00:02:27,645] Pre-condition - Step 02: Enter to FirstName textbox with value is 'Geni'
+[2023-07-07 00:02:27,792] OS name = Windows 10
+[2023-07-07 00:02:27,793] Driver instance name = chromedriver: chrome on windows (dfcd729fcd91fff80b4cca09efc46f6c)
+[2023-07-07 00:04:18,602] Pre-condition - Step 01: Navigate to 'Register' page
+[2023-07-07 00:04:19,611] Pre-condition - Step 02: Enter to FirstName textbox with value is 'Geni'
+[2023-07-07 00:04:19,752] Pre-condition - Step 03: Enter to Lastname textbox with value is 'Nguyen'
+[2023-07-07 00:04:19,876] Pre-condition - Step 04: Enter to Email Address textbox with value is 'afc82970@acb.com'
+[2023-07-07 00:04:20,005] Pre-condition - Step 05: Enter to Password textbox with value is '123456'
+[2023-07-07 00:04:20,134] Pre-condition - Step 06: Enter to Confirm Password textbox with value is '123456'
+[2023-07-07 00:04:20,267] Pre-condition - Step 08: Click to 'Register' button
+[2023-07-07 00:04:21,011] Pre-condition - Step 09: Verify register success message is displayed
+[2023-07-07 00:04:21,079]  -------------------------- PASSED -------------------------- 
+[2023-07-07 00:04:21,080] Pre-condition - Step 10: Click to Continue button
+[2023-07-07 00:04:21,568] Pre-condition - Step 11: Navigate to Login page
+[2023-07-07 00:04:22,018] Pre-condition - Step 12: Enter to Email textbox with value is 'afc82970@acb.com'
+[2023-07-07 00:04:22,144] Pre-condition - Step 13: Enter to Password textbox with value is '123456'
+[2023-07-07 00:04:22,278] Pre-condition - Step 14: Click to Login button
+[2023-07-07 00:04:23,096] OS name = Windows 10
+[2023-07-07 00:04:23,096] Driver instance name = chromedriver: chrome on windows (ccc9df70a49b3215cd930ac2da8c9427)
+[2023-07-07 00:09:42,420] Pre-condition - Step 01: Navigate to 'Register' page
+[2023-07-07 00:09:43,474] Pre-condition - Step 02: Enter to FirstName textbox with value is 'Geni'
+[2023-07-07 00:09:43,620] Pre-condition - Step 03: Enter to Lastname textbox with value is 'Nguyen'
+[2023-07-07 00:09:43,776] Pre-condition - Step 04: Enter to Email Address textbox with value is 'afc88133@acb.com'
+[2023-07-07 00:09:43,898] Pre-condition - Step 05: Enter to Password textbox with value is '123456'
+[2023-07-07 00:09:44,020] Pre-condition - Step 06: Enter to Confirm Password textbox with value is '123456'
+[2023-07-07 00:09:44,169] Pre-condition - Step 08: Click to 'Register' button
+[2023-07-07 00:09:44,928] Pre-condition - Step 09: Verify register success message is displayed
+[2023-07-07 00:09:44,989]  -------------------------- PASSED -------------------------- 
+[2023-07-07 00:09:44,990] Pre-condition - Step 10: Click to Continue button
+[2023-07-07 00:09:45,423] Pre-condition - Step 11: Navigate to Login page
+[2023-07-07 00:10:15,889] OS name = Windows 10
+[2023-07-07 00:10:15,890] Driver instance name = chromedriver: chrome on windows (995e4fdb937c50c73074a6f8cb990b4e)
+[2023-07-07 00:10:35,593] Pre-condition - Step 01: Navigate to 'Register' page
+[2023-07-07 00:10:36,615] Pre-condition - Step 02: Enter to FirstName textbox with value is 'Geni'
+[2023-07-07 00:10:36,755] Pre-condition - Step 03: Enter to Lastname textbox with value is 'Nguyen'
+[2023-07-07 00:10:36,888] Pre-condition - Step 04: Enter to Email Address textbox with value is 'afc86639@acb.com'
+[2023-07-07 00:10:37,024] Pre-condition - Step 05: Enter to Password textbox with value is '123456'
+[2023-07-07 00:10:37,144] Pre-condition - Step 06: Enter to Confirm Password textbox with value is '123456'
+[2023-07-07 00:10:37,289] Pre-condition - Step 08: Click to 'Register' button
+[2023-07-07 00:10:38,014] Pre-condition - Step 09: Verify register success message is displayed
+[2023-07-07 00:10:38,094]  -------------------------- PASSED -------------------------- 
+[2023-07-07 00:10:38,094] Pre-condition - Step 10: Click to Continue button
+[2023-07-07 00:10:38,534] Pre-condition - Step 11: Navigate to Login page
+[2023-07-07 00:10:38,980] Pre-condition - Step 12: Enter to Email textbox with value is 'afc86639@acb.com'
+[2023-07-07 00:10:39,100] Pre-condition - Step 13: Enter to Password textbox with value is '123456'
+[2023-07-07 00:10:39,230] Pre-condition - Step 14: Click to Login button
+[2023-07-07 00:10:40,093] OS name = Windows 10
+[2023-07-07 00:10:40,094] Driver instance name = chromedriver: chrome on windows (7ed8bc45d705463cc146e28bb40047fd)
+[2023-07-07 23:03:56,457] Pre-condition - Step 01: Navigate to 'Register' page
+[2023-07-07 23:03:57,463] Pre-condition - Step 02: Enter to FirstName textbox with value is 'Geni'
+[2023-07-07 23:03:57,629] Pre-condition - Step 03: Enter to Lastname textbox with value is 'Nguyen'
+[2023-07-07 23:03:57,761] Pre-condition - Step 04: Enter to Email Address textbox with value is 'afc76067@acb.com'
+[2023-07-07 23:03:57,897] Pre-condition - Step 05: Enter to Password textbox with value is '123456'
+[2023-07-07 23:03:58,068] Pre-condition - Step 06: Enter to Confirm Password textbox with value is '123456'
+[2023-07-07 23:03:58,199] Pre-condition - Step 08: Click to 'Register' button
+[2023-07-07 23:03:58,882] Pre-condition - Step 09: Verify register success message is displayed
+[2023-07-07 23:03:58,981]  -------------------------- PASSED -------------------------- 
+[2023-07-07 23:03:58,981] Pre-condition - Step 10: Click to Continue button
+[2023-07-07 23:03:59,468] Pre-condition - Step 11: Navigate to Login page
+[2023-07-07 23:03:59,903] Pre-condition - Step 12: Enter to Email textbox with value is 'afc76067@acb.com'
+[2023-07-07 23:04:00,021] Pre-condition - Step 13: Enter to Password textbox with value is '123456'
+[2023-07-07 23:04:00,149] Pre-condition - Step 14: Click to Login button
+[2023-07-07 23:04:01,078] OS name = Windows 10
+[2023-07-07 23:04:01,078] Driver instance name = chromedriver: chrome on windows (c3916e40ac1f28671ba4409295aada46)
+[2023-07-08 00:33:26,211] Pre-condition - Step 01: Navigate to 'Register' page
+[2023-07-08 00:33:27,302] Pre-condition - Step 02: Enter to FirstName textbox with value is 'Geni'
+[2023-07-08 00:33:27,454] Pre-condition - Step 03: Enter to Lastname textbox with value is 'Nguyen'
+[2023-07-08 00:33:27,579] Pre-condition - Step 04: Enter to Email Address textbox with value is 'afc65047@acb.com'
+[2023-07-08 00:33:27,700] Pre-condition - Step 05: Enter to Password textbox with value is '123456'
+[2023-07-08 00:33:27,823] Pre-condition - Step 06: Enter to Confirm Password textbox with value is '123456'
+[2023-07-08 00:33:27,971] Pre-condition - Step 08: Click to 'Register' button
+[2023-07-08 00:33:28,718] Pre-condition - Step 09: Verify register success message is displayed
+[2023-07-08 00:33:28,774]  -------------------------- PASSED -------------------------- 
+[2023-07-08 00:33:28,774] Pre-condition - Step 10: Click to Continue button
+[2023-07-08 00:33:29,252] Pre-condition - Step 11: Navigate to Login page
+[2023-07-08 00:33:29,720] Pre-condition - Step 12: Enter to Email textbox with value is 'afc65047@acb.com'
+[2023-07-08 00:33:29,842] Pre-condition - Step 13: Enter to Password textbox with value is '123456'
+[2023-07-08 00:33:29,967] Pre-condition - Step 14: Click to Login button
+[2023-07-08 00:33:34,944] OS name = Windows 10
+[2023-07-08 00:33:34,945] Driver instance name = chromedriver: chrome on windows (015dd2b3f85a66f5df26f0ca66f5cf61)
+[2023-07-08 00:33:34,964] disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=114.0.5735.199)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'LAPTOP-LPVSJDFS', ip: '192.168.1.17', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53708}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 015dd2b3f85a66f5df26f0ca66f5cf61
+[2023-07-08 00:33:52,896] Pre-condition - Step 01: Navigate to 'Register' page
+[2023-07-08 00:33:53,937] Pre-condition - Step 02: Enter to FirstName textbox with value is 'Geni'
+[2023-07-08 00:33:54,083] Pre-condition - Step 03: Enter to Lastname textbox with value is 'Nguyen'
+[2023-07-08 00:33:54,211] Pre-condition - Step 04: Enter to Email Address textbox with value is 'afc89620@acb.com'
+[2023-07-08 00:33:54,375] Pre-condition - Step 05: Enter to Password textbox with value is '123456'
+[2023-07-08 00:33:54,499] Pre-condition - Step 06: Enter to Confirm Password textbox with value is '123456'
+[2023-07-08 00:33:54,643] Pre-condition - Step 08: Click to 'Register' button
+[2023-07-08 00:33:55,347] Pre-condition - Step 09: Verify register success message is displayed
+[2023-07-08 00:33:55,407]  -------------------------- PASSED -------------------------- 
+[2023-07-08 00:33:55,407] Pre-condition - Step 10: Click to Continue button
+[2023-07-08 00:33:55,839] Pre-condition - Step 11: Navigate to Login page
+[2023-07-08 00:33:56,233] Pre-condition - Step 12: Enter to Email textbox with value is 'afc89620@acb.com'
+[2023-07-08 00:33:56,345] Pre-condition - Step 13: Enter to Password textbox with value is '123456'
+[2023-07-08 00:33:56,481] Pre-condition - Step 14: Click to Login button
+[2023-07-08 00:33:57,267] OS name = Windows 10
+[2023-07-08 00:33:57,268] Driver instance name = chromedriver: chrome on windows (7613f94d153cbf3db0e001da99b30cb2)
+[2023-07-08 14:16:06,819] Pre-condition - Step 01: Navigate to 'Register' page
+[2023-07-08 14:16:09,702] Pre-condition - Step 02: Enter to FirstName textbox with value is 'Geni'
+[2023-07-08 14:16:09,890] Pre-condition - Step 03: Enter to Lastname textbox with value is 'Nguyen'
+[2023-07-08 14:16:10,037] Pre-condition - Step 04: Enter to Email Address textbox with value is 'afc20885@acb.com'
+[2023-07-08 14:16:10,173] Pre-condition - Step 05: Enter to Password textbox with value is '123456'
+[2023-07-08 14:16:10,311] Pre-condition - Step 06: Enter to Confirm Password textbox with value is '123456'
+[2023-07-08 14:16:10,454] Pre-condition - Step 08: Click to 'Register' button
+[2023-07-08 14:16:11,188] Pre-condition - Step 09: Verify register success message is displayed
+[2023-07-08 14:16:11,257]  -------------------------- PASSED -------------------------- 
+[2023-07-08 14:16:11,257] Pre-condition - Step 10: Click to Continue button
+[2023-07-08 14:16:11,688] Pre-condition - Step 11: Navigate to Login page
+[2023-07-08 14:16:12,119] Pre-condition - Step 12: Enter to Email textbox with value is 'afc20885@acb.com'
+[2023-07-08 14:16:12,243] Pre-condition - Step 13: Enter to Password textbox with value is '123456'
+[2023-07-08 14:16:12,366] Pre-condition - Step 14: Click to Login button
+[2023-07-08 14:16:13,107] Pre-condition - Step 15: Verify is 'My account' Link displayed
+[2023-07-08 14:16:13,184]  -------------------------- PASSED -------------------------- 
+[2023-07-08 14:16:13,348] OS name = Windows 10
+[2023-07-08 14:16:13,348] Driver instance name = chromedriver: chrome on windows (5813a0f58ae974636092dbddad303d0c)
+[2023-07-08 14:19:40,938] Pre-condition - Step 01: Navigate to 'Register' page
+[2023-07-08 14:19:42,240] Pre-condition - Step 02: Enter to FirstName textbox with value is 'Geni'
+[2023-07-08 14:19:42,428] Pre-condition - Step 03: Enter to Lastname textbox with value is 'Nguyen'
+[2023-07-08 14:19:42,583] Pre-condition - Step 04: Enter to Email Address textbox with value is 'afc8099@acb.com'
+[2023-07-08 14:19:42,731] Pre-condition - Step 05: Enter to Password textbox with value is '123456'
+[2023-07-08 14:19:42,893] Pre-condition - Step 06: Enter to Confirm Password textbox with value is '123456'
+[2023-07-08 14:19:43,062] Pre-condition - Step 08: Click to 'Register' button
+[2023-07-08 14:19:43,990] Pre-condition - Step 09: Verify register success message is displayed
+[2023-07-08 14:19:44,068]  -------------------------- PASSED -------------------------- 
+[2023-07-08 14:19:44,069] Pre-condition - Step 10: Click to Continue button
+[2023-07-08 14:20:14,715] OS name = Windows 10
+[2023-07-08 14:20:14,716] Driver instance name = chromedriver: chrome on windows (f6a37b3808095abd8791b640774f9885)
+[2023-07-08 14:20:14,733] no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=114.0.5735.199)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'LAPTOP-LPVSJDFS', ip: '192.168.1.17', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63360}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f6a37b3808095abd8791b640774f9885
+[2023-07-08 14:21:38,006] Pre-condition - Step 01: Navigate to 'Register' page
+[2023-07-08 14:21:39,238] Pre-condition - Step 02: Enter to FirstName textbox with value is 'Geni'
+[2023-07-08 14:21:39,394] Pre-condition - Step 03: Enter to Lastname textbox with value is 'Nguyen'
+[2023-07-08 14:21:39,548] Pre-condition - Step 04: Enter to Email Address textbox with value is 'afc33983@acb.com'
+[2023-07-08 14:21:39,683] Pre-condition - Step 05: Enter to Password textbox with value is '123456'
+[2023-07-08 14:21:39,816] Pre-condition - Step 06: Enter to Confirm Password textbox with value is '123456'
+[2023-07-08 14:21:39,972] Pre-condition - Step 08: Click to 'Register' button
+[2023-07-08 14:21:40,722] Pre-condition - Step 09: Verify register success message is displayed
+[2023-07-08 14:21:40,785]  -------------------------- PASSED -------------------------- 
+[2023-07-08 14:21:40,785] Pre-condition - Step 10: Click to Continue button
+[2023-07-08 14:21:41,284] Pre-condition - Step 11: Navigate to Login page
+[2023-07-08 14:21:41,731] Pre-condition - Step 12: Enter to Email textbox with value is 'afc33983@acb.com'
+[2023-07-08 14:21:41,920] Pre-condition - Step 13: Enter to Password textbox with value is '123456'
+[2023-07-08 14:21:42,170] Pre-condition - Step 14: Click to Login button
+[2023-07-08 14:21:42,996] Pre-condition - Step 15: Verify is 'My account' Link displayed
+[2023-07-08 14:21:43,080]  -------------------------- PASSED -------------------------- 
+[2023-07-08 14:21:43,687] OS name = Windows 10
+[2023-07-08 14:21:43,687] Driver instance name = chromedriver: chrome on windows (c81f2fb9bd80758c7be8467f72ca547a)
+[2023-07-08 15:18:48,945] Pre-condition - Step 01: Navigate to 'Register' page
+[2023-07-08 15:18:49,960] Pre-condition - Step 02: Click to radio Button
+[2023-07-08 15:18:50,058] Pre-condition - Step 03: Enter to FirstName textbox with value is 'Geni'
+[2023-07-08 15:18:50,184] Pre-condition - Step 04: Enter to Lastname textbox with value is 'Nguyen'
+[2023-07-08 15:18:50,312] Pre-condition - Step 05: Enter to dropdown DOB with value
+[2023-07-08 15:19:15,933] OS name = Windows 10
+[2023-07-08 15:19:15,933] Driver instance name = chromedriver: chrome on windows (a02840b188de2bfa390b38439f3970b0)
+[2023-07-08 15:19:15,953] no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=114.0.5735.199)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'LAPTOP-LPVSJDFS', ip: '192.168.1.17', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50311}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a02840b188de2bfa390b38439f3970b0
+[2023-07-08 15:19:42,278] Pre-condition - Step 01: Navigate to 'Register' page
+[2023-07-08 15:19:43,372] Pre-condition - Step 02: Click to radio Button
+[2023-07-08 15:19:43,518] Pre-condition - Step 03: Enter to FirstName textbox with value is 'Geni'
+[2023-07-08 15:19:43,668] Pre-condition - Step 04: Enter to Lastname textbox with value is 'Nguyen'
+[2023-07-08 15:19:43,815] Pre-condition - Step 05: Enter to dropdown DOB with value
+[2023-07-08 15:19:44,236] Pre-condition - Step 06: Enter to Email Address textbox with value is 'afc16300@acb.com'
+[2023-07-08 15:19:44,385] Pre-condition - Step 07: Check to checkbox NewsLetter
+[2023-07-08 15:19:44,433] Pre-condition - Step 08: Enter to Password textbox with value is '123456'
+[2023-07-08 15:19:44,574] Pre-condition - Step 06: Enter to Confirm Password textbox with value is '123456'
+[2023-07-08 15:19:54,726] Pre-condition - Step 08: Click to 'Register' button
+[2023-07-08 15:19:55,477] Pre-condition - Step 09: Verify register success message is displayed
+[2023-07-08 15:19:55,536]  -------------------------- PASSED -------------------------- 
+[2023-07-08 15:19:55,597] Login - Step 01: Click to Continue button
+[2023-07-08 15:19:56,092] Login - Step 02: Navigate to Login page
+[2023-07-08 15:19:56,543] Login - Step 12: Enter to Email textbox with value is 'afc16300@acb.com'
+[2023-07-08 15:19:56,678] Login - Step 13: Enter to Password textbox with value is '123456'
+[2023-07-08 15:19:56,817] Login - Step 14: Click to Login button
+[2023-07-08 15:19:57,798] Login - Step 15: Verify is 'My account' Link displayed
+[2023-07-08 15:19:57,894]  -------------------------- PASSED -------------------------- 
+[2023-07-08 15:19:57,989] OS name = Windows 10
+[2023-07-08 15:19:57,990] Driver instance name = chromedriver: chrome on windows (1b3f88102bbf4c916b4a55cba6674b71)
+[2023-07-08 15:40:36,308] Pre-condition - Step 01: Navigate to 'Register' page
+[2023-07-08 15:40:37,356] Pre-condition - Step 02: Click to radio Button
+[2023-07-08 15:40:37,491] Pre-condition - Step 03: Enter to FirstName textbox with value is 'Geni'
+[2023-07-08 15:40:37,619] Pre-condition - Step 04: Enter to Lastname textbox with value is 'Nguyen'
+[2023-07-08 15:40:37,745] Pre-condition - Step 05: Enter to dropdown DOB with value
+[2023-07-08 15:40:38,127] Pre-condition - Step 06: Enter to Email Address textbox with value is 'afc84091@acb.com'
+[2023-07-08 15:40:38,264] Pre-condition - Step 07: Check to checkbox NewsLetter
+[2023-07-08 15:40:38,308] Pre-condition - Step 08: Enter to Password textbox with value is '123456'
+[2023-07-08 15:40:38,427] Pre-condition - Step 06: Enter to Confirm Password textbox with value is '123456'
+[2023-07-08 15:40:48,590] Pre-condition - Step 08: Click to 'Register' button
+[2023-07-08 15:40:56,679] Pre-condition - Step 01: Navigate to 'Register' page
+[2023-07-08 15:40:57,697] Pre-condition - Step 02: Click to radio Button
+[2023-07-08 15:40:57,839] Pre-condition - Step 03: Enter to FirstName textbox with value is 'Geni'
+[2023-07-08 15:40:57,973] Pre-condition - Step 04: Enter to Lastname textbox with value is 'Nguyen'
+[2023-07-08 15:40:58,101] Pre-condition - Step 05: Enter to dropdown DOB with value
+[2023-07-08 15:40:58,496] Pre-condition - Step 06: Enter to Email Address textbox with value is 'afc20888@acb.com'
+[2023-07-08 15:40:58,633] Pre-condition - Step 07: Check to checkbox NewsLetter
+[2023-07-08 15:40:58,681] Pre-condition - Step 08: Enter to Password textbox with value is '123456'
+[2023-07-08 15:40:58,816] Pre-condition - Step 06: Enter to Confirm Password textbox with value is '123456'
+[2023-07-08 15:40:58,949] Pre-condition - Step 08: Click to 'Register' button
+[2023-07-08 15:40:59,706] Pre-condition - Step 09: Verify register success message is displayed
+[2023-07-08 15:40:59,783]  -------------------------- PASSED -------------------------- 
+[2023-07-08 15:40:59,840] Login - Step 01: Click to Continue button
+[2023-07-08 15:41:00,307] Login - Step 02: Navigate to Login page
+[2023-07-08 15:41:00,748] Login - Step 12: Enter to Email textbox with value is 'afc20888@acb.com'
+[2023-07-08 15:41:00,899] Login - Step 13: Enter to Password textbox with value is '123456'
+[2023-07-08 15:41:01,017] Login - Step 14: Click to Login button
+[2023-07-08 15:41:01,730] Login - Step 15: Verify is 'My account' Link displayed
+[2023-07-08 15:41:01,814]  -------------------------- PASSED -------------------------- 
+[2023-07-08 15:41:01,887] Login - Step 01: Open to Customer Info Page
+[2023-07-08 15:41:02,315] Login - Step 02: Verify the data on Customer Info page
+[2023-07-08 15:41:02,376]  -------------------------- PASSED -------------------------- 
+[2023-07-08 15:41:02,436]  -------------------------- PASSED -------------------------- 
+[2023-07-08 15:41:02,496]  -------------------------- PASSED -------------------------- 
+[2023-07-08 15:41:02,548]  -------------------------- PASSED -------------------------- 
+[2023-07-08 15:41:02,621] OS name = Windows 10
+[2023-07-08 15:41:02,621] Driver instance name = chromedriver: chrome on windows (b9f142b1f97dfa17c45071aab3e918b0)
+[2023-07-08 15:41:18,730] OS name = Windows 10
+[2023-07-08 15:41:18,730] Driver instance name = chromedriver: chrome on windows (27fd399e88e9e27fe3339619df20ef9b)
+[2023-07-08 15:41:18,743] no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=114.0.5735.199)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'LAPTOP-LPVSJDFS', ip: '192.168.1.17', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51031}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 27fd399e88e9e27fe3339619df20ef9b
+[2023-07-08 15:43:13,541] Pre-condition - Step 01: Navigate to 'Register' page
+[2023-07-08 15:43:14,579] Pre-condition - Step 02: Click to radio Button
+[2023-07-08 15:43:14,717] Pre-condition - Step 03: Enter to FirstName textbox with value is 'Geni'
+[2023-07-08 15:43:14,869] Pre-condition - Step 04: Enter to Lastname textbox with value is 'Nguyen'
+[2023-07-08 15:43:15,010] Pre-condition - Step 05: Enter to dropdown DOB with value
+[2023-07-08 15:43:15,400] Pre-condition - Step 06: Enter to Email Address textbox with value is 'afc90918@acb.com'
+[2023-07-08 15:43:15,541] Pre-condition - Step 07: Check to checkbox NewsLetter
+[2023-07-08 15:43:15,595] Pre-condition - Step 08: Enter to Password textbox with value is '123456'
+[2023-07-08 15:43:15,721] Pre-condition - Step 06: Enter to Confirm Password textbox with value is '123456'
+[2023-07-08 15:43:15,864] Pre-condition - Step 08: Click to 'Register' button
+[2023-07-08 15:43:16,547] Pre-condition - Step 09: Verify register success message is displayed
+[2023-07-08 15:43:16,616]  -------------------------- PASSED -------------------------- 
+[2023-07-08 15:43:16,676] Login - Step 01: Click to Continue button
+[2023-07-08 15:43:17,163] Login - Step 02: Navigate to Login page
+[2023-07-08 15:43:17,582] Login - Step 12: Enter to Email textbox with value is 'afc90918@acb.com'
+[2023-07-08 15:43:17,708] Login - Step 13: Enter to Password textbox with value is '123456'
+[2023-07-08 15:43:17,843] Login - Step 14: Click to Login button
+[2023-07-08 15:43:18,523] Login - Step 15: Verify is 'My account' Link displayed
+[2023-07-08 15:43:18,590]  -------------------------- PASSED -------------------------- 
+[2023-07-08 15:43:18,679] Login - Step 01: Open to Customer Info Page
+[2023-07-08 15:43:19,081] Login - Step 02: Verify the data on Customer Info page
+[2023-07-08 15:43:19,154]  -------------------------- PASSED -------------------------- 
+[2023-07-08 15:43:19,215]  -------------------------- PASSED -------------------------- 
+[2023-07-08 15:43:19,274]  -------------------------- PASSED -------------------------- 
+[2023-07-08 15:43:19,328]  -------------------------- PASSED -------------------------- 
+[2023-07-08 15:43:19,470]  -------------------------- PASSED -------------------------- 
+[2023-07-08 15:43:19,611]  -------------------------- PASSED -------------------------- 
+[2023-07-08 15:43:20,072]  -------------------------- PASSED -------------------------- 
+[2023-07-08 15:43:20,076] OS name = Windows 10
+[2023-07-08 15:43:20,076] Driver instance name = chromedriver: chrome on windows (13d599b9e77537c8fc67fd8715eccf7e)
+[2023-07-08 15:50:17,687] Pre-condition - Step 01: Navigate to 'Register' page
+[2023-07-08 15:50:18,735] Pre-condition - Step 02: Click to radio Button
+[2023-07-08 15:50:18,855] Pre-condition - Step 03: Enter to FirstName textbox with value is 'Geni'
+[2023-07-08 15:50:18,995] Pre-condition - Step 04: Enter to Lastname textbox with value is 'Nguyen'
+[2023-07-08 15:50:19,124] Pre-condition - Step 05: Enter to dropdown DOB with value
+[2023-07-08 15:50:19,504] Pre-condition - Step 06: Enter to Email Address textbox with value is 'afc23358@acb.com'
+[2023-07-08 15:50:19,641] Pre-condition - Step 07: Check to checkbox NewsLetter
+[2023-07-08 15:50:19,687] Pre-condition - Step 08: Enter to Password textbox with value is '123456'
+[2023-07-08 15:50:19,811] Pre-condition - Step 06: Enter to Confirm Password textbox with value is '123456'
+[2023-07-08 15:50:19,963] Pre-condition - Step 08: Click to 'Register' button
+[2023-07-08 15:50:20,718] Pre-condition - Step 09: Verify register success message is displayed
+[2023-07-08 15:50:20,777]  -------------------------- PASSED -------------------------- 
+[2023-07-08 15:50:20,826] Login - Step 01: Click to Continue button
+[2023-07-08 15:50:21,279] Login - Step 02: Navigate to Login page
+[2023-07-08 15:50:21,678] Login - Step 12: Enter to Email textbox with value is 'afc23358@acb.com'
+[2023-07-08 15:50:21,804] Login - Step 13: Enter to Password textbox with value is '123456'
+[2023-07-08 15:50:21,937] Login - Step 14: Click to Login button
+[2023-07-08 15:50:22,645] Login - Step 15: Verify is 'My account' Link displayed
+[2023-07-08 15:50:22,730]  -------------------------- PASSED -------------------------- 
+[2023-07-08 15:50:22,792] Login - Step 01: Open to Customer Info Page
+[2023-07-08 15:50:23,214] Login - Step 02: Verify the data on Customer Info page
+[2023-07-08 15:50:23,278]  -------------------------- PASSED -------------------------- 
+[2023-07-08 15:50:23,340]  -------------------------- PASSED -------------------------- 
+[2023-07-08 15:50:23,404]  -------------------------- PASSED -------------------------- 
+[2023-07-08 15:50:23,455]  -------------------------- PASSED -------------------------- 
+[2023-07-08 15:50:23,586]  -------------------------- PASSED -------------------------- 
+[2023-07-08 15:50:23,728]  -------------------------- PASSED -------------------------- 
+[2023-07-08 15:50:24,175]  -------------------------- PASSED -------------------------- 
+[2023-07-08 15:50:24,178] OS name = Windows 10
+[2023-07-08 15:50:24,178] Driver instance name = chromedriver: chrome on windows (7849672724d1fa9ffbbcd2305c39188e)
+[2023-07-08 16:01:29,980] Pre-condition - Step 01: Navigate to 'Register' page
+[2023-07-08 16:01:30,560] Pre-condition - Step 02: Click to radio Button
+[2023-07-08 16:01:30,704] Pre-condition - Step 03: Enter to FirstName textbox with value is 'Geni'
+[2023-07-08 16:01:30,846] Pre-condition - Step 04: Enter to Lastname textbox with value is 'Nguyen'
+[2023-07-08 16:01:30,982] Pre-condition - Step 05: Enter to dropdown DOB with value
+[2023-07-08 16:01:31,309] Pre-condition - Step 06: Enter to Email Address textbox with value is 'afc3000@acb.com'
+[2023-07-08 16:01:31,455] Pre-condition - Step 07: Check to checkbox NewsLetter
+[2023-07-08 16:01:31,513] Pre-condition - Step 08: Enter to Password textbox with value is '123456'
+[2023-07-08 16:01:31,641] Pre-condition - Step 06: Enter to Confirm Password textbox with value is '123456'
+[2023-07-08 16:01:31,794] Pre-condition - Step 08: Click to 'Register' button
+[2023-07-08 16:01:32,536] Pre-condition - Step 09: Verify register success message is displayed
+[2023-07-08 16:01:32,608]  -------------------------- PASSED -------------------------- 
+[2023-07-08 16:01:32,668] Login - Step 01: Click to Continue button
+[2023-07-08 16:01:33,144] Login - Step 02: Navigate to Login page
+[2023-07-08 16:01:33,594] Login - Step 12: Enter to Email textbox with value is 'afc3000@acb.com'
+[2023-07-08 16:01:33,714] Login - Step 13: Enter to Password textbox with value is '123456'
+[2023-07-08 16:01:33,850] Login - Step 14: Click to Login button
+[2023-07-08 16:01:34,534] Login - Step 15: Verify is 'My account' Link displayed
+[2023-07-08 16:01:34,607]  -------------------------- PASSED -------------------------- 
+[2023-07-08 16:01:34,681] Login - Step 01: Open to Customer Info Page
+[2023-07-08 16:01:35,079] Login - Step 02: Verify the data on Customer Info page
+[2023-07-08 16:01:35,149]  -------------------------- PASSED -------------------------- 
+[2023-07-08 16:01:35,212]  -------------------------- PASSED -------------------------- 
+[2023-07-08 16:01:35,276]  -------------------------- PASSED -------------------------- 
+[2023-07-08 16:01:35,331]  -------------------------- PASSED -------------------------- 
+[2023-07-08 16:01:35,466]  -------------------------- PASSED -------------------------- 
+[2023-07-08 16:01:35,600]  -------------------------- PASSED -------------------------- 
+[2023-07-08 16:01:36,081]  -------------------------- PASSED -------------------------- 
+[2023-07-08 16:01:36,085] OS name = Windows 10
+[2023-07-08 16:01:36,085] Driver instance name = chromedriver: chrome on windows (8f44e39dae4cffb76d68f2cad915ab65)
+[2023-07-08 16:06:16,942] Pre-condition - Step 01: Navigate to 'Register' page
+[2023-07-08 16:06:17,972] Pre-condition - Step 02: Click to radio Button
+[2023-07-08 16:06:18,073] Pre-condition - Step 03: Enter to FirstName textbox with value is 'Geni'
+[2023-07-08 16:06:18,207] Pre-condition - Step 04: Enter to Lastname textbox with value is 'Nguyen'
+[2023-07-08 16:06:18,346] Pre-condition - Step 05: Enter to dropdown DOB with value
+[2023-07-08 16:06:18,724] Pre-condition - Step 06: Enter to Email Address textbox with value is 'afc82363@acb.com'
+[2023-07-08 16:06:18,858] Pre-condition - Step 07: Check to checkbox NewsLetter
+[2023-07-08 16:06:18,904] Pre-condition - Step 08: Enter to Password textbox with value is '123456'
+[2023-07-08 16:06:19,024] Pre-condition - Step 06: Enter to Confirm Password textbox with value is '123456'
+[2023-07-08 16:06:19,155] Pre-condition - Step 08: Click to 'Register' button
+[2023-07-08 16:06:19,851] Pre-condition - Step 09: Verify register success message is displayed
+[2023-07-08 16:06:19,932]  -------------------------- PASSED -------------------------- 
+[2023-07-08 16:06:20,064] Login - Step 01: Click to Continue button
+[2023-07-08 16:06:20,521] Login - Step 02: Navigate to Login page
+[2023-07-08 16:06:20,940] Login - Step 12: Enter to Email textbox with value is 'afc82363@acb.com'
+[2023-07-08 16:06:21,056] Login - Step 13: Enter to Password textbox with value is '123456'
+[2023-07-08 16:06:21,190] Login - Step 14: Click to Login button
+[2023-07-08 16:06:21,882] Login - Step 15: Verify is 'My account' Link displayed
+[2023-07-08 16:06:21,961]  -------------------------- PASSED -------------------------- 
+[2023-07-08 16:06:22,032] Login - Step 01: Open to Customer Info Page
+[2023-07-08 16:06:22,416] Login - Step 02: Verify the data on Customer Info page
+[2023-07-08 16:06:22,484]  -------------------------- PASSED -------------------------- 
+[2023-07-08 16:06:22,546]  -------------------------- PASSED -------------------------- 
+[2023-07-08 16:06:22,607]  -------------------------- PASSED -------------------------- 
+[2023-07-08 16:06:22,659]  -------------------------- PASSED -------------------------- 
+[2023-07-08 16:06:22,792]  -------------------------- PASSED -------------------------- 
+[2023-07-08 16:06:22,925]  -------------------------- PASSED -------------------------- 
+[2023-07-08 16:06:23,384]  -------------------------- PASSED -------------------------- 
+[2023-07-08 16:06:23,387] OS name = Windows 10
+[2023-07-08 16:06:23,388] Driver instance name = chromedriver: chrome on windows (25a65f36cbf6e53ba76a2377bd15e801)
+[2023-07-08 16:07:18,286] Pre-condition - Step 01: Navigate to 'Register' page
+[2023-07-08 16:07:19,357] Pre-condition - Step 02: Click to radio Button
+[2023-07-08 16:07:19,483] Pre-condition - Step 03: Enter to FirstName textbox with value is 'Geni'
+[2023-07-08 16:07:19,605] Pre-condition - Step 04: Enter to Lastname textbox with value is 'Nguyen'
+[2023-07-08 16:07:19,752] Pre-condition - Step 05: Enter to dropdown DOB with value
+[2023-07-08 16:07:20,111] Pre-condition - Step 06: Enter to Email Address textbox with value is 'afc7461@acb.com'
+[2023-07-08 16:07:20,249] Pre-condition - Step 07: Check to checkbox NewsLetter
+[2023-07-08 16:07:20,295] Pre-condition - Step 08: Enter to Password textbox with value is '123456'
+[2023-07-08 16:07:20,417] Pre-condition - Step 06: Enter to Confirm Password textbox with value is '123456'
+[2023-07-08 16:07:20,561] Pre-condition - Step 08: Click to 'Register' button
+[2023-07-08 16:07:21,304] Pre-condition - Step 09: Verify register success message is displayed
+[2023-07-08 16:07:21,361]  -------------------------- PASSED -------------------------- 
+[2023-07-08 16:07:21,404] Login - Step 01: Click to Continue button
+[2023-07-08 16:07:21,831] Login - Step 02: Navigate to Login page
+[2023-07-08 16:07:52,280] Login - Step 01: Open to Customer Info Page
+[2023-07-08 16:07:58,248] Pre-condition - Step 01: Navigate to 'Register' page
+[2023-07-08 16:07:59,312] Pre-condition - Step 02: Click to radio Button
+[2023-07-08 16:07:59,441] Pre-condition - Step 03: Enter to FirstName textbox with value is 'Geni'
+[2023-07-08 16:07:59,566] Pre-condition - Step 04: Enter to Lastname textbox with value is 'Nguyen'
+[2023-07-08 16:07:59,705] Pre-condition - Step 05: Enter to dropdown DOB with value
+[2023-07-08 16:08:00,070] Pre-condition - Step 06: Enter to Email Address textbox with value is 'afc36053@acb.com'
+[2023-07-08 16:08:00,207] Pre-condition - Step 07: Check to checkbox NewsLetter
+[2023-07-08 16:08:00,253] Pre-condition - Step 08: Enter to Password textbox with value is '123456'
+[2023-07-08 16:08:00,383] Pre-condition - Step 06: Enter to Confirm Password textbox with value is '123456'
+[2023-07-08 16:08:00,526] Pre-condition - Step 08: Click to 'Register' button
+[2023-07-08 16:08:01,267] Pre-condition - Step 09: Verify register success message is displayed
+[2023-07-08 16:08:01,328]  -------------------------- PASSED -------------------------- 
+[2023-07-08 16:08:01,424] Login - Step 01: Click to Continue button
+[2023-07-08 16:08:01,895] Login - Step 02: Navigate to Login page
+[2023-07-08 16:08:07,056] Login - Step 12: Enter to Email textbox with value is 'afc36053@acb.com'
+[2023-07-08 16:08:07,199] Login - Step 13: Enter to Password textbox with value is '123456'
+[2023-07-08 16:08:07,326] Login - Step 14: Click to Login button
+[2023-07-08 16:08:08,255] Login - Step 15: Verify is 'My account' Link displayed
+[2023-07-08 16:08:21,380] Pre-condition - Step 01: Navigate to 'Register' page
+[2023-07-08 16:08:22,378] Pre-condition - Step 02: Click to radio Button
+[2023-07-08 16:08:22,507] Pre-condition - Step 03: Enter to FirstName textbox with value is 'Geni'
+[2023-07-08 16:08:22,635] Pre-condition - Step 04: Enter to Lastname textbox with value is 'Nguyen'
+[2023-07-08 16:08:22,766] OS name = Windows 10
+[2023-07-08 16:08:22,767] Driver instance name = chromedriver: chrome on windows (a6d37bcd58b5363e23f166ff29fd665c)
+[2023-07-08 16:08:22,776] Pre-condition - Step 05: Enter to dropdown DOB with value
+[2023-07-08 16:08:22,782] no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=114.0.5735.199)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'LAPTOP-LPVSJDFS', ip: '192.168.1.17', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52373}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a6d37bcd58b5363e23f166ff29fd665c
+[2023-07-08 16:08:23,213] Login - Step 01: Open to Customer Info Page
+[2023-07-08 16:08:23,229] OS name = Windows 10
+[2023-07-08 16:08:23,229] Driver instance name = chromedriver: chrome on windows (a8754693e9107b89b7874fc61f7a57fe)
+[2023-07-08 16:08:23,232] java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:9973
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'LAPTOP-LPVSJDFS', ip: '192.168.1.17', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+Driver info: driver.version: RemoteWebDriver
+[2023-07-08 16:08:23,298] OS name = Windows 10
+[2023-07-08 16:08:23,298] Driver instance name = chromedriver: chrome on windows (3c8fa35ccc60f6b9b2079fda8a22824f)
+[2023-07-08 16:08:23,319] java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:24540
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'LAPTOP-LPVSJDFS', ip: '192.168.1.17', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+Driver info: driver.version: RemoteWebDriver
+[2023-07-08 16:08:35,610] Pre-condition - Step 01: Navigate to 'Register' page
+[2023-07-08 16:08:36,630] Pre-condition - Step 02: Click to radio Button
+[2023-07-08 16:08:36,774] Pre-condition - Step 03: Enter to FirstName textbox with value is 'Geni'
+[2023-07-08 16:08:36,926] Pre-condition - Step 04: Enter to Lastname textbox with value is 'Nguyen'
+[2023-07-08 16:08:37,054] Pre-condition - Step 05: Enter to dropdown DOB with value
+[2023-07-08 16:08:37,432] Pre-condition - Step 06: Enter to Email Address textbox with value is 'afc47170@acb.com'
+[2023-07-08 16:08:37,566] Pre-condition - Step 07: Check to checkbox NewsLetter
+[2023-07-08 16:08:37,613] Pre-condition - Step 08: Enter to Password textbox with value is '123456'
+[2023-07-08 16:08:37,738] Pre-condition - Step 06: Enter to Confirm Password textbox with value is '123456'
+[2023-07-08 16:08:37,884] Pre-condition - Step 08: Click to 'Register' button
+[2023-07-08 16:08:39,620] Pre-condition - Step 09: Verify register success message is displayed
+[2023-07-08 16:08:39,684]  -------------------------- PASSED -------------------------- 
+[2023-07-08 16:08:39,730] Login - Step 01: Click to Continue button
+[2023-07-08 16:08:40,177] Login - Step 02: Navigate to Login page
+[2023-07-08 16:08:44,393] Login - Step 12: Enter to Email textbox with value is 'afc47170@acb.com'
+[2023-07-08 16:08:44,542] Login - Step 13: Enter to Password textbox with value is '123456'
+[2023-07-08 16:08:44,675] Login - Step 14: Click to Login button
+[2023-07-08 16:08:45,409] Login - Step 15: Verify is 'My account' Link displayed
+[2023-07-08 16:08:45,491]  -------------------------- PASSED -------------------------- 
+[2023-07-08 16:08:45,559] Login - Step 01: Open to Customer Info Page
+[2023-07-08 16:08:45,945] Login - Step 02: Verify the data on Customer Info page
+[2023-07-08 16:08:46,006]  -------------------------- PASSED -------------------------- 
+[2023-07-08 16:08:46,067]  -------------------------- PASSED -------------------------- 
+[2023-07-08 16:08:46,130]  -------------------------- PASSED -------------------------- 
+[2023-07-08 16:08:46,182]  -------------------------- PASSED -------------------------- 
+[2023-07-08 16:08:46,320]  -------------------------- PASSED -------------------------- 
+[2023-07-08 16:08:46,453]  -------------------------- PASSED -------------------------- 
+[2023-07-08 16:08:46,912]  -------------------------- PASSED -------------------------- 
+[2023-07-08 16:08:46,916] OS name = Windows 10
+[2023-07-08 16:08:46,916] Driver instance name = chromedriver: chrome on windows (e67d027af79e4e6cff8f653bfebee2a6)
