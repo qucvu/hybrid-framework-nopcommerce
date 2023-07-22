@@ -1,11 +1,14 @@
-package com.nopcommerce.common;
+package com.nopcommerce.pratice;
 
-import java.util.Set;
+import java.lang.reflect.Method;
+import java.util.Random;
 
-import org.openqa.selenium.Cookie;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.BeforeTest;
+import org.testng.Assert;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
 
 import commons.BaseTest;
 import commons.PageGeneratorManager;
@@ -13,19 +16,25 @@ import pageObjects.nopCommerce.user.UserHomePageObject;
 import pageObjects.nopCommerce.user.UserLoginPageObject;
 import pageObjects.nopCommerce.user.UserRegisterPageObject;
 
-public class Common_01_Register_Cookie extends BaseTest {
+public class Level_16_ExtentReport_V3_Screenshot extends BaseTest {
+
 	@Parameters("browser")
-	@BeforeTest(description = "Create a new common User for all Classes Test")
-	public void Register(String browserName) {
+	@BeforeClass
+	public void beforeClass(String browserName) {
 		driver = getBrowserDriver(browserName);
 
-		firstName = "Geni" + generateRandomNumber();
+		firstName = "Geni";
 		lastName = "Nguyen";
 		emailAddress = "afc" + generateRandomNumber() + "@acb.com";
 		password = "123456";
 
 		driver.get("https://demo.nopcommerce.com/");
 		homePage = PageGeneratorManager.getUserHomePage(driver);
+
+	}
+
+	@Test
+	public void User_01_Register(Method method) {
 
 		log.info("Register - Step 01: Navigate to 'Register' page");
 		registerPage = homePage.openRegisterPage();
@@ -49,34 +58,46 @@ public class Common_01_Register_Cookie extends BaseTest {
 		registerPage.clickToRegisterButton();
 
 		log.info("Register - Step 09: Verify register success message is displayed");
-		verifyEquals(registerPage.getSuccessRegisterMessage(), "Your registration completed");
+		Assert.assertEquals(registerPage.getSuccessRegisterMessage(), "Your registration completed");
 
-		log.info("Register - Step 10: Click to Continue button");
-		homePage = registerPage.clickToContinueButton();
-		
-		log.info("Pre-condition - Step 11: Navigate to Login page");
-		loginPage = homePage.openLoginPage();
-
-		log.info("Pre-condition - Step 12: Enter to Email textbox with value is '" + emailAddress + "'");
-		loginPage.inputToEmailTextBox(emailAddress);
-
-		log.info("Pre-condition - Step 13: Enter to Password textbox with value is '" + password + "'");
-		loginPage.inputToPasswordTextBox(password);
-
-		log.info("Pre-condition - Step 14: Click to Login button");
-		homePage = loginPage.clickToLoginButton();
-		
-		loggedCookies = homePage.getAllCookies(driver);
-		driver.quit();
-		
 	}
 
+	@Test
+	public void User_02_Login(Method method) {
+
+		log.info("Login - Step 01: Navigate to Login page");
+		homePage = registerPage.clickToContinueButton();
+		loginPage = homePage.openLoginPage();
+
+		log.info("Login - Step 02: Enter to Email textbox with value is '" + emailAddress + "'");
+		loginPage.inputToEmailTextBox(emailAddress);
+
+		log.info("Login - Step 03: Enter to Password textbox with value is '" + password + "'");
+		loginPage.inputToPasswordTextBox(password);
+
+		log.info("Login - Step 04: Click to Login button");
+		homePage = loginPage.clickToLoginButton();
+
+		log.info("Login - Step 06: Verify the 'My Account' Link is displayed");
+		Assert.assertFalse(homePage.isMyAccountDisplayed());
+
+		log.info("Login - Step 05: Verify the correct title of Home Page");
+		Assert.assertEquals(loginPage.getTitle(driver), "nopCommerce demo storee");
+
+	}
+
+	public int generateRandomNumber() {
+		return new Random().nextInt(99999);
+	}
+
+	@AfterClass
+	public void afterClass() {
+		driver.quit();
+	}
 
 	private WebDriver driver;
+	private UserLoginPageObject loginPage;
 	private UserHomePageObject homePage;
 	private UserRegisterPageObject registerPage;
-	private UserLoginPageObject loginPage;
-	private String firstName, lastName;
-	public static String password, emailAddress;
-	public static Set<Cookie> loggedCookies;
+	private String firstName, lastName, password, emailAddress;
 }

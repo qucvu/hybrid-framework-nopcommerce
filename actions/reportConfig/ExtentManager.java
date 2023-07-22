@@ -20,7 +20,7 @@ public class ExtentManager {
 		extentReports.attachReporter(reporter);
 		extentReports.setSystemInfo("Company", "Automation FC");
 		extentReports.setSystemInfo("Project", "NopCommerce");
-		extentReports.setSystemInfo("Team", "Fly Team");
+		extentReports.setSystemInfo("Team", "Hoiio Team");
 		extentReports.setSystemInfo("JDK version", GlobalConstants.JAVA_VERSION);
 		return extentReports;
 	}

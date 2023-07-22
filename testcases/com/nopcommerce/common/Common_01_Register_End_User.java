@@ -4,13 +4,10 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 
-import com.aventstack.extentreports.Status;
-
 import commons.BaseTest;
 import commons.PageGeneratorManager;
 import pageObjects.nopCommerce.user.UserHomePageObject;
 import pageObjects.nopCommerce.user.UserRegisterPageObject;
-import reportConfig.ExtentTestManager;
 
 public class Common_01_Register_End_User extends BaseTest {
 	@Parameters("browser")

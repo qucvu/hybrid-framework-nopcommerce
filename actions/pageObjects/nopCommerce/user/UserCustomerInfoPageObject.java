@@ -7,10 +7,10 @@ import pageUIs.nopCommerce.user.CustomerInfoPageUI;
 
 public class UserCustomerInfoPageObject extends BasePage {
 	private WebDriver driver;
-	
+
 	public UserCustomerInfoPageObject(WebDriver driver) {
 		this.driver = driver;
-    }
+	}
 
 	public String getValueAtFirstNameTextbox() {
 		waitForAllElementVisibility(driver, CustomerInfoPageUI.FIRST_NAME_TEXTBOX);
@@ -31,7 +31,5 @@ public class UserCustomerInfoPageObject extends BasePage {
 		waitForElementVisibility(driver, CustomerInfoPageUI.CUSTOMER_INFO_HEADER);
 		return isElemenetDisplayed(driver, CustomerInfoPageUI.CUSTOMER_INFO_HEADER);
 	}
-
-
 
 }

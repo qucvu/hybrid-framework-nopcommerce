@@ -6,7 +6,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import commons.BasePage;
-import commons.GlobalConstants;
 import pageUIs.jQuery.uploadFile.HomePageUI;
 
 public class HomePageObject extends BasePage {
@@ -16,29 +15,26 @@ public class HomePageObject extends BasePage {
 		this.driver = driver;
 	}
 
-
 	public boolean isFileLoadedByFileName(String fileName) {
 		waitForElementVisibility(driver, HomePageUI.LOADED_FILE_BY_FILE_NAME, fileName);
-		return isElemenetDisplayed(driver, HomePageUI.LOADED_FILE_BY_FILE_NAME, fileName);
+		return isElementDisplayed(driver, HomePageUI.LOADED_FILE_BY_FILE_NAME, fileName);
 
 	}
-	
+
 	public boolean isFileLinkUpoadedByFileName(String fileName) {
 		waitForElementVisibility(driver, HomePageUI.UPLOADED_FILE_BY_FILE_NAME, fileName);
-		return isElemenetDisplayed(driver, HomePageUI.UPLOADED_FILE_BY_FILE_NAME, fileName);
+		return isElementDisplayed(driver, HomePageUI.UPLOADED_FILE_BY_FILE_NAME, fileName);
 
 	}
 
-	
 	public boolean isImgFileUploadedByFileName(String fileName) {
 		waitForElementVisibility(driver, HomePageUI.LOAD_IMG_BY_FILE_NAME, fileName);
 		return isImageLoaded(driver, HomePageUI.LOAD_IMG_BY_FILE_NAME, fileName);
 	}
 
-
 	public boolean isUnallowedLinkByFileName(String fileName) {
 		waitForElementVisibility(driver, HomePageUI.UNALLOWED_LOADED_FILE_BY_FILE_NAME, fileName);
-		return isElemenetDisplayed(driver, HomePageUI.UNALLOWED_LOADED_FILE_BY_FILE_NAME, fileName);
+		return isElementDisplayed(driver, HomePageUI.UNALLOWED_LOADED_FILE_BY_FILE_NAME, fileName);
 	}
 
 	public void clickToUploadFile() {
@@ -49,8 +45,5 @@ public class HomePageObject extends BasePage {
 			sleepInSecond(1);
 		}
 	}
-
-
-
 
 }

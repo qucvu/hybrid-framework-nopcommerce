@@ -151,16 +151,16 @@ public class BasePage {
 	}
 
 	private String getDynamicXpath(String locatorType, String... dynamicValues) {
-		if (locatorType.startsWith("xpath=") || locatorType.startsWith("XPATH=") || locatorType.startsWith("XPath=") || locatorType.startsWith("Xpath=")) {
-			locatorType = String.format(locatorType, (Object[]) dynamicValues);
-		} else {
-			// throw new RuntimeException("The locator type is only supported for the XPath locator");
-		}
+//		if (locatorType.startsWith("xpath=") || locatorType.startsWith("XPATH=") || locatorType.startsWith("XPath=") || locatorType.startsWith("Xpath=")) {
+//			locatorType = String.format(locatorType, dynamicValues);
+//		} else {
+//			 throw new RuntimeException("The locator type is only supported for the XPath locator");
+//		}
 		locatorType = String.format(locatorType, (Object[]) dynamicValues);
 		return locatorType;
 
 	}
-
+	
 	public WebElement getWebElement(WebDriver driver, String locatorType) {
 		return driver.findElement(getByLocator(locatorType));
 	}
@@ -271,11 +271,10 @@ public class BasePage {
 	protected String getElementAttribute(WebDriver driver, String attributeName, String locatorType) {
 		return getWebElement(driver, locatorType).getAttribute(attributeName);
 	}
-	
+
 	protected String getElementAttribute(WebDriver driver, String attributeName, String locatorType, String... dynamicValues) {
 		return getWebElement(driver, getDynamicXpath(locatorType, dynamicValues)).getAttribute(attributeName);
 	}
-
 
 	protected String getElementCssValue(WebDriver driver, String locatorType, String propertyName) {
 		return getWebElement(driver, locatorType).getCssValue(propertyName);
@@ -332,7 +331,7 @@ public class BasePage {
 		}
 	}
 
-	protected boolean isElemenetDisplayed(WebDriver driver, String locatorType, String... dynamicValues) {
+	protected boolean isElementDisplayed(WebDriver driver, String locatorType, String... dynamicValues) {
 		return getWebElement(driver, locatorType, dynamicValues).isDisplayed();
 	}
 
@@ -368,11 +367,10 @@ public class BasePage {
 		return getWebElement(driver, locatorType).isSelected();
 	}
 
-	protected boolean isElemenetSelected(WebDriver driver, String locatorType, String ...dynamicValues) {
+	protected boolean isElemenetSelected(WebDriver driver, String locatorType, String... dynamicValues) {
 		return getWebElement(driver, getDynamicXpath(locatorType, dynamicValues)).isSelected();
 	}
 
-	
 	protected void switchToFrameIframe(WebDriver driver, String locatorType) {
 		driver.switchTo().frame(getWebElement(driver, locatorType));
 	}
@@ -386,6 +384,13 @@ public class BasePage {
 		Actions actions = new Actions(driver);
 		actions.moveToElement(element).build().perform();
 	}
+	
+	protected void hoverMouseToElement(WebDriver driver, String locatorType, String... dynamicValues) {
+		WebElement element = getWebElement(driver, getDynamicXpath(locatorType, dynamicValues));
+		Actions actions = new Actions(driver);
+		actions.moveToElement(element).build().perform();
+	}
+
 
 	protected void pressKeyToElement(WebDriver driver, String locatorType, Keys key) {
 		Actions actions = new Actions(driver);
@@ -404,6 +409,15 @@ public class BasePage {
 	protected void highlightElement(WebDriver driver, String locatorType) {
 		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
 		WebElement element = getWebElement(driver, locatorType);
+		String originalStyle = element.getAttribute("style");
+		jsExecutor.executeScript("arguments[0].setAttribute(arguments[1], arguments[2])", element, "style", "border: 2px solid red; border-style: dashed;");
+		sleepInSecond(1);
+		jsExecutor.executeScript("arguments[0].setAttribute(arguments[1], arguments[2])", element, "style", originalStyle);
+	}
+	
+	protected void highlightElement(WebDriver driver, String locatorType,String... dynamicValues) {
+		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+		WebElement element = getWebElement(driver, getDynamicXpath(locatorType, dynamicValues));
 		String originalStyle = element.getAttribute("style");
 		jsExecutor.executeScript("arguments[0].setAttribute(arguments[1], arguments[2])", element, "style", "border: 2px solid red; border-style: dashed;");
 		sleepInSecond(1);
@@ -584,6 +598,15 @@ public class BasePage {
 
 	}
 
+	// @Step("Navigate to the 'My Account' Page")
+	public UserCustomerInfoPageObject openMyAccountPage(WebDriver driver) {
+		waitForElementClickable(driver, BasePageNopCommerceUI.MY_ACCOUNT_LINK_USER_PAGE);
+		clickToElement(driver, BasePageNopCommerceUI.MY_ACCOUNT_LINK_USER_PAGE);
+		return PageGeneratorManager.getUserCustomerInfoPage(driver);
+	}
+
+
+	
 	// bài dynamic locator tối ưu cho bài switch page
 	public BasePage openDynamicPageAtMyAccountByPageName(WebDriver driver, String pageName) {
 		waitForElementClickable(driver, BasePageNopCommerceUI.DYNAMIC_LOCATOR_AT_MY_ACCOUNT_PAGE, pageName);
@@ -597,6 +620,8 @@ public class BasePage {
 			return PageGeneratorManager.getUserMyProductReviewPage(driver);
 		case "Reward points":
 			return PageGeneratorManager.getUserRewardPointPage(driver);
+		case "Change password":
+			return PageGeneratorManager.getUserChangePasswordPage(driver);
 		default:
 			throw new RuntimeException("Invalid page name at My Account Page");
 		}
@@ -628,17 +653,32 @@ public class BasePage {
 
 	/**
 	 * Enter to dynamic textbox by ID
-	 * @param driver 
-	 * @param textID  the ID of textbox
-	 * @param value text value
+	 * 
+	 * @param driver
+	 * @param textID the ID of textbox
+	 * @param value  text value
 	 */
 	public void inputToTextboxById(WebDriver driver, String textID, String value) {
 		waitForElementVisibility(driver, BasePageNopCommerceUI.DYNAMIC_TEXTBOX_BY_ID, textID);
 		sendkeyToElement(driver, BasePageNopCommerceUI.DYNAMIC_TEXTBOX_BY_ID, value, textID);
 	}
+
+	
+	/**
+	 * Enter to dynamic TextArea by ID
+	 * @param driver
+	 * @param textID
+	 * @param value
+	 */
+	public void inputToTextareaById(WebDriver driver, String textID, String value) {
+		waitForElementVisibility(driver, BasePageNopCommerceUI.DYNAMIC_TEXTAREA_BY_ID, textID);
+		sendkeyToElement(driver, BasePageNopCommerceUI.DYNAMIC_TEXTAREA_BY_ID, value, textID);
+	}
+
 	
 	/**
 	 * Click to dynamic button By text
+	 * 
 	 * @author Geni
 	 * @param driver
 	 * @param text
@@ -647,9 +687,10 @@ public class BasePage {
 		waitForElementClickable(driver, BasePageNopCommerceUI.DYNAMIC_BUTTON_BY_TEXT, text);
 		clickToElement(driver, BasePageNopCommerceUI.DYNAMIC_BUTTON_BY_TEXT, text);
 	}
-	
+
 	/**
 	 * Click to Radio button by label name
+	 * 
 	 * @param driver
 	 * @param labelName
 	 */
@@ -659,7 +700,19 @@ public class BasePage {
 	}
 	
 	/**
+	 * Click to Radito button by Aria Label
+	 * @param driver
+	 * @param ariaLabel
+	 */
+	public void clickToRadioButtonByAriaLabel(WebDriver driver, String ariaLabel) {
+		waitForElementClickable(driver, BasePageNopCommerceUI.DYNAMIC_RADIO_BY_ARIA_LABEL, ariaLabel);
+		checkToDefaultCheckboxRadio(driver, BasePageNopCommerceUI.DYNAMIC_RADIO_BY_ARIA_LABEL, ariaLabel);
+	}
+
+
+	/**
 	 * Select to default Dropdown by name attribute
+	 * 
 	 * @param driver
 	 * @param string
 	 * @param value
@@ -668,20 +721,21 @@ public class BasePage {
 		waitForElementClickable(driver, BasePageNopCommerceUI.DYNAMIC_DROPDOWN_BY_NAME, nameAttribute);
 		selectItemInDefaultDropdown(driver, BasePageNopCommerceUI.DYNAMIC_DROPDOWN_BY_NAME, textValue, nameAttribute);
 	}
-	
-	
+
 	/**
 	 * Select to checkbox by label name
-	 * @param driver2
+	 * 
+	 * @param driver
 	 * @param string
 	 */
 	public void clickToCheckboxByLabel(WebDriver driver, String labelName) {
-		waitForElementClickable(driver,BasePageNopCommerceUI.DYNAMIC_CHECKBOX_BY_LABEL , labelName);
+		waitForElementClickable(driver, BasePageNopCommerceUI.DYNAMIC_CHECKBOX_BY_LABEL, labelName);
 		checkToDefaultCheckboxRadio(driver, BasePageNopCommerceUI.DYNAMIC_CHECKBOX_BY_LABEL, labelName);
 	}
-	
+
 	/**
 	 * Get textbox value by ID
+	 * 
 	 * @param driver
 	 * @param id
 	 * @return
@@ -690,10 +744,10 @@ public class BasePage {
 		waitForElementVisibility(driver, BasePageNopCommerceUI.DYNAMIC_TEXTBOX_BY_ID, id);
 		return getElementAttribute(driver, "value", BasePageNopCommerceUI.DYNAMIC_TEXTBOX_BY_ID, id);
 	}
-	
-	
+
 	/**
 	 * Check selectedCheckbox
+	 * 
 	 * @param driver
 	 * @param labelName
 	 * @return
@@ -705,6 +759,7 @@ public class BasePage {
 
 	/**
 	 * Get the selected item of default dropdown
+	 * 
 	 * @param driver
 	 * @param dynamicName
 	 */
@@ -713,9 +768,29 @@ public class BasePage {
 		return getSelectedItemDefaultDropdown(driver, BasePageNopCommerceUI.DYNAMIC_DROPDOWN_BY_NAME, dynamicName);
 	}
 
+	/**
+	 * Check success message display on bar notification by message
+	 * 
+	 * @param driver
+	 * @param message
+	 * @return
+	 */
+	public boolean isSuccessMessageDispalyedOnBarByMessage(WebDriver driver, String message) {
+		waitForElementVisibility(driver, BasePageNopCommerceUI.DYNAMIC_NOTIFICATION_SUCCESS_BY_MESSAGE, message);
+		return isElementDisplayed(driver, BasePageNopCommerceUI.DYNAMIC_NOTIFICATION_SUCCESS_BY_MESSAGE, message);
 
+	}
 
-
+	public void closeTheBarNotification(WebDriver driver) {
+		waitForElementClickable(driver, BasePageNopCommerceUI.CLOSE_ICON_BAR_NOTIFICATION);
+		clickToElement(driver, BasePageNopCommerceUI.CLOSE_ICON_BAR_NOTIFICATION);
+		sleepInSecond(1);
+	}
+	
+	public void hoverDynamicProductCategoryOnTopMenuByName(WebDriver driver, String productName) {
+		waitForElementVisibility(driver, BasePageNopCommerceUI.DYNAMIC_PRODUCT_CATEGORY_LINK_BY_NAME, productName);
+		hoverMouseToElement(driver, BasePageNopCommerceUI.DYNAMIC_PRODUCT_CATEGORY_LINK_BY_NAME, productName);
+	}
 
 
 }

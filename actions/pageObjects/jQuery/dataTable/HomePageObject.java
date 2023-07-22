@@ -24,7 +24,7 @@ public class HomePageObject extends BasePage {
 
 	public boolean isPageNumberActive(String pageNumber) {
 		waitForElementVisibility(driver, HomePageUI.ACTIVE_PAGINATION_PAGE_BY_PAGE_NUMBER, pageNumber);
-		return isElemenetDisplayed(driver, HomePageUI.ACTIVE_PAGINATION_PAGE_BY_PAGE_NUMBER, pageNumber);
+		return isElementDisplayed(driver, HomePageUI.ACTIVE_PAGINATION_PAGE_BY_PAGE_NUMBER, pageNumber);
 	}
 
 	public void enterToHeaderByLabel(String label, String value) {
@@ -47,7 +47,6 @@ public class HomePageObject extends BasePage {
 		return allRowDataValues;
 	}
 	
-
 	public void enterToTextboxAtRowNumberByColumnName(String columnName, String rowNumber, String textValue) {
 		int indexColumn = getElementsSize(driver, HomePageUI.INDEX_COLUMN_BY_COLUMN_NAME, columnName) + 1;
 		waitForElementVisibility(driver, HomePageUI.TEXTBOX_AT_ROW_NUMBER_BY_COLUMN_INDEX, rowNumber, String.valueOf(indexColumn));
