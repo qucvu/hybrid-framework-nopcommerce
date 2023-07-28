@@ -320,7 +320,7 @@ public class BasePage {
 		}
 	}
 
-	protected boolean isElemenetDisplayed(WebDriver driver, String locatorType) {
+	protected boolean isElementDisplayed(WebDriver driver, String locatorType) {
 		try {
 			// displayed - có trong dom: true
 			// undisplayed - có trong dom: trả về false
@@ -397,12 +397,12 @@ public class BasePage {
 		actions.sendKeys(getWebElement(driver, locatorType), key).build().perform();
 	}
 
-	protected void pressKeyToElement(WebDriver driver, String locatorType, Keys key, String... dynamicValues) {
+	public void pressKeyToElement(WebDriver driver, String locatorType, Keys key, String... dynamicValues) {
 		Actions actions = new Actions(driver);
 		actions.sendKeys(getWebElement(driver, getDynamicXpath(locatorType, dynamicValues)), key).build().perform();
 	}
 
-	protected void scrollToBottomPage(WebDriver driver) {
+	public void scrollToBottomPage(WebDriver driver) {
 		((JavascriptExecutor) driver).executeScript("window.scrollBy(0,document.body.scrollHeight)");
 	}
 
@@ -510,6 +510,7 @@ public class BasePage {
 	protected void waitForElementInvisibility(WebDriver driver, String locatorType) {
 		WebDriverWait explicitWait = new WebDriverWait(driver, longTimeout);
 		explicitWait.until(ExpectedConditions.invisibilityOfElementLocated(getByLocator(locatorType)));
+
 	}
 
 	/*
@@ -566,6 +567,23 @@ public class BasePage {
 		explicitWait.until(ExpectedConditions.elementToBeClickable(getByLocator(getDynamicXpath(locatorType, dynamicValues))));
 	}
 
+	protected void waitForElementStaleness(WebDriver driver, String locatorType) {
+		WebDriverWait explicitWait = new WebDriverWait(driver, longTimeout);
+		explicitWait.until(ExpectedConditions.stalenessOf(getWebElement(driver, locatorType)));
+	}
+
+	
+	public void uploadFilesByFileName(WebDriver driver, String... fileNames) {
+		String filePath = GlobalConstants.UPLOAD_FILE_FOLDER;
+		String fullName = "";
+		for (String fileName : fileNames) {
+			fullName += filePath + fileName + "\n";
+		}
+		fullName = fullName.trim();
+		getWebElement(driver, HomePageUI.UPLOAD_FILE).sendKeys(fullName);
+
+	}
+	
 	// bài switch page
 	public UserMyProductReviewPageObject openMyProductReviewPage(WebDriver driver) {
 		waitForElementClickable(driver, BasePageNopCommerceUI.MY_PRODUCT_REVIEW_LINK);
@@ -640,16 +658,7 @@ public class BasePage {
 
 	}
 
-	public void uploadFilesByFileName(WebDriver driver, String... fileNames) {
-		String filePath = GlobalConstants.UPLOAD_FILE_FOLDER;
-		String fullName = "";
-		for (String fileName : fileNames) {
-			fullName += filePath + fileName + "\n";
-		}
-		fullName = fullName.trim();
-		getWebElement(driver, HomePageUI.UPLOAD_FILE).sendKeys(fullName);
 
-	}
 
 	/**
 	 * Enter to dynamic textbox by ID
@@ -790,6 +799,31 @@ public class BasePage {
 	public void hoverDynamicProductCategoryOnTopMenuByName(WebDriver driver, String productName) {
 		waitForElementVisibility(driver, BasePageNopCommerceUI.DYNAMIC_PRODUCT_CATEGORY_LINK_BY_NAME, productName);
 		hoverMouseToElement(driver, BasePageNopCommerceUI.DYNAMIC_PRODUCT_CATEGORY_LINK_BY_NAME, productName);
+	}
+
+	/**
+	 * Open Dynamic Link OnFooter Block By page name
+	 * @param driver
+	 * @param name
+	 */
+	public void openDynamicLinkOnFooterBlockByPageName(WebDriver driver, String pageName) {
+		waitForElementClickable(driver, BasePageNopCommerceUI.DYNAMIC_LINK_ON_FOOTER_BY_PAGE_NAME, pageName);
+		clickToElement(driver, BasePageNopCommerceUI.DYNAMIC_LINK_ON_FOOTER_BY_PAGE_NAME, pageName);
+	}
+	
+	
+	/**
+	 * Press enter to Textbox by Id
+	 * @param driver
+	 * @param id
+	 */
+	public void pressEnterToTextboxById(WebDriver driver, String id) {
+		waitForElementVisibility(driver, BasePageNopCommerceUI.DYNAMIC_TEXTBOX_BY_ID, id);
+		pressKeyToElement(driver, BasePageNopCommerceUI.DYNAMIC_TEXTBOX_BY_ID, Keys.ENTER, id);
+	}
+	 
+	public void waitForCurrentPageStaleness(WebDriver driver) {
+		waitForElementStaleness(driver, BasePageNopCommerceUI.CURRENT_PAGE);
 	}
 
 

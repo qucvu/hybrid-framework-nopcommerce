@@ -66,7 +66,7 @@ public class BaseTest {
 			WebDriverManager.iedriver().arch32().setup();
 			driver = new InternetExplorerDriver();
 			break;
-		case EDEG:
+		case EDGE:
 			WebDriverManager.edgedriver().setup();
 			driver = new EdgeDriver();
 			break;

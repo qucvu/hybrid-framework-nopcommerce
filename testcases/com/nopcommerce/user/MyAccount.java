@@ -230,7 +230,7 @@ public class MyAccount extends BaseTest {
 		verifyEquals(productReviewPage.getProductReviewRateByFirstName(firstName), reviewRate);
 		verifyEquals(productReviewPage.getProductReviewContentByFirstName(firstName), reviewContent);
 
-		ExtentTestManager.getTest().log(Status.SKIP, "Product review - Step 10: Navigate to 'My Product review' page");
+		ExtentTestManager.getTest().log(Status.INFO, "Product review - Step 10: Navigate to 'My Product review' page");
 		customerInfoPage = productReviewPage.openMyAccountPage(driver);
 		myProductReviewPage = (UserMyProductReviewPageObject) productReviewPage.openDynamicPageAtMyAccountByPageName(driver, "My product reviews");
 

@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE xml>
-<suite name="NopCommerce - User">
+<suite name="Wordpress - Admin">
 	<listeners>
 		<listener class-name="commons.MethodListener" />
 		<!--		<listener class-name="reportConfig.ReportNGListener" />-->
-		<!--		<listener class-name="reportConfig.ExtentReportListenerV2" />-->
-		<!--		<listener class-name="reportConfig.ExtentReportListenerV3" />-->
-		<!--		<listener class-name="reportConfig.ExtentReportListenerV4" />-->
 		<listener class-name="reportConfig.ExtentReportListenerV5" />
 		<!--		<listener class-name="reportConfig.AllureTestListener" />-->
 		<!--		<listener class-name="org.uncommons.reportng.HTMLReporter" />-->
 		<!--		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />-->
 	</listeners>
+	<parameter name="urlAdmin" value="https://wordpress-automation-geni.com/vunguyen/wp-admin"/>
+	<parameter name="urlUser" value="https://wordpress-automation-geni.com/vunguyen" />
 	<test name="Run on FIREFOX">
-		<parameter name="browser" value="chrome" />
-		<classes>
-			<class name="com.nopcommerce.common.Common_01_Register_Cookie" />
-			<class name="com.nopcommerce.user.Search_Advanced_Search" />
-		</classes>
+		<parameter name="browser" value="firefox" />
+		<!--		<classes>-->
+		<!--			<class name="com.wordpress.admin.Post_01_Create_Search_Read_Delete_Update" />-->
+		<!--		</classes>-->
+		<packages>
+			<package name="com.wordpress.admin" />
+		</packages>
 	</test>
 </suite>

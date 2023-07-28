@@ -1,6 +1,7 @@
 package pageUIs.nopCommerce.user;
 
 public class BasePageNopCommerceUI {
+	public static final String CURRENT_PAGE = "xpath=//html";
 	public static final String CUSTOMER_INFO_LINK = "xpath=//li[contains(@class, 'customer-info')]/a[text()='Customer info']";
 
 	public static final String ADDRESS_LINK = "xpath=//li[contains(@class, 'customer-addresses')]/a[text()='Addresses']";
@@ -26,5 +27,6 @@ public class BasePageNopCommerceUI {
 	public static final String DYNAMIC_NOTIFICATION_SUCCESS_BY_MESSAGE = "xpath=//div[@class='bar-notification success' and contains(., '%s')]";
 	public static final String DYNAMIC_PRODUCT_CATEGORY_LINK_BY_NAME= "xpath=//ul[@class='top-menu notmobile']//a[contains(text(), 'Computers')]";
 	public static final String DYNAMIC_SUB_PRODUCT_CATEGORY_LINK_BY_NAME= "xpath=//ul[@class='top-menu notmobile']//ul[contains(@class,'sublist')]//a[text()='%s']";
+	public static final String DYNAMIC_LINK_ON_FOOTER_BY_PAGE_NAME= "xpath=//div[contains(@class, 'footer-block')]//ul[@class='list']//a[text()='%s']";
 
 }
