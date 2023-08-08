@@ -3,19 +3,13 @@
 <suite name="Wordpress - Admin">
 	<listeners>
 		<listener class-name="commons.MethodListener" />
-		<!--		<listener class-name="reportConfig.ReportNGListener" />-->
 		<listener class-name="reportConfig.ExtentReportListenerV5" />
-		<!--		<listener class-name="reportConfig.AllureTestListener" />-->
-		<!--		<listener class-name="org.uncommons.reportng.HTMLReporter" />-->
-		<!--		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />-->
 	</listeners>
-	<parameter name="urlAdmin" value="https://wordpress-automation-geni.com/vunguyen/wp-admin"/>
-	<parameter name="urlUser" value="https://wordpress-automation-geni.com/vunguyen" />
+	
+	<parameter name="urlAdmin" value="http://wordpress-automation-geni.com/vunguyen/wp-admin" />
+	<parameter name="urlUser" value="http://wordpress-automation-geni.com/vunguyen" />
 	<test name="Run on FIREFOX">
 		<parameter name="browser" value="firefox" />
-		<!--		<classes>-->
-		<!--			<class name="com.wordpress.admin.Post_01_Create_Search_Read_Delete_Update" />-->
-		<!--		</classes>-->
 		<packages>
 			<package name="com.wordpress.admin" />
 		</packages>
