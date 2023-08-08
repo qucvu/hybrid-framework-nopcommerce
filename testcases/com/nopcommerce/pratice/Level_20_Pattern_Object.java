@@ -44,9 +44,9 @@ public class Level_20_Pattern_Object extends BaseTest {
 		registerPage.inputToTextboxById(driver, "LastName", lastName);
 
 		log.info("Pre-condition - Step 05: Enter to dropdown DOB with value");
-		registerPage.selectDropDownByName(driver, "DateOfBirthDay",day);
-		registerPage.selectDropDownByName(driver, "DateOfBirthMonth", month);
-		registerPage.selectDropDownByName(driver, "DateOfBirthYear", year);
+		registerPage.selectDefaultDropDownByName(driver, "DateOfBirthDay",day);
+		registerPage.selectDefaultDropDownByName(driver, "DateOfBirthMonth", month);
+		registerPage.selectDefaultDropDownByName(driver, "DateOfBirthYear", year);
 
 		log.info("Pre-condition - Step 06: Enter to Email Address textbox with value is '" + emailAddress + "'");
 		registerPage.inputToTextboxById(driver, "Email", emailAddress);

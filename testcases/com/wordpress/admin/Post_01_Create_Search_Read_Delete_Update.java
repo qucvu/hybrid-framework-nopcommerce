@@ -9,15 +9,25 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import commons.BaseTest;
-import commons.GlobalConstants;
+import pageObjects.wordpress.admin.AdminLoginPO;
+import pageObjects.wordpress.admin.PageGeneratorManager;
 
 public class Post_01_Create_Search_Read_Delete_Update extends BaseTest {
 
-	@Parameters("browser")
+	@Parameters({"browser", "urlAdmin"})
 	@BeforeClass
-	public void beforeClass(String browserName, Method method) {
-		driver = getBrowserDriver(browserName, GlobalConstants.PORTAL_PAGE_URL);
-
+	public void beforeClass(String browserName, String urlAdmin) {
+		adminUserName = "vunguyen";
+		adminPassword = "Nguyenquocvu.111";
+		log.info("Step 01: ");
+		driver = getBrowserDriver(browserName, urlAdmin);
+		adminLoginPage = PageGeneratorManager.getAdminLoginPage(driver);
+		
+		adminLoginPage.inputToTextboxById(driver, "user_login", adminUserName);
+		adminLoginPage.inputToTextboxById(driver, "user_pass", adminPassword);
+		adminLoginPage.pressEnterToTextboxById(driver, "user_pass");
+		adminLoginPage.sleepInSecond(5);
+		
 	}
 
 	@Test
@@ -54,5 +64,7 @@ public class Post_01_Create_Search_Read_Delete_Update extends BaseTest {
 	}
 
 	private WebDriver driver;
+	private String adminUserName, adminPassword;
+	private AdminLoginPO adminLoginPage;
 
 }

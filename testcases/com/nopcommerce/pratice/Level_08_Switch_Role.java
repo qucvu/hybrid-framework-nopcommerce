@@ -75,7 +75,7 @@ public class Level_08_Switch_Role extends BaseTest {
 		adminLoginPage = PageGeneratorManager.getAdminLoginPage(driver);
 
 		adminDashboardPage = adminLoginPage.loginAsAdmin(adminEmailAddress, adminPassword);
-		Assert.assertTrue(adminDashboardPage.isDashboardHeaderDisplayed(driver));
+		Assert.assertTrue(adminDashboardPage.isDashboardTitleDisplayed());
 
 		// logout bên trang admin
 		adminLoginPage = adminDashboardPage.clickToLogoutLinkAtAdminPage(driver);

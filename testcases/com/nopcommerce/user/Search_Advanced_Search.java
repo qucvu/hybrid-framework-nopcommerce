@@ -124,7 +124,7 @@ public class Search_Advanced_Search extends BaseTest {
 
 		
 		ExtentTestManager.getTest().log(Status.INFO, "Search - Step 03: Select 'Computer' categories at Category input");
-		searchPage.selectDropDownByName(driver, "cid", "Computers");
+		searchPage.selectDefaultDropDownByName(driver, "cid", "Computers");
 
 		ExtentTestManager.getTest().log(Status.INFO, "Search - Step 04: Uncheck the 'Automatically search sub categories' checkbox");
 		searchPage.unCheckToCheckboxByLabelAtSearchFieldset("Automatically search sub categories");
@@ -149,7 +149,7 @@ public class Search_Advanced_Search extends BaseTest {
 
 		
 		ExtentTestManager.getTest().log(Status.INFO, "Search - Step 03: Select 'Computer' categories at Category input");
-		searchPage.selectDropDownByName(driver, "cid", "Computers");
+		searchPage.selectDefaultDropDownByName(driver, "cid", "Computers");
 
 		ExtentTestManager.getTest().log(Status.INFO, "Search - Step 04: Check the 'Automatically search sub categories' checkbox");
 		searchPage.checkToCheckboxByLabelAtSearchFieldset("Automatically search sub categories");
@@ -174,13 +174,13 @@ public class Search_Advanced_Search extends BaseTest {
 
 		
 		ExtentTestManager.getTest().log(Status.INFO, "Search - Step 03: Select 'Computer' categories at Category input");
-		searchPage.selectDropDownByName(driver, "cid", "Computers");
+		searchPage.selectDefaultDropDownByName(driver, "cid", "Computers");
 
 		ExtentTestManager.getTest().log(Status.INFO, "Search - Step 04: Check the 'Automatically search sub categories' checkbox");
 		searchPage.checkToCheckboxByLabelAtSearchFieldset("Automatically search sub categories");
 
 		ExtentTestManager.getTest().log(Status.INFO, "Search - Step 05: Select 'HP' Manufacture  at Manufacture input");
-		searchPage.selectDropDownByName(driver, "mid", "HP");
+		searchPage.selectDefaultDropDownByName(driver, "mid", "HP");
 
 		ExtentTestManager.getTest().log(Status.INFO, "Search - Step 06: Press 'Enter' to search Textbox");
 		searchPage.pressEnterToSearchInputOnSearchFieldset();
@@ -200,13 +200,13 @@ public class Search_Advanced_Search extends BaseTest {
 		searchPage.checkToCheckboxByLabelAtSearchFieldset("Advanced search");
 
 		ExtentTestManager.getTest().log(Status.INFO, "Search - Step 03: Select 'Computer' categories at Category input");
-		searchPage.selectDropDownByName(driver, "cid", "Computers");
+		searchPage.selectDefaultDropDownByName(driver, "cid", "Computers");
 
 		ExtentTestManager.getTest().log(Status.INFO, "Search - Step 04: Check the 'Automatically search sub categories' checkbox");
 		searchPage.checkToCheckboxByLabelAtSearchFieldset("Automatically search sub categories");
 
 		ExtentTestManager.getTest().log(Status.INFO, "Search - Step 05: Select 'Apple' Manufacture  at Manufacture input");
-		searchPage.selectDropDownByName(driver, "mid", "Apple");
+		searchPage.selectDefaultDropDownByName(driver, "mid", "Apple");
 
 		ExtentTestManager.getTest().log(Status.INFO, "Search - Step 06: Press 'Enter' to search Textbox");
 		searchPage.pressEnterToSearchInputOnSearchFieldset();

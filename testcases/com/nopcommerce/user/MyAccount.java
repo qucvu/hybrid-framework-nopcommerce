@@ -78,9 +78,9 @@ public class MyAccount extends BaseTest {
 		customerInfoPage.inputToTextboxById(driver, "FirstName", firstName);
 		customerInfoPage.inputToTextboxById(driver, "LastName", lastName);
 		customerInfoPage.clickToRadioButtonByLabelName(driver, gender);
-		customerInfoPage.selectDropDownByName(driver, "DateOfBirthDay", dobDay);
-		customerInfoPage.selectDropDownByName(driver, "DateOfBirthMonth", dobMonth);
-		customerInfoPage.selectDropDownByName(driver, "DateOfBirthYear", dobYear);
+		customerInfoPage.selectDefaultDropDownByName(driver, "DateOfBirthDay", dobDay);
+		customerInfoPage.selectDefaultDropDownByName(driver, "DateOfBirthMonth", dobMonth);
+		customerInfoPage.selectDefaultDropDownByName(driver, "DateOfBirthYear", dobYear);
 		customerInfoPage.inputToTextboxById(driver, "Email", email);
 		customerInfoPage.inputToTextboxById(driver, "Company", companyName);
 
@@ -122,8 +122,8 @@ public class MyAccount extends BaseTest {
 		addressPage.inputToTextboxById(driver, "Address_ZipPostalCode", postalCode);
 		addressPage.inputToTextboxById(driver, "Address_PhoneNumber", phoneNumber);
 		addressPage.inputToTextboxById(driver, "Address_FaxNumber", faxNumber);
-		addressPage.selectDropDownByName(driver, "Address.CountryId", country);
-		addressPage.selectDropDownByName(driver, "Address.StateProvinceId", provice);
+		addressPage.selectDefaultDropDownByName(driver, "Address.CountryId", country);
+		addressPage.selectDefaultDropDownByName(driver, "Address.StateProvinceId", provice);
 
 		ExtentTestManager.getTest().log(Status.INFO, "Add Address - Step 04: Click to 'Save' button");
 		addressPage.clickToButtonByText(driver, "Save");
