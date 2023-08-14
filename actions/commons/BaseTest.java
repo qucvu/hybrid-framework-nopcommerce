@@ -7,6 +7,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.joda.time.DateTime;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -23,7 +24,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class BaseTest {
 	private WebDriver driver;
 	protected final Log log;
-	
+
 	protected BaseTest() {
 		log = LogFactory.getLog(getClass());
 	}
@@ -32,11 +33,11 @@ public class BaseTest {
 	public void initBeforeSuite() {
 		deleteAllureReport();
 	}
-	
+
 	public WebDriver getDriverInstance() {
 		return this.driver;
 	}
-	
+
 	protected WebDriver getBrowserDriver(String browserName) {
 		BrowserList browserList = BrowserList.valueOf(browserName.toUpperCase());
 		switch (browserList) {
@@ -53,11 +54,13 @@ public class BaseTest {
 			break;
 		case CHROME:
 			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();
+			ChromeOptions optionsChrome = new ChromeOptions();
+			optionsChrome.setAcceptInsecureCerts(true);
+			driver = new ChromeDriver(optionsChrome);
 			break;
 		case H_CHROME:
 			WebDriverManager.chromedriver().setup();
-			ChromeOptions optionsChrome = new ChromeOptions();
+			optionsChrome = new ChromeOptions();
 			optionsChrome.addArguments("-headless");
 			optionsChrome.addArguments("window-size=1920x1080");
 			driver = new ChromeDriver(optionsChrome);
@@ -215,8 +218,7 @@ public class BaseTest {
 		}
 		return pass;
 	}
-	
-	
+
 	public void deleteAllureReport() {
 		try {
 			String pathFolderDownload = GlobalConstants.PROJECT_PATH + "allure-json";
@@ -231,7 +233,7 @@ public class BaseTest {
 			System.out.print(e.getMessage());
 		}
 	}
-	
+
 	protected void closeBrowserDriver() {
 		String cmd = null;
 		try {
@@ -258,9 +260,9 @@ public class BaseTest {
 			}
 
 			if (osName.contains("Windows")) {
-//				cmd = "taskkill /F /FI \"IMAGENAME eq " + browserDriverName + "*\"";
+				// cmd = "taskkill /F /FI \"IMAGENAME eq " + browserDriverName + "*\"";
 				cmd = "taskkill /f /im " + browserDriverName + ".exe /T";
-				
+
 			} else {
 				cmd = "pkill " + browserDriverName;
 			}
@@ -281,6 +283,36 @@ public class BaseTest {
 				e.printStackTrace();
 			}
 		}
+	}
+
+	protected String getCurrentDate() {
+		DateTime nowUTC = new DateTime();
+		int day = nowUTC.getDayOfMonth();
+		if (day < 10) {
+			String dayValue = "0" + day;
+			return dayValue;
+		}
+		return String.valueOf(day);
+	}
+
+	protected static String getCurrentMonth() {
+		DateTime now = new DateTime();
+		// int month = now.getMonthOfYear();
+		// if (month < 10) {
+		// String monthValue = "0" + month;
+		// return monthValue;
+		// }
+		return now.toString("MMMMMMMMM");
+
+	}
+
+	protected String getCurrentYear() {
+		DateTime now = new DateTime();
+		return String.valueOf(now.getYear());
+	}
+
+	protected String getCurrentDay() {
+		return String.format("%s %s, %s", getCurrentMonth(), getCurrentDate(), getCurrentYear());
 	}
 
 

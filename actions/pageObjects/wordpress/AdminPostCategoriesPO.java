@@ -1,4 +1,4 @@
-package pageObjects.wordpress.admin;
+package pageObjects.wordpress;
 
 public class AdminPostCategoriesPO {
 

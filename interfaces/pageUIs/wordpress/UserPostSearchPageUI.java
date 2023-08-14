@@ -1,4 +1,4 @@
-package pageUIs.wordpress.endUser;
+package pageUIs.wordpress;
 
 public class UserPostSearchPageUI {
 

@@ -2184,3 +2184,186 @@ Session ID: 52521241-23a2-4053-914d-6947cda963b3
 [2023-07-28 21:21:19,668]  -------------------------- PASSED -------------------------- 
 [2023-07-28 21:21:19,675] OS name = Windows 10
 [2023-07-28 21:21:19,675] Driver instance name = chromedriver: chrome on windows (8359b10e7d1fc8f78a8817b5c0e943be)
+[2023-08-13 16:48:01,400] Pre-condition - Step 01: Open browser and admin URL
+[2023-08-13 16:48:06,469] Pre-conditions - Step 02: Enter Username textbox with value: vunguyen
+[2023-08-13 16:48:06,620] Pre-conditions - Step 03: Enter Password textbox with value: Nguyenquocvu.111
+[2023-08-13 16:48:06,753] Pre-conditions - Step 03: Click to 'Log in' button
+[2023-08-13 16:48:09,448] Pre-condition - Step 03: Verify that Navigate to Admin Dashboard page successfully
+[2023-08-13 16:48:09,653]  -------------------------- PASSED -------------------------- 
+[2023-08-13 16:48:09,733] Create Post - Step 01: Click to 'Post' Menu link
+[2023-08-13 16:48:11,004] Create Post - Step 02: Get 'Search Posts' page Url
+[2023-08-13 16:48:11,017] Create Post - Step 02: Click to 'Add New' button
+[2023-08-13 16:48:13,902] Create Post - Step 03: Enter to post title
+[2023-08-13 16:48:15,547] Create Post - Step 04: Enter to body
+[2023-08-13 16:48:17,478] Create Post - Step 05: Click to 'Publish' button
+[2023-08-13 16:48:17,946] Create Post - Step 05: Click to Confirm 'Publish' button
+[2023-08-13 16:48:18,241] Create Post - Step 05: Verify 'Posted Published' message is displayed
+[2023-08-13 16:48:20,210]  -------------------------- PASSED -------------------------- 
+[2023-08-13 16:48:20,303] Search Post - Step 01: Click to 'Publish' button
+[2023-08-13 16:48:21,792] OS name = Windows 10
+[2023-08-13 16:48:21,792] Driver instance name = chromedriver: chrome on windows (658ce02f9382ebadb355784055513f86)
+[2023-08-13 16:52:48,324] Pre-condition - Step 01: Open browser and admin URL
+[2023-08-13 16:52:52,612] Pre-conditions - Step 02: Enter Username textbox with value: vunguyen
+[2023-08-13 16:52:52,796] Pre-conditions - Step 03: Enter Password textbox with value: Nguyenquocvu.111
+[2023-08-13 16:52:52,934] Pre-conditions - Step 03: Click to 'Log in' button
+[2023-08-13 16:52:55,190] Pre-condition - Step 03: Verify that Navigate to Admin Dashboard page successfully
+[2023-08-13 16:52:55,283]  -------------------------- PASSED -------------------------- 
+[2023-08-13 16:52:55,354] Create Post - Step 01: Click to 'Post' Menu link
+[2023-08-13 16:52:56,655] Create Post - Step 02: Get 'Search Posts' page Url
+[2023-08-13 16:52:56,666] Create Post - Step 02: Click to 'Add New' button
+[2023-08-13 16:52:59,170] Create Post - Step 03: Enter to post title
+[2023-08-13 16:53:00,632] Create Post - Step 04: Enter to body
+[2023-08-13 16:53:02,087] Create Post - Step 05: Click to 'Publish' button
+[2023-08-13 16:53:02,410] Create Post - Step 05: Click to Confirm 'Publish' button
+[2023-08-13 16:53:02,610] Create Post - Step 05: Verify 'Posted Published' message is displayed
+[2023-08-13 16:53:04,341]  -------------------------- PASSED -------------------------- 
+[2023-08-13 16:53:04,450] Search Post - Step 01: Click to 'Publish' button
+[2023-08-13 16:53:05,719] OS name = Windows 10
+[2023-08-13 16:53:05,719] Driver instance name = chromedriver: chrome on windows (3a105602e59c6e8e673d00d14c68ae39)
+[2023-08-13 20:58:54,841] Pre-condition - Step 01: Open browser and admin site
+[2023-08-13 20:59:01,618] Pre-condition - Step 03: Verify that Navigate to Admin Dashboard page successfully
+[2023-08-13 21:00:02,538] Pre-condition - Step 01: Open browser and admin site
+[2023-08-13 21:00:08,525] Pre-condition - Step 03: Verify that Navigate to Admin Dashboard page successfully
+[2023-08-14 21:48:35,253] Pre-condition - Step 01: Open browser and admin site
+[2023-08-14 21:48:40,149] Pre-conditions - Step 02: Enter Username textbox with value: vunguyen
+[2023-08-14 21:48:40,366] Pre-conditions - Step 03: Enter Password textbox with value: Nguyenquocvu.111
+[2023-08-14 21:48:40,518] Pre-conditions - Step 03: Click to 'Log in' button
+[2023-08-14 21:48:42,827] Pre-condition - Step 03: Verify that Navigate to Admin Dashboard page successfully
+[2023-08-14 21:48:42,918]  -------------------------- PASSED -------------------------- 
+[2023-08-14 21:48:42,990] Create Post - Step 01: Click to 'Post' Menu link
+[2023-08-14 21:48:44,214] Create Post - Step 02: Get 'Search Posts' page Url
+[2023-08-14 21:48:44,224] Create Post - Step 02: Click to 'Add New' button
+[2023-08-14 21:48:51,176] Create Post - Step 03: Enter to post title
+[2023-08-14 21:48:52,704] Create Post - Step 04: Enter to body
+[2023-08-14 21:48:53,984] Create Post - Step 05: Click to 'Publish' button
+[2023-08-14 21:48:54,273] Create Post - Step 05: Click to Confirm 'Publish' button
+[2023-08-14 21:48:54,616] Create Post - Step 05: Verify 'Posted Published' message is displayed
+[2023-08-14 21:48:56,221]  -------------------------- PASSED -------------------------- 
+[2023-08-14 21:48:56,331] Search Post - Step 01: Click to 'Publish' button
+[2023-08-14 21:48:57,609] Search Post - Step 02: Enter to Search textbox with value: Live coding Title 12852
+[2023-08-14 21:48:57,767] Search Post - Step 03: Click to Search Posts button
+[2023-08-14 21:48:59,658] Search Post - Step 04: Verify Search table contains: 'Live coding Title 12852'
+[2023-08-14 21:52:05,405] Pre-condition - Step 01: Open browser and admin site
+[2023-08-14 21:52:09,709] Pre-conditions - Step 02: Enter Username textbox with value: vunguyen
+[2023-08-14 21:52:09,938] Pre-conditions - Step 03: Enter Password textbox with value: Nguyenquocvu.111
+[2023-08-14 21:52:10,078] Pre-conditions - Step 03: Click to 'Log in' button
+[2023-08-14 21:52:12,248] Pre-condition - Step 03: Verify that Navigate to Admin Dashboard page successfully
+[2023-08-14 21:52:12,338]  -------------------------- PASSED -------------------------- 
+[2023-08-14 21:52:12,397] Create Post - Step 01: Click to 'Post' Menu link
+[2023-08-14 21:52:13,573] Create Post - Step 02: Get 'Search Posts' page Url
+[2023-08-14 21:52:13,585] Create Post - Step 02: Click to 'Add New' button
+[2023-08-14 21:52:15,928] Create Post - Step 03: Enter to post title
+[2023-08-14 21:52:17,204] Create Post - Step 04: Enter to body
+[2023-08-14 21:52:18,621] Create Post - Step 05: Click to 'Publish' button
+[2023-08-14 21:52:18,927] Create Post - Step 05: Click to Confirm 'Publish' button
+[2023-08-14 21:52:19,122] Create Post - Step 05: Verify 'Posted Published' message is displayed
+[2023-08-14 21:52:20,754]  -------------------------- PASSED -------------------------- 
+[2023-08-14 21:52:20,868] Search Post - Step 01: Click to 'Publish' button
+[2023-08-14 21:52:22,082] Search Post - Step 02: Enter to Search textbox with value: Live coding Title 86294
+[2023-08-14 21:52:22,278] Search Post - Step 03: Click to Search Posts button
+[2023-08-14 21:52:24,227] Search Post - Step 04: Verify Search table contains: 'Live coding Title 86294'
+[2023-08-14 21:52:24,349]  -------------------------- PASSED -------------------------- 
+[2023-08-14 21:52:24,350] Search Post - Step 05: Verify Search table contains: 'Vu Admin'
+[2023-08-14 21:52:24,424]  -------------------------- PASSED -------------------------- 
+[2023-08-14 21:52:24,424] Search Post - Step 05: Open end User Site
+[2023-08-14 21:52:25,589] Search Post - Step 06: Verify post infor displayed at HomePage
+[2023-08-14 21:52:25,659]  -------------------------- PASSED -------------------------- 
+[2023-08-14 21:52:25,722]  -------------------------- PASSED -------------------------- 
+[2023-08-14 21:52:25,807]  -------------------------- PASSED -------------------------- 
+[2023-08-14 21:53:35,728] Pre-condition - Step 01: Open browser and admin site
+[2023-08-14 21:53:41,135] Pre-conditions - Step 02: Enter Username textbox with value: vunguyen
+[2023-08-14 21:53:41,306] Pre-conditions - Step 03: Enter Password textbox with value: Nguyenquocvu.111
+[2023-08-14 21:53:41,448] Pre-conditions - Step 03: Click to 'Log in' button
+[2023-08-14 21:53:43,774] Pre-condition - Step 03: Verify that Navigate to Admin Dashboard page successfully
+[2023-08-14 21:53:43,867]  -------------------------- PASSED -------------------------- 
+[2023-08-14 21:53:43,933] Create Post - Step 01: Click to 'Post' Menu link
+[2023-08-14 21:53:45,142] Create Post - Step 02: Get 'Search Posts' page Url
+[2023-08-14 21:53:45,150] Create Post - Step 02: Click to 'Add New' button
+[2023-08-14 21:53:47,481] Create Post - Step 03: Enter to post title
+[2023-08-14 21:53:48,815] Create Post - Step 04: Enter to body
+[2023-08-14 21:53:50,186] Create Post - Step 05: Click to 'Publish' button
+[2023-08-14 21:53:50,494] Create Post - Step 05: Click to Confirm 'Publish' button
+[2023-08-14 21:53:50,702] Create Post - Step 05: Verify 'Posted Published' message is displayed
+[2023-08-14 21:53:52,347]  -------------------------- PASSED -------------------------- 
+[2023-08-14 21:53:52,465] Search Post - Step 01: Click to 'Publish' button
+[2023-08-14 21:53:53,610] Search Post - Step 02: Enter to Search textbox with value: Live coding Title 32580
+[2023-08-14 21:53:53,792] Search Post - Step 03: Click to Search Posts button
+[2023-08-14 21:53:55,696] Search Post - Step 04: Verify Search table contains: 'Live coding Title 32580'
+[2023-08-14 21:53:55,823]  -------------------------- PASSED -------------------------- 
+[2023-08-14 21:53:55,823] Search Post - Step 05: Verify Search table contains: 'Vu Admin'
+[2023-08-14 21:53:55,919]  -------------------------- PASSED -------------------------- 
+[2023-08-14 21:53:55,919] Search Post - Step 05: Open end User Site
+[2023-08-14 21:53:56,996] Search Post - Step 06: Verify post infor displayed at HomePage
+[2023-08-14 21:53:57,088]  -------------------------- PASSED -------------------------- 
+[2023-08-14 21:53:57,150]  -------------------------- PASSED -------------------------- 
+[2023-08-14 21:53:57,215]  -------------------------- PASSED -------------------------- 
+[2023-08-14 22:02:48,853] Pre-condition - Step 01: Open browser and admin site
+[2023-08-14 22:02:54,049] Pre-conditions - Step 02: Enter Username textbox with value: vunguyen
+[2023-08-14 22:02:54,217] Pre-conditions - Step 03: Enter Password textbox with value: Nguyenquocvu.111
+[2023-08-14 22:02:54,345] Pre-conditions - Step 03: Click to 'Log in' button
+[2023-08-14 22:02:56,854] Pre-condition - Step 03: Verify that Navigate to Admin Dashboard page successfully
+[2023-08-14 22:02:56,944]  -------------------------- PASSED -------------------------- 
+[2023-08-14 22:02:57,012] Create Post - Step 01: Click to 'Post' Menu link
+[2023-08-14 22:02:59,017] Create Post - Step 02: Get 'Search Posts' page Url
+[2023-08-14 22:02:59,027] Create Post - Step 02: Click to 'Add New' button
+[2023-08-14 22:03:01,466] Create Post - Step 03: Enter to post title
+[2023-08-14 22:03:02,820] Create Post - Step 04: Enter to body
+[2023-08-14 22:03:04,210] Create Post - Step 05: Click to 'Publish' button
+[2023-08-14 22:03:04,920] Create Post - Step 05: Click to Confirm 'Publish' button
+[2023-08-14 22:03:05,258] Create Post - Step 05: Verify 'Posted Published' message is displayed
+[2023-08-14 22:03:07,218]  -------------------------- PASSED -------------------------- 
+[2023-08-14 22:03:07,355] Search Post - Step 01: Click to 'Publish' button
+[2023-08-14 22:03:08,676] Search Post - Step 02: Enter to Search textbox with value: Live coding Title 79768
+[2023-08-14 22:03:08,860] Search Post - Step 03: Click to Search Posts button
+[2023-08-14 22:03:10,912] Search Post - Step 04: Verify Search table contains: 'Live coding Title 79768'
+[2023-08-14 22:03:10,994]  -------------------------- PASSED -------------------------- 
+[2023-08-14 22:03:10,995] Search Post - Step 05: Verify Search table contains: 'Vu Admin'
+[2023-08-14 22:03:11,073]  -------------------------- PASSED -------------------------- 
+[2023-08-14 22:03:11,073] Search Post - Step 05: Open end User Site
+[2023-08-14 22:03:12,193] Search Post - Step 06: Verify post infor displayed at HomePage
+[2023-08-14 22:03:12,285]  -------------------------- PASSED -------------------------- 
+[2023-08-14 22:03:12,346]  -------------------------- PASSED -------------------------- 
+[2023-08-14 22:03:12,440]  -------------------------- PASSED -------------------------- 
+[2023-08-14 22:03:12,518]  -------------------------- PASSED -------------------------- 
+[2023-08-14 22:03:12,518] Search Post - Step 06: Click to Post title
+[2023-08-14 22:03:13,685] Search Post - Step 06: Verify Post infor displayed at Post details page
+[2023-08-14 22:03:13,757]  -------------------------- PASSED -------------------------- 
+[2023-08-14 22:03:13,820]  -------------------------- PASSED -------------------------- 
+[2023-08-14 22:03:13,883]  -------------------------- PASSED -------------------------- 
+[2023-08-14 22:03:13,949]  -------------------------- PASSED -------------------------- 
+[2023-08-14 22:09:47,912] Pre-condition - Step 01: Open browser and admin site
+[2023-08-14 22:09:53,087] Pre-conditions - Step 02: Enter Username textbox with value: vunguyen
+[2023-08-14 22:09:53,281] Pre-conditions - Step 03: Enter Password textbox with value: Nguyenquocvu.111
+[2023-08-14 22:09:53,423] Pre-conditions - Step 03: Click to 'Log in' button
+[2023-08-14 22:09:55,738] Pre-condition - Step 03: Verify that Navigate to Admin Dashboard page successfully
+[2023-08-14 22:09:55,811]  -------------------------- PASSED -------------------------- 
+[2023-08-14 22:09:55,901] Create Post - Step 01: Click to 'Post' Menu link
+[2023-08-14 22:09:57,158] Create Post - Step 02: Get 'Search Posts' page Url
+[2023-08-14 22:09:57,167] Create Post - Step 02: Click to 'Add New' button
+[2023-08-14 22:09:59,719] Create Post - Step 03: Enter to post title
+[2023-08-14 22:10:01,087] Create Post - Step 04: Enter to body
+[2023-08-14 22:10:02,715] Create Post - Step 05: Click to 'Publish' button
+[2023-08-14 22:10:03,511] Create Post - Step 05: Click to Confirm 'Publish' button
+[2023-08-14 22:10:03,772] Create Post - Step 05: Verify 'Posted Published' message is displayed
+[2023-08-14 22:10:05,695]  -------------------------- PASSED -------------------------- 
+[2023-08-14 22:10:05,810] Search Post - Step 01: Click to 'Publish' button
+[2023-08-14 22:10:07,035] Search Post - Step 02: Enter to Search textbox with value: Live coding Title 91181
+[2023-08-14 22:10:07,221] Search Post - Step 03: Click to Search Posts button
+[2023-08-14 22:10:09,235] Search Post - Step 04: Verify Search table contains: 'Live coding Title 91181'
+[2023-08-14 22:10:09,334]  -------------------------- PASSED -------------------------- 
+[2023-08-14 22:10:09,334] Search Post - Step 05: Verify Search table contains: 'Vu Admin'
+[2023-08-14 22:10:09,411]  -------------------------- PASSED -------------------------- 
+[2023-08-14 22:10:09,411] Search Post - Step 05: Open end User Site
+[2023-08-14 22:10:10,616] Search Post - Step 06: Verify post infor displayed at HomePage
+[2023-08-14 22:10:10,693]  -------------------------- PASSED -------------------------- 
+[2023-08-14 22:10:10,758]  -------------------------- PASSED -------------------------- 
+[2023-08-14 22:10:10,835]  -------------------------- PASSED -------------------------- 
+[2023-08-14 22:10:10,899]  -------------------------- PASSED -------------------------- 
+[2023-08-14 22:10:10,899] Search Post - Step 06: Click to Post title
+[2023-08-14 22:10:12,101] Search Post - Step 06: Verify Post infor displayed at Post details page
+[2023-08-14 22:10:12,166]  -------------------------- PASSED -------------------------- 
+[2023-08-14 22:10:12,229]  -------------------------- PASSED -------------------------- 
+[2023-08-14 22:10:12,291]  -------------------------- PASSED -------------------------- 
+[2023-08-14 22:10:12,351]  -------------------------- PASSED -------------------------- 
+[2023-08-14 22:10:12,369] OS name = Windows 10
+[2023-08-14 22:10:12,370] Driver instance name = chromedriver: chrome on windows (5e6ed50c1c06d81a4bd534f841e568e0)

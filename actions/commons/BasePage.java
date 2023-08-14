@@ -25,6 +25,7 @@ import pageObjects.nopCommerce.user.UserCustomerInfoPageObject;
 import pageObjects.nopCommerce.user.UserHomePageObject;
 import pageObjects.nopCommerce.user.UserMyProductReviewPageObject;
 import pageObjects.nopCommerce.user.UserRewardPointPageObject;
+import pageObjects.wordpress.UserHomePO;
 import pageUIs.jQuery.uploadFile.HomePageUI;
 import pageUIs.nopCommerce.user.BasePageNopCommerceUI;
 
@@ -44,7 +45,7 @@ public class BasePage {
 		return driver.getTitle();
 	}
 
-	protected String getCurrentUrl(WebDriver driver) {
+	public String getCurrentUrl(WebDriver driver) {
 		return driver.getCurrentUrl();
 	}
 
@@ -359,15 +360,15 @@ public class BasePage {
 		return false;
 	}
 
-	protected boolean isElemenetEnabled(WebDriver driver, String locatorType) {
+	protected boolean isElementEnabled(WebDriver driver, String locatorType) {
 		return getWebElement(driver, locatorType).isEnabled();
 	}
 
-	protected boolean isElemenetSelected(WebDriver driver, String locatorType) {
+	protected boolean isElementSelected(WebDriver driver, String locatorType) {
 		return getWebElement(driver, locatorType).isSelected();
 	}
 
-	protected boolean isElemenetSelected(WebDriver driver, String locatorType, String... dynamicValues) {
+	protected boolean isElementSelected(WebDriver driver, String locatorType, String... dynamicValues) {
 		return getWebElement(driver, getDynamicXpath(locatorType, dynamicValues)).isSelected();
 	}
 
@@ -736,7 +737,7 @@ public class BasePage {
 
 	public boolean isSelectedCheckboxByLabelAtAdminPage(WebDriver driver, String label) {
 		waitForElementVisibility(driver, BasePageNopCommerceUI.DYNAMIC_CHECKBOX_BY_LABEL_AT_ADMIN_PAGE, label);
-		return isElemenetSelected(driver, BasePageNopCommerceUI.DYNAMIC_CHECKBOX_BY_LABEL_AT_ADMIN_PAGE, label);
+		return isElementSelected(driver, BasePageNopCommerceUI.DYNAMIC_CHECKBOX_BY_LABEL_AT_ADMIN_PAGE, label);
 	}
 
 	public String getValueTextboxByIdAtAdminPage(WebDriver driver, String id) {
@@ -897,7 +898,7 @@ public class BasePage {
 	 */
 	public boolean isSelectedRadioByLabel(WebDriver driver, String labelName) {
 		waitForElementVisibility(driver, BasePageNopCommerceUI.DYNAMIC_RADIO_BY_LABEL, labelName);
-		return isElemenetSelected(driver, BasePageNopCommerceUI.DYNAMIC_RADIO_BY_LABEL, labelName);
+		return isElementSelected(driver, BasePageNopCommerceUI.DYNAMIC_RADIO_BY_LABEL, labelName);
 	}
 
 	/**
@@ -959,6 +960,12 @@ public class BasePage {
 
 	public void waitForCurrentPageStaleness(WebDriver driver) {
 		waitForElementStaleness(driver, BasePageNopCommerceUI.CURRENT_PAGE);
+	}
+
+	// wordpress site
+	public UserHomePO openEndUserSite(WebDriver driver, String endUserUrl) {
+		openPageUrl(driver, endUserUrl);
+		return pageObjects.wordpress.PageGeneratorManager.getUserHomePage(driver);
 	}
 
 }

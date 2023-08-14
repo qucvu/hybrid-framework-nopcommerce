@@ -70,7 +70,6 @@ public class MyAccount extends BaseTest {
 	@Test
 	public void My_Account_01_Customer_Info(Method method) {
 		ExtentTestManager.startTest(method.getName(), "My_Account_01_Customer_Info");
-
 		ExtentTestManager.getTest().log(Status.INFO, "Update Customer Info - Step 01: Navigate to 'Customer info' page");
 		customerInfoPage = homePage.openMyAccountPage(driver);
 
