@@ -18,7 +18,6 @@ public class AdminPostSearchPO extends BasePage {
 		return PageGeneratorManager.getAdminPostAddNewPage(driver);
 	}
 
-
 	public void enterToSearchTextbox(String postTitle) {
 		waitForElementVisibility(driver, AdminPostSearchPageUI.SEARCH_TEXTBOX);
 		sendkeyToElement(driver, AdminPostSearchPageUI.SEARCH_TEXTBOX, postTitle);
@@ -27,8 +26,6 @@ public class AdminPostSearchPO extends BasePage {
 	public void clickToSearchPostButton() {
 		waitForElementClickable(driver, AdminPostSearchPageUI.SEARCH_POSTS_BUTTON);
 		clickToElement(driver, AdminPostSearchPageUI.SEARCH_POSTS_BUTTON);
-
-		
 	}
 
 	public boolean isPostSearchTableDisplayed(String headerId, String postCellData) {
@@ -37,5 +34,35 @@ public class AdminPostSearchPO extends BasePage {
 		return isElementDisplayed(driver, AdminPostSearchPageUI.TABLE_ROW_VALUE_BY_HEADER_INDEX, String.valueOf(headerIndex), postCellData);
 	}
 
+	public AdminPostAddNewPO clickToPostTitleLink(String postTitle) {
+		waitForElementClickable(driver, AdminPostSearchPageUI.ROW_TITLE_DETAIL_BY_TITLE_NAME, postTitle);
+		clickToElement(driver, AdminPostSearchPageUI.ROW_TITLE_DETAIL_BY_TITLE_NAME, postTitle);
+		return PageGeneratorManager.getAdminPostAddNewPage(driver);
+	}
+
+	public void selectToPostCheckboxByTittle(String editPostTitle) {
+		waitForElementClickable(driver, AdminPostSearchPageUI.ROW_CHECKBOX_BY_TITLE_NAME, editPostTitle);
+		checkToDefaultCheckboxRadio(driver, AdminPostSearchPageUI.ROW_CHECKBOX_BY_TITLE_NAME, editPostTitle);
+	}
+
+	public void selectTextItemActionDropdown(String actionItem) {
+		waitForElementClickable(driver, AdminPostSearchPageUI.BULK_ACTION_DROPDOWN);
+		selectItemInDefaultDropdown(driver, AdminPostSearchPageUI.BULK_ACTION_DROPDOWN, actionItem);
+	}
+
+	public void clickToApplyAction() {
+		waitForElementClickable(driver, AdminPostSearchPageUI.APPLY_ACTION);
+		clickToElement(driver, AdminPostSearchPageUI.APPLY_ACTION);
+	}
+
+	public boolean isMoveToTrashMessageDisplayed(String message) {
+		waitForElementVisibility(driver, AdminPostSearchPageUI.MOVE_TO_TRASH_MESSAGE, message);
+		return isElementDisplayed(driver, AdminPostSearchPageUI.MOVE_TO_TRASH_MESSAGE, message);
+	}
+
+	public boolean isNoPostFoundMessageDisplayed() {
+		waitForElementVisibility(driver, AdminPostSearchPageUI.NO_POST_FOUND_MESSAGE);
+		return isElementDisplayed(driver, AdminPostSearchPageUI.NO_POST_FOUND_MESSAGE);
+	}
 
 }

@@ -38,4 +38,20 @@ public class UserHomePO extends BasePage {
 		waitForElementVisibility(driver, UserHomePageUI.POST_CURRENT_DATE_BY_POST_TITLE, postTitle, currentDay);
 		return isElementDisplayed(driver, UserHomePageUI.POST_CURRENT_DATE_BY_POST_TITLE, postTitle, currentDay);
 	}
+
+	public boolean isPostInfoUndisplayedWithPostTittle(String editPostTitle) {
+		return isElementUndisplayed(driver, UserHomePageUI.POST_TITLE_TEXT, editPostTitle);
+	}
+
+	public void enterToSearchTextbox(String editPostTitle) {
+		waitForElementVisibility(driver, UserHomePageUI.SEARCH_TEXTBOX);
+		sendkeyToElement(driver, UserHomePageUI.SEARCH_TEXTBOX, editPostTitle);
+
+	}
+
+	public UserPostSearchPO clickToSearchPostButton() {
+		waitForElementClickable(driver, UserHomePageUI.SEARCH_BUTTON);
+		clickToElement(driver, UserHomePageUI.SEARCH_BUTTON);
+		return PageGeneratorManager.getUserPostSearchPage(driver);
+	}
 }

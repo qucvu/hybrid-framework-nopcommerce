@@ -17,7 +17,7 @@ public class AdminPostAddNewPO extends BasePage {
 		sendkeyToElement(driver, AdminPostAddNewPageUI.POST_TITLE_TEXTBOX, postTitleValue);
 	}
 
-	public void enterToAddNewPostBody(String postBodyValue) {
+	public void enterToEditAddNewPostBody(String postBodyValue) {
 		waitForElementClickable(driver, AdminPostAddNewPageUI.POST_BODY_BUTTON);
 		clickToElement(driver, AdminPostAddNewPageUI.POST_BODY_BUTTON);
 		
@@ -26,7 +26,7 @@ public class AdminPostAddNewPO extends BasePage {
 
 	}
 
-	public void clickToPublishButton() {
+	public void clickToPublishOrUpdateButton() {
 		waitForElementClickable(driver, AdminPostAddNewPageUI.PUBLISH_BUTTON);
 		clickToElement(driver, AdminPostAddNewPageUI.PUBLISH_BUTTON);
 
