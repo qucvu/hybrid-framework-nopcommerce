@@ -32,7 +32,7 @@ public class MyAccount extends BaseTest {
 	public void beforeClass(String browserName, Method method) {
 		driver = getBrowserDriver(browserName, GlobalConstants.PORTAL_PAGE_URL);
 		homePage = PageGeneratorManager.getUserHomePage(driver);
-
+		showBrowserConsoleLogs(driver);
 		log.info("Pre-condition - Step 01: Set cookie and reload page");
 		homePage.setCookies(driver, Common_01_Register_Cookie.loggedCookies);
 		homePage.refreshCurrentPage(driver);

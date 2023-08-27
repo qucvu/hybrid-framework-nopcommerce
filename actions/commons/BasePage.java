@@ -1,9 +1,12 @@
 package commons;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
+import java.util.stream.Collectors;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
@@ -164,6 +167,9 @@ public class BasePage {
 	}
 
 	public WebElement getWebElement(WebDriver driver, String locatorType) {
+		if(driver.toString().contains("internet explorer")) {
+			sleepInSecond(3);
+		}
 		return driver.findElement(getByLocator(locatorType));
 	}
 
@@ -180,11 +186,17 @@ public class BasePage {
 	}
 
 	protected void clickToElement(WebDriver driver, String locatorType) {
-		getWebElement(driver, locatorType).click();
+		if(driver.toString().contains("internet explorer")) {
+			sleepInSecond(3);
+			clickToElementByJS(driver, locatorType);
+		}else {
+			getWebElement(driver, locatorType).click();
+		}
+
 	}
 
 	protected void clickToElement(WebDriver driver, String locatorType, String... dynamicValues) {
-		getWebElement(driver, locatorType, dynamicValues).click();
+		this.getWebElement(driver, locatorType, dynamicValues).click();
 	}
 
 	protected void sendkeyToElement(WebDriver driver, String locatorType, String textValue) {
@@ -590,6 +602,54 @@ public class BasePage {
 
 	}
 
+	public boolean isDataStringSortAsc(WebDriver driver, String locator) {
+		List<WebElement> elementList = getListElements(driver, locator);
+
+		List<String> dataList = new ArrayList<String>();		
+		for (WebElement element : elementList) {
+			dataList.add(element.getText());
+		}
+		
+		List<String> sortList = new ArrayList<String>(dataList);
+		
+		Collections.sort(sortList);
+		
+		return sortList.equals(dataList);
+	}
+	
+	public boolean isDataStringSortAscLamDa(WebDriver driver, String locator) {
+		List<WebElement> elementList = getListElements(driver, locator);
+		List<String> dataList = elementList.stream().map(n -> n.getText()).collect(Collectors.toList());
+		List<String> sortList = new ArrayList<String>(dataList);
+		Collections.sort(sortList);
+		return sortList.equals(dataList);
+	}
+
+	public boolean isDataStringSortDesc(WebDriver driver, String locator) {
+		List<String> dataList = new ArrayList<String>();
+		
+		List<WebElement> elementList = getListElements(driver, locator);
+		
+		for (WebElement element : elementList) {
+			dataList.add(element.getText());
+		}
+		List<String> sortList = new ArrayList<String>(dataList);
+		
+		Collections.sort(sortList);
+		Collections.reverse(sortList);
+		
+		return sortList.equals(dataList);
+	}
+
+	public boolean isDataStringSortDescLamDa(WebDriver driver, String locator) {
+		List<WebElement> elementList = getListElements(driver, locator);
+		List<String> dataList = elementList.stream().map(n -> n.getText()).collect(Collectors.toList());
+		List<String> sortList = new ArrayList<String>(dataList);
+		Collections.sort(sortList);
+		Collections.reverse(sortList);
+		return sortList.equals(dataList);
+	}
+
 	// bài switch page
 	public UserMyProductReviewPageObject openMyProductReviewPage(WebDriver driver) {
 		waitForElementClickable(driver, BasePageNopCommerceUI.MY_PRODUCT_REVIEW_LINK);
@@ -661,6 +721,7 @@ public class BasePage {
 		return PageGeneratorManager.getAdminLoginPage(driver);
 
 	}
+
 
 	/**
 	 * Open dynamic page on sidebar at admin page by Page Name

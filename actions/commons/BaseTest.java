@@ -2,6 +2,8 @@ package commons;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.Collections;
+import java.util.List;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
@@ -15,6 +17,9 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.logging.LogEntries;
+import org.openqa.selenium.logging.LogEntry;
+import org.openqa.selenium.safari.SafariDriver;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.BeforeSuite;
@@ -43,6 +48,8 @@ public class BaseTest {
 		switch (browserList) {
 		case FIREFOX:
 			WebDriverManager.firefoxdriver().setup();
+			System.setProperty(FirefoxDriver.SystemProperty.DRIVER_USE_MARIONETTE, "true");
+			System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE, GlobalConstants.PROJECT_PATH + "\\browserLogs\\Firefox.log");
 			driver = new FirefoxDriver();
 			break;
 		case H_FIREFOX:
@@ -53,10 +60,23 @@ public class BaseTest {
 			driver = new FirefoxDriver(options);
 			break;
 		case CHROME:
-			WebDriverManager.chromedriver().setup();
+		    WebDriverManager.chromedriver().setup();
+
+			System.setProperty("webdriver.chrome.args", "--disable-logging");
+			System.setProperty("webdriver.chrome.silentOutput" , "true");
+			File file = new File(GlobalConstants.PROJECT_PATH + "\\BrowserExtensions\\extension_2_0_13_0.crx");
 			ChromeOptions optionsChrome = new ChromeOptions();
 			optionsChrome.setAcceptInsecureCerts(true);
+			optionsChrome.addExtensions(file);
+			optionsChrome.addArguments("--lang=vi");
+			optionsChrome.addArguments("--disable-notifications");
+			optionsChrome.setExperimentalOption("useAutomationExtension", false);
+			optionsChrome.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
 			driver = new ChromeDriver(optionsChrome);
+			break;
+		case SAFARI:
+			WebDriverManager.safaridriver().setup();
+			driver = new SafariDriver();
 			break;
 		case H_CHROME:
 			WebDriverManager.chromedriver().setup();
@@ -120,7 +140,8 @@ public class BaseTest {
 			driver = new FirefoxDriver(options);
 			break;
 		case "chrome":
-			WebDriverManager.chromedriver().setup();
+//			WebDriverManager.chromedriver().setup();	
+			System.setProperty("webdriver.chrome.driver", GlobalConstants.PROJECT_PATH + "browserDrivers\\chromedriver_116.exe");
 			driver = new ChromeDriver();
 			break;
 		case "h_chrome":
@@ -234,6 +255,17 @@ public class BaseTest {
 		}
 	}
 
+	protected void showBrowserConsoleLogs(WebDriver driver) {
+		if(driver.toString().contains("chrome")) {
+			log.info("chrome console log");
+			LogEntries logs = driver.manage().logs().get("browser");
+			List<LogEntry> logList = logs.getAll();
+			for (LogEntry logging : logList) {
+				log.info("--------" + logging.getLevel().toString() + "---------- \n" + logging.getMessage());
+			}
+		}
+	}
+	
 	protected void closeBrowserDriver() {
 		String cmd = null;
 		try {

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<suite name="SwapLap - EndUser">
+	<listeners>
+		<listener class-name="commons.MethodListener" />
+	</listeners>
+	<parameter name="appUrl" value="https://www.saucedemo.com/" />
+	<test name="Run on CHROME">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.swaglab.sort.Level_21_Sort_ACS_DESC" />
+		</classes>
+	</test>
+</suite>
