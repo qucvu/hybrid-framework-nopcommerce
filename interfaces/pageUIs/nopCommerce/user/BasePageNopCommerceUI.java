@@ -28,7 +28,7 @@ public class BasePageNopCommerceUI {
 	
 	// dynamic locator
 	public static final String DYNAMIC_NOTIFICATION_SUCCESS_BY_MESSAGE = "xpath=//div[@class='bar-notification success' and contains(., '%s')]";
-	public static final String DYNAMIC_PRODUCT_CATEGORY_LINK_BY_NAME= "xpath=//ul[@class='top-menu notmobile']//a[contains(text(), 'Computers')]";
+	public static final String DYNAMIC_PRODUCT_CATEGORY_LINK_BY_NAME= "xpath=//ul[@class='top-menu notmobile']//a[contains(text(), '%s')]";
 	public static final String DYNAMIC_SUB_PRODUCT_CATEGORY_LINK_BY_NAME= "xpath=//ul[@class='top-menu notmobile']//ul[contains(@class,'sublist')]//a[text()='%s']";
 	public static final String DYNAMIC_LINK_ON_FOOTER_BY_PAGE_NAME= "xpath=//div[contains(@class, 'footer-block')]//ul[@class='list']//a[text()='%s']";
 	

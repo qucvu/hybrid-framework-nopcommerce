@@ -604,16 +604,12 @@ public class BasePage {
 
 	public boolean isDataStringSortAsc(WebDriver driver, String locator) {
 		List<WebElement> elementList = getListElements(driver, locator);
-
-		List<String> dataList = new ArrayList<String>();		
+		ArrayList<String> dataList = new ArrayList<String>();		
 		for (WebElement element : elementList) {
 			dataList.add(element.getText());
 		}
-		
 		List<String> sortList = new ArrayList<String>(dataList);
-		
 		Collections.sort(sortList);
-		
 		return sortList.equals(dataList);
 	}
 	
@@ -637,7 +633,6 @@ public class BasePage {
 		
 		Collections.sort(sortList);
 		Collections.reverse(sortList);
-		
 		return sortList.equals(dataList);
 	}
 
