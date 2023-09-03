@@ -15,14 +15,13 @@ import pageObjects.nopCommerce.user.UserLoginPageObject;
 import pageObjects.nopCommerce.user.UserRegisterPageObject;
 import utilities.DataHelper;
 
-public class Level_21_Fake_Data extends BaseTest {
+public class Level_21_Fake_Data_Manage_Data_I extends BaseTest {
 
 	@Parameters("browser")
 	@BeforeClass
 	public void beforeClass(String browserName) {
 		driver = getBrowserDriver(browserName, "https://demo.nopcommerce.com/");
 		dataFaker = DataHelper.getDataHelper();
-		System.out.println("before test 2");
 		
 		firstName = dataFaker.getFirstName();
 		lastName = dataFaker.getLastName();
@@ -112,7 +111,7 @@ public class Level_21_Fake_Data extends BaseTest {
 
 
 	@AfterClass(alwaysRun = true)
-	public void afterTest() {
+	public void afterClass() {
 		closeBrowserDriver();
 	}
 

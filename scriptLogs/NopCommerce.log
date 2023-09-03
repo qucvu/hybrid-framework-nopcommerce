@@ -3614,3 +3614,15 @@ Session ID: 52521241-23a2-4053-914d-6947cda963b3
 [2023-09-02 10:15:22,225]  -------------------------- PASSED -------------------------- 
 [2023-09-02 10:15:22,232] OS name = Windows 10
 [2023-09-02 10:15:22,232] Driver instance name = firefoxdriver: firefox on windows (e38781a1-83e6-4927-9785-f17836b6b155)
+[2023-09-02 15:44:31,531] Pre-condition - Step 01: Open End User Page URL
+[2023-09-02 15:44:35,732] Pre-condition - Step 02: Set cookie and reload page
+[2023-09-02 15:44:39,309] Pre-condition - Step 03: Verify 'My Account' Link is displayed
+[2023-09-02 15:44:39,387]  -------------------------- PASSED -------------------------- 
+[2023-09-02 15:44:39,538] OS name = Windows 10
+[2023-09-02 15:44:39,540] Driver instance name = firefoxdriver: firefox on windows (fe38311f-a14e-4769-8857-173167c59872)
+[2023-09-02 16:06:15,062] Pre-condition - Step 01: Open End User Page URL
+[2023-09-02 16:06:20,460] Pre-condition - Step 02: Set cookie and reload page
+[2023-09-02 16:06:24,741] Pre-condition - Step 03: Verify 'My Account' Link is displayed
+[2023-09-02 16:06:24,821]  -------------------------- PASSED -------------------------- 
+[2023-09-02 16:06:24,987] OS name = Windows 10
+[2023-09-02 16:06:24,987] Driver instance name = firefoxdriver: firefox on windows (3d96dd3a-3d42-456d-8ec2-0ed62a9e5fda)

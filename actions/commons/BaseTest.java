@@ -61,7 +61,6 @@ public class BaseTest {
 			break;
 		case CHROME:
 		    WebDriverManager.chromedriver().setup();
-
 			System.setProperty("webdriver.chrome.args", "--disable-logging");
 			System.setProperty("webdriver.chrome.silentOutput" , "true");
 			File file = new File(GlobalConstants.PROJECT_PATH + "\\BrowserExtensions\\extension_2_0_13_0.crx");

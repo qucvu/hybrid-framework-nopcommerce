@@ -1,0 +1,11 @@
+{
+	"firstName": "Ericka",
+	"lastName": "Bindon",
+	"email": "ebindon0@google.ca",
+	"password": "123456",
+	"dob": {
+		"day": "11",
+		"month": "October",
+		"year": "2000"
+	}
+}
