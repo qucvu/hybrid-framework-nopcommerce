@@ -6,18 +6,21 @@ import pageObjects.nopCommerce.admin.AdminCustomersPageObject;
 import pageObjects.nopCommerce.admin.AdminDashboardPageObject;
 import pageObjects.nopCommerce.admin.AdminLoginPageObject;
 import pageObjects.nopCommerce.admin.AdminProductPageObject;
-import pageObjects.nopCommerce.user.CategoryPageObject;
-import pageObjects.nopCommerce.user.ProductPurchasePageObject;
-import pageObjects.nopCommerce.user.ProductReviewPageObject;
 import pageObjects.nopCommerce.user.UserAddressPageObject;
+import pageObjects.nopCommerce.user.UserCategoryPageObject;
 import pageObjects.nopCommerce.user.UserChangePasswordPageObject;
+import pageObjects.nopCommerce.user.UserCompareProductPageObject;
 import pageObjects.nopCommerce.user.UserCustomerInfoPageObject;
 import pageObjects.nopCommerce.user.UserHomePageObject;
 import pageObjects.nopCommerce.user.UserLoginPageObject;
 import pageObjects.nopCommerce.user.UserMyProductReviewPageObject;
+import pageObjects.nopCommerce.user.UserProductDetailPageObject;
+import pageObjects.nopCommerce.user.UserProductReviewPageObject;
 import pageObjects.nopCommerce.user.UserRegisterPageObject;
 import pageObjects.nopCommerce.user.UserRewardPointPageObject;
 import pageObjects.nopCommerce.user.UserSearchPageObject;
+import pageObjects.nopCommerce.user.UserShoppingCartPageObject;
+import pageObjects.nopCommerce.user.UserWishlistPageObject;
 
 public class PageGeneratorManager {
 	public static UserHomePageObject getUserHomePage(WebDriver driver) {
@@ -52,22 +55,35 @@ public class PageGeneratorManager {
 		return new UserChangePasswordPageObject(driver);
 	}
 
-	public static CategoryPageObject getCategoryPageObject(WebDriver driver) {
-		return new CategoryPageObject(driver);
+	public static UserCategoryPageObject getCategoryPageObject(WebDriver driver) {
+		return new UserCategoryPageObject(driver);
 	}
 
-	public static ProductPurchasePageObject getProductPurchasePage(WebDriver driver) {
-		return new ProductPurchasePageObject(driver);
+	public static UserProductDetailPageObject getProductPurchasePage(WebDriver driver) {
+		return new UserProductDetailPageObject(driver);
 
 	}
 
-	public static ProductReviewPageObject getProductReviewPage(WebDriver driver) {
-		return new ProductReviewPageObject(driver);
+	public static UserProductReviewPageObject getProductReviewPage(WebDriver driver) {
+		return new UserProductReviewPageObject(driver);
 	}
 
 	public static UserSearchPageObject getSearchPage(WebDriver driver) {
 		return new UserSearchPageObject(driver);
 	}
+	
+	public static UserWishlistPageObject getWishListPage(WebDriver driver) {
+		return new UserWishlistPageObject(driver);
+	}
+
+	public static UserShoppingCartPageObject getShoppingCartPage(WebDriver driver) {
+		return new UserShoppingCartPageObject(driver);
+	}
+	
+	public static UserCompareProductPageObject getCompareProductPage(WebDriver driver) {
+		return new UserCompareProductPageObject(driver);
+	}
+
 
 	/* Admin Page */
 

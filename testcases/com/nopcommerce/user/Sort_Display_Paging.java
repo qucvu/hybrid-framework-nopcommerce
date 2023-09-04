@@ -14,7 +14,7 @@ import com.nopcommerce.common.Common_01_Register_Cookie;
 import commons.BaseTest;
 import commons.GlobalConstants;
 import commons.PageGeneratorManager;
-import pageObjects.nopCommerce.user.CategoryPageObject;
+import pageObjects.nopCommerce.user.UserCategoryPageObject;
 import pageObjects.nopCommerce.user.UserHomePageObject;
 import reportConfig.ExtentTestManager;
 
@@ -36,7 +36,7 @@ public class Sort_Display_Paging extends BaseTest {
 
 		log.info("Pre-condition - Step 04: Open submenu 'Notebooks' at top menu 'Computer'");
 		homePage.hoverDynamicProductCategoryOnTopMenuByName(driver, "Computers");
-		categoryPage = homePage.openCategoryPageOnTopMenuByProductName("Notebooks ");
+		categoryPage = homePage.openCategoryPageOnTopMenuByCategoryName("Notebooks ");
 
 		log.info("Pre-condition - Step 05: Verify 'Notebooks' is displayed at Title and Breadcrumb");
 		verifyEquals(categoryPage.getCurrentTextAtBreadcrumbMenu(), "Notebooks");
@@ -142,5 +142,5 @@ public class Sort_Display_Paging extends BaseTest {
 
 	private WebDriver driver;
 	private UserHomePageObject homePage;
-	private CategoryPageObject categoryPage;
+	private UserCategoryPageObject categoryPage;
 }

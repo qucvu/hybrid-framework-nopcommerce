@@ -12,6 +12,8 @@ public class BasePageNopCommerceUI {
 	public static final String LOGOUT_LINK_USER_PAGE = "xpath=//a[contains(@class, 'ico-logout')]";
 	public static final String LOGOUT_LINK_ADMIN_PAGE = "XPATH=//a[text()='Logout']";
 	public static final String MY_ACCOUNT_LINK_USER_PAGE = "xpath=//a[@class='ico-account' and text() = 'My account']";
+	public static final String WISHLIST_LINK_USER_PAGE = "css=a.ico-wishlist";
+	public static final String SHOPPING_CART_LINK_USER_PAGE = "css=a.ico-cart";
 	public static final String CLOSE_ICON_BAR_NOTIFICATION = "css=span.close";
 
 	// Pattern Object
@@ -27,9 +29,9 @@ public class BasePageNopCommerceUI {
 	
 	
 	// dynamic locator
-	public static final String DYNAMIC_NOTIFICATION_SUCCESS_BY_MESSAGE = "xpath=//div[@class='bar-notification success' and contains(., '%s')]";
+	public static final String DYNAMIC_MESSAGE_AT_BAR_NOTIFICATION_BY_MESSAGE = "xpath=//div[@id='bar-notification']//p[@class='content' and contains(.,'%s')]";
 	public static final String DYNAMIC_PRODUCT_CATEGORY_LINK_BY_NAME= "xpath=//ul[@class='top-menu notmobile']//a[contains(text(), '%s')]";
-	public static final String DYNAMIC_SUB_PRODUCT_CATEGORY_LINK_BY_NAME= "xpath=//ul[@class='top-menu notmobile']//ul[contains(@class,'sublist')]//a[text()='%s']";
+	public static final String DYNAMIC_SUB_PRODUCT_CATEGORY_LINK_BY_NAME= "xpath=//ul[@class='top-menu notmobile']//ul[contains(@class,'sublist')]//a[contains(text(), '%s')]";
 	public static final String DYNAMIC_LINK_ON_FOOTER_BY_PAGE_NAME= "xpath=//div[contains(@class, 'footer-block')]//ul[@class='list']//a[text()='%s']";
 	
 	// ADMIN SITE

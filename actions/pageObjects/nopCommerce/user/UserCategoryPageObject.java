@@ -11,10 +11,10 @@ import commons.BasePage;
 import commons.PageGeneratorManager;
 import pageUIs.nopCommerce.user.CategoryPageUI;
 
-public class CategoryPageObject extends BasePage {
+public class UserCategoryPageObject extends BasePage {
 	private WebDriver driver;
 
-	public CategoryPageObject(WebDriver driver) {
+	public UserCategoryPageObject(WebDriver driver) {
 		this.driver = driver;
 	}
 
@@ -24,15 +24,15 @@ public class CategoryPageObject extends BasePage {
 	}
 
 	/**
-	 * Open dynamic purchase page by title
+	 * Open dynamic purchase page by product name
 	 * 
 	 * @param driver
-	 * @param title
+	 * @param name
 	 * @return
 	 */
-	public ProductPurchasePageObject openDynamicPurchasePageByTitle(String title) {
-		waitForElementClickable(driver, CategoryPageUI.DYNAMIC_PRODUCT_TITLE_BY_TITLE, title);
-		clickToElement(driver, CategoryPageUI.DYNAMIC_PRODUCT_TITLE_BY_TITLE, title);
+	public UserProductDetailPageObject openDynamicProductDetailPageByName(String productName) {
+		waitForElementClickable(driver, CategoryPageUI.DYNAMIC_PRODUCT_NAME_AT_PRODUCT_ITEM, productName);
+		clickToElement(driver, CategoryPageUI.DYNAMIC_PRODUCT_NAME_AT_PRODUCT_ITEM, productName);
 		return PageGeneratorManager.getProductPurchasePage(driver);
 	}
 
@@ -81,7 +81,7 @@ public class CategoryPageObject extends BasePage {
 		Collections.reverse(productPriceSortList);
 		return productPriceUIList.equals(productPriceSortList);
 	}
-	
+
 	public void selectItemInDisplayDropdown(String option) {
 		waitForElementClickable(driver, CategoryPageUI.DISPLAY_PER_PAGE_DROPDOWN);
 		selectItemInDefaultDropdown(driver, CategoryPageUI.DISPLAY_PER_PAGE_DROPDOWN, option);
@@ -107,7 +107,6 @@ public class CategoryPageObject extends BasePage {
 		return isElementDisplayed(driver, CategoryPageUI.NEXT_ICON_PAGING);
 	}
 
-
 	public boolean isPreviousIconDisplayedAtProductWrapper() {
 		waitForElementVisibility(driver, CategoryPageUI.PREVIOUS_ICON_PAGING);
 		return isElementDisplayed(driver, CategoryPageUI.PREVIOUS_ICON_PAGING);
@@ -117,5 +116,29 @@ public class CategoryPageObject extends BasePage {
 		return isElementUndisplayed(driver, CategoryPageUI.PAGING_ITEM);
 	}
 
+	public String getPriceByProductName(String productName) {
+		waitForElementVisibility(driver, CategoryPageUI.DYNAMIC_PRICE_AT_PRODUCT_ITEM_BY_PRODUCT_NAME, productName);
+		return getElementText(driver, CategoryPageUI.DYNAMIC_PRICE_AT_PRODUCT_ITEM_BY_PRODUCT_NAME, productName);
+	}
+
+	public void clickToAddToCompareButtonByProductName(String productName) {
+		waitForElementClickable(driver, CategoryPageUI.ADD_TO_COMPARE_LIST_BUTTON_BY_PRODUCT_NAME, productName);
+		clickToElement(driver, CategoryPageUI.ADD_TO_COMPARE_LIST_BUTTON_BY_PRODUCT_NAME, productName);
+	}
+
+	public UserCompareProductPageObject clickToProductComparisonLink() {
+		waitForElementClickable(driver, CategoryPageUI.PRODUCT_COMPARISION_LINK_AT_BAR_NOTIFICATION);
+		clickToElement(driver, CategoryPageUI.PRODUCT_COMPARISION_LINK_AT_BAR_NOTIFICATION);
+		return PageGeneratorManager.getCompareProductPage(driver);
+	}
+
+	public boolean isProductNameDisplayed(String productName) {
+		waitForElementVisibility(driver, CategoryPageUI.DYNAMIC_PRODUCT_NAME_AT_PRODUCT_ITEM, productName);
+		return isElementDisplayed(driver, CategoryPageUI.DYNAMIC_PRODUCT_NAME_AT_PRODUCT_ITEM, productName);
+	}
+
+	public boolean isProductNameUnDisplayed(String productName) {
+		return isElementUndisplayed(driver, CategoryPageUI.DYNAMIC_PRODUCT_NAME_AT_PRODUCT_ITEM, productName);
+	}
 
 }

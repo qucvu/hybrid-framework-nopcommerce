@@ -28,6 +28,7 @@ import pageObjects.nopCommerce.user.UserCustomerInfoPageObject;
 import pageObjects.nopCommerce.user.UserHomePageObject;
 import pageObjects.nopCommerce.user.UserMyProductReviewPageObject;
 import pageObjects.nopCommerce.user.UserRewardPointPageObject;
+import pageObjects.nopCommerce.user.UserWishlistPageObject;
 import pageObjects.wordpress.AdminDashboardPO;
 import pageObjects.wordpress.UserHomePO;
 import pageUIs.jQuery.uploadFile.HomePageUI;
@@ -61,14 +62,14 @@ public class BasePage {
 		for (Cookie cookie : cookies) {
 			driver.manage().addCookie(cookie);
 		}
-		sleepInSecond(2);
+		sleepInSecond(1);
 	}
 
 	protected String getPageSource(WebDriver driver) {
 		return driver.getPageSource();
 	}
 
-	protected void backToPage(WebDriver driver) {
+	public void backToPage(WebDriver driver) {
 		driver.navigate().back();
 	}
 
@@ -674,8 +675,14 @@ public class BasePage {
 		waitForElementClickable(driver, BasePageNopCommerceUI.LOGOUT_LINK_USER_PAGE);
 		clickToElement(driver, BasePageNopCommerceUI.LOGOUT_LINK_USER_PAGE);
 		return PageGeneratorManager.getUserHomePage(driver);
-
 	}
+	
+	public UserWishlistPageObject clickToWishlistLinkAtUserPage(WebDriver driver) {
+		waitForElementClickable(driver, BasePageNopCommerceUI.WISHLIST_LINK_USER_PAGE);
+		clickToElement(driver, BasePageNopCommerceUI.WISHLIST_LINK_USER_PAGE);
+		return PageGeneratorManager.getWishListPage(driver);
+	}
+
 
 	// @Step("Navigate to the 'My Account' Page")
 	public UserCustomerInfoPageObject openMyAccountPage(WebDriver driver) {
@@ -976,9 +983,9 @@ public class BasePage {
 	 * @param message
 	 * @return
 	 */
-	public boolean isSuccessMessageDispalyedOnBarByMessage(WebDriver driver, String message) {
-		waitForElementVisibility(driver, BasePageNopCommerceUI.DYNAMIC_NOTIFICATION_SUCCESS_BY_MESSAGE, message);
-		return isElementDisplayed(driver, BasePageNopCommerceUI.DYNAMIC_NOTIFICATION_SUCCESS_BY_MESSAGE, message);
+	public boolean isMessageDispalyedOnBarNotificationByMessage(WebDriver driver, String message) {
+		waitForElementVisibility(driver, BasePageNopCommerceUI.DYNAMIC_MESSAGE_AT_BAR_NOTIFICATION_BY_MESSAGE, message);
+		return isElementDisplayed(driver, BasePageNopCommerceUI.DYNAMIC_MESSAGE_AT_BAR_NOTIFICATION_BY_MESSAGE, message);
 
 	}
 

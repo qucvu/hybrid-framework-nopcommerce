@@ -42,7 +42,7 @@ public class UserHomePageObject extends BasePage {
 	 * @param productName
 	 * @return
 	 */
-	public CategoryPageObject openCategoryPageOnTopMenuByProductName( String productName) {
+	public UserCategoryPageObject openCategoryPageOnTopMenuByCategoryName( String productName) {
 		waitForElementClickable(driver, BasePageNopCommerceUI.DYNAMIC_SUB_PRODUCT_CATEGORY_LINK_BY_NAME, productName);
 		clickToElement(driver, BasePageNopCommerceUI.DYNAMIC_SUB_PRODUCT_CATEGORY_LINK_BY_NAME, productName);
 		return PageGeneratorManager.getCategoryPageObject(driver);

@@ -5,10 +5,10 @@ import org.openqa.selenium.WebDriver;
 import commons.BasePage;
 import pageUIs.nopCommerce.user.ProductReviewPageUI;
 
-public class ProductReviewPageObject extends BasePage {
+public class UserProductReviewPageObject extends BasePage {
 	WebDriver driver;
 	
-	public ProductReviewPageObject(WebDriver driver) {
+	public UserProductReviewPageObject(WebDriver driver) {
 		this.driver = driver;
 	}
 

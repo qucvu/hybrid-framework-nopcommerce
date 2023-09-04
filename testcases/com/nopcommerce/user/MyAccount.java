@@ -14,9 +14,9 @@ import com.nopcommerce.common.Common_01_Register_Cookie;
 import commons.BaseTest;
 import commons.GlobalConstants;
 import commons.PageGeneratorManager;
-import pageObjects.nopCommerce.user.CategoryPageObject;
-import pageObjects.nopCommerce.user.ProductPurchasePageObject;
-import pageObjects.nopCommerce.user.ProductReviewPageObject;
+import pageObjects.nopCommerce.user.UserCategoryPageObject;
+import pageObjects.nopCommerce.user.UserProductDetailPageObject;
+import pageObjects.nopCommerce.user.UserProductReviewPageObject;
 import pageObjects.nopCommerce.user.UserAddressPageObject;
 import pageObjects.nopCommerce.user.UserChangePasswordPageObject;
 import pageObjects.nopCommerce.user.UserCustomerInfoPageObject;
@@ -87,7 +87,7 @@ public class MyAccount extends BaseTest {
 		customerInfoPage.clickToButtonByText(driver, "Save");
 
 		ExtentTestManager.getTest().log(Status.INFO, "Update Customer Info - Step 05: Verify the message 'Update Customer info successfully'");
-		verifyTrue(customerInfoPage.isSuccessMessageDispalyedOnBarByMessage(driver, "The customer info has been updated successfully"));
+		verifyTrue(customerInfoPage.isMessageDispalyedOnBarNotificationByMessage(driver, "The customer info has been updated successfully"));
 
 		ExtentTestManager.getTest().log(Status.INFO, "Update Customer Info - Step 06: Verify the customer info update successfully");
 		verifyEquals(customerInfoPage.getTextboxValueByID(driver, "FirstName"), firstName);
@@ -128,7 +128,7 @@ public class MyAccount extends BaseTest {
 		addressPage.clickToButtonByText(driver, "Save");
 
 		ExtentTestManager.getTest().log(Status.INFO, "Add Address - Step 05: Verify the message 'add new address successfully' displayed");
-		verifyTrue(addressPage.isSuccessMessageDispalyedOnBarByMessage(driver, "The new address has been added successfully."));
+		verifyTrue(addressPage.isMessageDispalyedOnBarNotificationByMessage(driver, "The new address has been added successfully."));
 
 		ExtentTestManager.getTest().log(Status.INFO, "Add Address - Step 05: Verify the new address has been added successfully");
 		verifyTrue(addressPage.isTitleDisplayedByFullName(firstName + " " + lastName));
@@ -161,7 +161,7 @@ public class MyAccount extends BaseTest {
 		changePasswordPage.clickToButtonByText(driver, "Change password");
 
 		ExtentTestManager.getTest().log(Status.INFO, "Change password - Step 05: Verify the message 'Change password success' displayed");
-		verifyTrue(changePasswordPage.isSuccessMessageDispalyedOnBarByMessage(driver, "Password was changed"));
+		verifyTrue(changePasswordPage.isMessageDispalyedOnBarNotificationByMessage(driver, "Password was changed"));
 
 		ExtentTestManager.getTest().log(Status.INFO, "Change password - Step 06: Close the bar notification");
 		changePasswordPage.closeTheBarNotification(driver);
@@ -202,13 +202,13 @@ public class MyAccount extends BaseTest {
 		homePage.hoverDynamicProductCategoryOnTopMenuByName(driver, "Computers");
 
 		ExtentTestManager.getTest().log(Status.INFO, "Product review - Step 02: Navigate to 'Desktop' product page");
-		productPage = homePage.openCategoryPageOnTopMenuByProductName("Desktops ");
+		productPage = homePage.openCategoryPageOnTopMenuByCategoryName("Desktops ");
 
 		ExtentTestManager.getTest().log(Status.INFO, "Product review - Step 03: Verify the 'Desktops' word show on breadcrumb menu ");
 		verifyEquals(productPage.getCurrentTextAtBreadcrumbMenu(), "Desktops");
 
 		ExtentTestManager.getTest().log(Status.INFO, "Product review - Step 04: Navigate to Product Purchase Page");
-		productPurchasePage = productPage.openDynamicPurchasePageByTitle(productReview);
+		productPurchasePage = productPage.openDynamicProductDetailPageByName(productReview);
 
 		ExtentTestManager.getTest().log(Status.INFO, "Product review - Step 05: Click to 'add your view' on Purchase Page");
 		productReviewPage = productPurchasePage.openProductReviewPage();
@@ -250,10 +250,10 @@ public class MyAccount extends BaseTest {
 	private UserCustomerInfoPageObject customerInfoPage;
 	private UserAddressPageObject addressPage;
 	private UserChangePasswordPageObject changePasswordPage;
-	private CategoryPageObject productPage;
+	private UserCategoryPageObject productPage;
 	private UserLoginPageObject loginPage;
-	private ProductPurchasePageObject productPurchasePage;
-	private ProductReviewPageObject productReviewPage;
+	private UserProductDetailPageObject productPurchasePage;
+	private UserProductReviewPageObject productReviewPage;
 	private UserMyProductReviewPageObject myProductReviewPage;
 	private String firstName, lastName, dobDay, dobMonth, dobYear, email, companyName, gender, country, provice, city, address1, address2, postalCode, phoneNumber, faxNumber;
 	private String oldPassword, newPassword;

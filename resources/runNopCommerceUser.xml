@@ -16,8 +16,8 @@
 	<test name="Run on FIREFOX">
 		<parameter name="browser" value="firefox" />
 		<classes>
-<!--			<class name="com.nopcommerce.common.Common_01_Register_Cookie" />-->
-			<class name="com.nopcommerce.pratice.Level_25_Manage_Data_III_DataDriven" />
+			<class name="com.nopcommerce.common.Common_01_Register_Cookie" />
+			<class name="com.nopcommerce.user.WishList_Compare_RecentView" />
 		</classes>
 	</test>
 </suite>
