@@ -27,9 +27,9 @@ public class Level_25_Manage_Data_III_DataDriven extends BaseTest {
 		lastName = userData.getlastName();
 		emailAddress = userData.getEmail();
 		password = userData.getFirstName();
-		day = userData.getDay();
-		month = userData.getMonth();
-		year  = userData.getYear();
+		day = userData.getDob().getDay();
+		month = userData.getDob().getMonth();
+		year  = userData.getDob().getYear();
 
 		homePage = PageGeneratorManager.getUserHomePage(driver);
 		
