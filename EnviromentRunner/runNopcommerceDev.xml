@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<suite name="NopCommerce - User">
+	<listeners>
+		<listener class-name="commons.MethodListener" />
+	</listeners>
+	<parameter name="url" value="abc-dev.com" />
+	<parameter name="db.host" value="localhost" />
+	<test name="Run on FIREFOX">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="com.nopcommerce.pratice.Level_25_Manage_Data_III_DataDriven" />
+		</classes>
+	</test>
+</suite>

@@ -33,7 +33,7 @@ public class Level_08_Switch_Role extends BaseTest {
 		adminEmailAddress = "admin@yourstore.com";
 		adminPassword = "admin";
 
-		driver.get(getDomainUrl("production"));
+		driver.get(getEnviromentUrl("dev"));
 		// driver.get(GlobalConstants.PORTAL_PAGE_URL);
 		userHomePage = PageGeneratorManager.getUserHomePage(driver);
 

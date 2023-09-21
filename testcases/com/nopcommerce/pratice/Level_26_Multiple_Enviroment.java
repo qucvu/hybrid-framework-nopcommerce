@@ -15,7 +15,7 @@ import pageObjects.nopCommerce.user.UserLoginPageObject;
 import pageObjects.nopCommerce.user.UserRegisterPageObject;
 import utilities.UserDataMapper;
 
-public class Level_25_Manage_Data_III_DataDriven extends BaseTest {
+public class Level_26_Multiple_Enviroment extends BaseTest {
 
 	@Parameters({"browser", "enviroment"})
 	@BeforeClass

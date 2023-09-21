@@ -1,6 +1,7 @@
 package com.nopcommerce.pratice;
 
 
+import org.aeonbits.owner.ConfigFactory;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -13,14 +14,22 @@ import pageObjects.nopCommerce.user.UserCustomerInfoPageObject;
 import pageObjects.nopCommerce.user.UserHomePageObject;
 import pageObjects.nopCommerce.user.UserLoginPageObject;
 import pageObjects.nopCommerce.user.UserRegisterPageObject;
+import utilities.Enviroment;
 import utilities.UserDataMapper;
 
-public class Level_25_Manage_Data_III_DataDriven extends BaseTest {
-
+public class Level_27_Multiple_Enviroment_Owner extends BaseTest {
+//	Enviroment enviroment; 
+	
 	@Parameters({"browser", "enviroment"})
 	@BeforeClass
 	public void beforeClass(String browserName, String enviromentName) {
-		driver = getBrowserDriver(browserName, enviromentName);
+		ConfigFactory.setProperty("env", enviromentName);
+		Enviroment env  = ConfigFactory.create(Enviroment.class);
+		driver = getBrowserDriverUrl(browserName, env.url());
+		
+		System.out.println(env.userNameDB());
+		System.out.println(env.passwordDB());
+		System.out.println(env.hostDB());
 		
 		userData = UserDataMapper.getUserDataMapper();
 		firstName = userData.getFirstName();

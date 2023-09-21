@@ -125,7 +125,7 @@ public class BaseTest {
 		return driver;
 	}
 
-	protected WebDriver getBrowserDriver(String browserName, String url) {
+	protected WebDriver getBrowserDriver(String browserName, String enviromentName) {
 		switch (browserName) {
 		case "firefox":
 			WebDriverManager.firefoxdriver().setup();
@@ -172,22 +172,61 @@ public class BaseTest {
 		default:
 			throw new RuntimeException("Browser name invalid");
 		}
-		driver.get(url);
-//		driver.manage().window().maximize();
+		driver.get(getEnviromentUrl(enviromentName));
 		driver.manage().timeouts().implicitlyWait(GlobalConstants.LONG_TIMEOUT, TimeUnit.SECONDS);
 
 		return driver;
 	}
 
-	protected String getDomainUrl(String env) {
-		switch (env) {
-		case "production":
-			env = GlobalConstants.PORTAL_PAGE_URL;
+	
+	protected WebDriver getBrowserDriverUrl(String browserName, String appUrl) {
+		switch (browserName) {
+		case "firefox":
+			WebDriverManager.firefoxdriver().setup();
+			driver = new FirefoxDriver();
+			break;
+		case "h_firefox":
+			WebDriverManager.firefoxdriver().setup();
+			driver = new FirefoxDriver();
+			break;
+		case "chrome":
+			WebDriverManager.chromedriver().setup();	
+			driver = new ChromeDriver();
+			break;
+		case "h_chrome":
+			WebDriverManager.chromedriver().setup();
+			ChromeOptions optionsChrome = new ChromeOptions();
+			optionsChrome.addArguments("-headless");
+			optionsChrome.addArguments("window-size=1920x1080");
+			driver = new ChromeDriver(optionsChrome);
+			break;
+		case "coccoc":
+			WebDriverManager.chromedriver().driverVersion("109.0.5414.25").setup();
+			ChromeOptions optionsCocCoc = new ChromeOptions();
+			if (GlobalConstants.OS_NAME.contains("windows")) {
+				optionsCocCoc.setBinary("C:\\Program Files (x86)\\CocCoc\\Browser\\Application\\browser.exe");
+			} else {
+				optionsCocCoc.setBinary("...");
+
+			}
+			driver = new ChromeDriver(optionsCocCoc);
 			break;
 		default:
-			break;
+			throw new RuntimeException("Browser name invalid");
 		}
-		return env;
+		driver.get(appUrl);
+		driver.manage().timeouts().implicitlyWait(GlobalConstants.LONG_TIMEOUT, TimeUnit.SECONDS);
+
+		return driver;
+	}
+
+	protected String getEnviromentUrl(String enviromentName) {
+		String envUrl = null;
+		EnviromentList enviroment = EnviromentList.valueOf(enviromentName.toUpperCase());
+		if(enviroment.equals(EnviromentList.DEV)) {
+			envUrl = GlobalConstants.PORTAL_PAGE_URL;
+		}
+		return envUrl;
 	}
 
 	protected int generateRandomNumber() {
