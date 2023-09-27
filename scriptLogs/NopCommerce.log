@@ -4197,3 +4197,253 @@ Session ID: 52521241-23a2-4053-914d-6947cda963b3
 [2023-09-09 11:39:04,142]  -------------------------- PASSED -------------------------- 
 [2023-09-09 11:39:04,148] OS name = Windows 10
 [2023-09-09 11:39:04,149] Driver instance name = firefoxdriver: firefox on windows (f1c03d84-1cbb-44a0-9f09-1bffc7e198a7)
+[2023-09-23 12:36:04,154] Pre-condition - Step 01: Open browser and admin site
+[2023-09-23 12:36:51,561] Pre-condition - Step 01: Open browser and admin site
+[2023-09-23 12:37:55,866] Pre-condition - Step 01: Open browser and admin site
+[2023-09-23 12:38:02,361] Pre-conditions - Step 02: Enter Username textbox with value: vunguyen
+[2023-09-23 12:38:02,541] Pre-conditions - Step 03: Enter Password textbox with value: Nguyenquocvu.111
+[2023-09-23 12:38:02,650] Pre-conditions - Step 03: Click to 'Log in' button
+[2023-09-23 12:38:07,949] Pre-condition - Step 03: Verify that Navigate to Admin Dashboard page successfully
+[2023-09-23 12:38:11,427]  -------------------------- PASSED -------------------------- 
+[2023-09-23 12:38:11,573] Create Post - Step 01: Click to 'Post' Menu link
+[2023-09-23 12:38:14,080] Create Post - Step 02: Get 'Search Posts' page Url
+[2023-09-23 12:38:14,087] Create Post - Step 02: Click to 'Add New' button
+[2023-09-23 12:38:20,709] Create Post - Step 03: Enter to post title
+[2023-09-23 12:38:21,233] Create Post - Step 04: Enter to Post body with value: Live coding Body 96350
+[2023-09-23 12:38:22,179] Create Post - Step 05: Click to 'Publish' button
+[2023-09-23 12:38:22,613] Create Post - Step 05: Click to Confirm 'Publish' button
+[2023-09-23 12:38:22,939] Create Post - Step 05: Verify 'Posted Published' message is displayed
+[2023-09-23 12:38:25,788]  -------------------------- PASSED -------------------------- 
+[2023-09-23 12:38:25,896] Search Post - Step 01: Open 'Search Posts' Page
+[2023-09-23 12:38:27,102] Search Post - Step 02: Enter to Search textbox with value: Live coding Title 96350
+[2023-09-23 12:38:27,254] Search Post - Step 03: Click to Search Posts button
+[2023-09-23 12:38:29,270] Search Post - Step 04: Verify Search table contains: 'Live coding Title 96350'
+[2023-09-23 12:38:29,397]  -------------------------- PASSED -------------------------- 
+[2023-09-23 12:38:29,397] Search Post - Step 05: Verify Search table contains: 'Vu Admin'
+[2023-09-23 12:38:29,487]  -------------------------- PASSED -------------------------- 
+[2023-09-23 12:38:29,487] Search Post - Step 05: Open end User Site
+[2023-09-23 12:39:11,762] Pre-condition - Step 01: Open browser and admin site
+[2023-09-23 12:39:31,821] Pre-condition - Step 01: Open browser and admin site
+[2023-09-23 12:39:37,954] Pre-conditions - Step 02: Enter Username textbox with value: vunguyen
+[2023-09-23 12:39:38,145] Pre-conditions - Step 03: Enter Password textbox with value: Nguyenquocvu.111
+[2023-09-23 12:39:38,328] Pre-conditions - Step 03: Click to 'Log in' button
+[2023-09-23 12:39:41,013] Pre-condition - Step 03: Verify that Navigate to Admin Dashboard page successfully
+[2023-09-23 12:39:41,262]  -------------------------- PASSED -------------------------- 
+[2023-09-23 12:39:41,453] Create Post - Step 01: Click to 'Post' Menu link
+[2023-09-23 12:39:43,325] Create Post - Step 02: Get 'Search Posts' page Url
+[2023-09-23 12:39:43,334] Create Post - Step 02: Click to 'Add New' button
+[2023-09-23 12:39:46,947] Create Post - Step 03: Enter to post title
+[2023-09-23 12:39:47,706] Create Post - Step 04: Enter to Post body with value: Live coding Body 89397
+[2023-09-23 12:39:48,769] Create Post - Step 05: Click to 'Publish' button
+[2023-09-23 12:39:49,203] Create Post - Step 05: Click to Confirm 'Publish' button
+[2023-09-23 12:39:49,995] Create Post - Step 05: Verify 'Posted Published' message is displayed
+[2023-09-23 12:39:51,179]  -------------------------- PASSED -------------------------- 
+[2023-09-23 12:39:51,271] Search Post - Step 01: Open 'Search Posts' Page
+[2023-09-23 12:39:53,412] Search Post - Step 02: Enter to Search textbox with value: Live coding Title 89397
+[2023-09-23 12:39:53,550] Search Post - Step 03: Click to Search Posts button
+[2023-09-23 12:39:55,386] Search Post - Step 04: Verify Search table contains: 'Live coding Title 89397'
+[2023-09-23 12:39:55,517]  -------------------------- PASSED -------------------------- 
+[2023-09-23 12:39:55,517] Search Post - Step 05: Verify Search table contains: 'Vu Admin'
+[2023-09-23 12:39:55,596]  -------------------------- PASSED -------------------------- 
+[2023-09-23 12:39:55,596] Search Post - Step 05: Open end User Site
+[2023-09-23 12:40:18,217] Pre-condition - Step 01: Open browser and admin site
+[2023-09-23 12:40:23,304] Pre-conditions - Step 02: Enter Username textbox with value: vunguyen
+[2023-09-23 12:40:23,487] Pre-conditions - Step 03: Enter Password textbox with value: Nguyenquocvu.111
+[2023-09-23 12:40:23,601] Pre-conditions - Step 03: Click to 'Log in' button
+[2023-09-23 12:40:25,668] Pre-condition - Step 03: Verify that Navigate to Admin Dashboard page successfully
+[2023-09-23 12:40:25,826]  -------------------------- PASSED -------------------------- 
+[2023-09-23 12:40:25,891] Create Post - Step 01: Click to 'Post' Menu link
+[2023-09-23 12:40:27,071] Create Post - Step 02: Get 'Search Posts' page Url
+[2023-09-23 12:40:27,077] Create Post - Step 02: Click to 'Add New' button
+[2023-09-23 12:40:29,043] Create Post - Step 03: Enter to post title
+[2023-09-23 12:40:29,526] Create Post - Step 04: Enter to Post body with value: Live coding Body 49863
+[2023-09-23 12:40:30,465] Create Post - Step 05: Click to 'Publish' button
+[2023-09-23 12:40:30,899] Create Post - Step 05: Click to Confirm 'Publish' button
+[2023-09-23 12:40:31,670] Create Post - Step 05: Verify 'Posted Published' message is displayed
+[2023-09-23 12:40:32,864]  -------------------------- PASSED -------------------------- 
+[2023-09-23 12:40:32,966] Search Post - Step 01: Open 'Search Posts' Page
+[2023-09-23 12:40:35,103] Search Post - Step 02: Enter to Search textbox with value: Live coding Title 49863
+[2023-09-23 12:40:35,229] Search Post - Step 03: Click to Search Posts button
+[2023-09-23 12:40:37,040] Search Post - Step 04: Verify Search table contains: 'Live coding Title 49863'
+[2023-09-23 12:40:37,145]  -------------------------- PASSED -------------------------- 
+[2023-09-23 12:40:37,145] Search Post - Step 05: Verify Search table contains: 'Vu Admin'
+[2023-09-23 12:40:37,221]  -------------------------- PASSED -------------------------- 
+[2023-09-23 12:40:37,222] Search Post - Step 05: Open end User Site
+[2023-09-23 12:40:38,431] Search Post - Step 06: Verify post infor displayed at HomePage
+[2023-09-23 12:40:38,524]  -------------------------- PASSED -------------------------- 
+[2023-09-23 12:40:38,586]  -------------------------- PASSED -------------------------- 
+[2023-09-23 12:40:38,649]  -------------------------- PASSED -------------------------- 
+[2023-09-23 12:40:38,712]  -------------------------- PASSED -------------------------- 
+[2023-09-23 12:40:38,712] Search Post - Step 06: Click to Post title
+[2023-09-23 12:40:39,724] Search Post - Step 06: Verify Post infor displayed at Post details page
+[2023-09-23 12:40:39,793]  -------------------------- PASSED -------------------------- 
+[2023-09-23 12:40:39,857]  -------------------------- PASSED -------------------------- 
+[2023-09-23 12:40:39,921]  -------------------------- PASSED -------------------------- 
+[2023-09-23 12:40:39,983]  -------------------------- PASSED -------------------------- 
+[2023-09-23 12:40:39,993] Edit Post - Step 01: Open browser and admin site
+[2023-09-23 12:40:41,080] Edit Post - Step 03: Click to 'Post' Menu link
+[2023-09-23 12:40:42,223] Edit Post - Step 03: Enter to Search textbox with value: Live coding Title 49863
+[2023-09-23 12:40:42,354] Edit Post - Step 04: Click to Search Posts button
+[2023-09-23 12:40:44,205] Edit Post - Step 05: Click Post title detail link and navigate to Edit Post page
+[2023-09-23 12:40:46,088] Edit Post - Step 06: Enter to post title
+[2023-09-23 12:40:46,573] Edit Post - Step 07: Enter to Post body with value: Live coding Body 49863edit
+[2023-09-23 12:40:47,632] Edit Post - Step 08: Click to Update button
+[2023-09-23 12:40:48,069] Edit Post - Step 09: Verify the 'Post updated' message is displayed
+[2023-09-23 12:40:49,066]  -------------------------- PASSED -------------------------- 
+[2023-09-23 12:40:49,066] Edit Post - Step 10: Open 'Search Posts' Page
+[2023-09-23 12:40:51,160] Edit Post - Step 11: Enter to Search textbox with value: Live coding Title 49863edit
+[2023-09-23 12:40:51,310] Edit Post - Step 12: Click to Search Posts button
+[2023-09-23 12:40:53,541] Edit Post - Step 13: Verify Search table contains: 'Live coding Title 49863edit'
+[2023-09-23 12:40:53,644]  -------------------------- PASSED -------------------------- 
+[2023-09-23 12:40:53,644] Edit Post - Step 14: Verify Search table contains: 'Vu Admin'
+[2023-09-23 12:40:53,738]  -------------------------- PASSED -------------------------- 
+[2023-09-23 12:40:53,738] Edit Post - Step 15: Open end User Site
+[2023-09-23 12:40:54,846] Edit Post - Step 16: Verify post infor displayed at HomePage
+[2023-09-23 12:40:54,950]  -------------------------- PASSED -------------------------- 
+[2023-09-23 12:40:55,011]  -------------------------- PASSED -------------------------- 
+[2023-09-23 12:40:55,071]  -------------------------- PASSED -------------------------- 
+[2023-09-23 12:40:55,146]  -------------------------- PASSED -------------------------- 
+[2023-09-23 12:40:55,147] Edit Post - Step 17: Click to Post title
+[2023-09-23 12:40:56,246] Edit Post - Step 18: Verify Post infor displayed at Post details page
+[2023-09-23 12:40:56,321]  -------------------------- PASSED -------------------------- 
+[2023-09-23 12:40:56,389]  -------------------------- PASSED -------------------------- 
+[2023-09-23 12:40:56,459]  -------------------------- PASSED -------------------------- 
+[2023-09-23 12:40:56,521]  -------------------------- PASSED -------------------------- 
+[2023-09-23 12:40:56,528] Delete post - Step 01: Open browser and admin site
+[2023-09-23 12:40:57,980] Delete post - Step 02: Click to 'Post' Menu link
+[2023-09-23 12:41:00,019] Delete post - Step 03: Enter to Search textbox with value: Live coding Title 49863edit
+[2023-09-23 12:41:00,164] Delete post - Step 04: Click to Search Posts button
+[2023-09-23 12:41:02,577] Delete post - Step 05: Select Post details checkbox
+[2023-09-23 12:41:02,911] Delete post - Step 06: Select 'Move to Trash' option in dropdown
+[2023-09-23 12:41:03,273] Delete Post - Step 07: Click to Appy button
+[2023-09-23 12:41:06,319] Delete Post - Step 08: Verify '1 post move to trash' message is displayed
+[2023-09-23 12:41:06,620]  -------------------------- PASSED -------------------------- 
+[2023-09-23 12:41:06,621] Delete Post - Step 09: Enter to Search textbox
+[2023-09-23 12:41:06,771] Delete post - Step 10: Click to Search Posts button
+[2023-09-23 12:41:12,002] Delete post - Step 11: Verify 'No Post found' message is displayed
+[2023-09-23 12:41:12,258]  -------------------------- PASSED -------------------------- 
+[2023-09-23 12:41:12,258] Delete post - Step 12: Open end User Site
+[2023-09-23 12:41:14,569] Delete post - Step 13: Verify post title is undisplayed at HomePage
+[2023-09-23 12:41:19,619]  -------------------------- PASSED -------------------------- 
+[2023-09-23 12:41:19,619] Delete post - Step 14: Enter to Search textbox
+[2023-09-23 12:41:19,748] Delete post - Step 15: Click to Search button
+[2023-09-23 12:41:23,406] Delete post - Step 16: Verify 'Nothing found' message is displayed
+[2023-09-23 12:41:23,487]  -------------------------- PASSED -------------------------- 
+[2023-09-23 12:41:23,495] OS name = Windows 10
+[2023-09-23 12:41:23,496] Driver instance name = firefoxdriver: firefox on windows (a28cc113-8d69-4895-82fc-0e803fd5c674)
+[2023-09-27 23:42:45,925] Pre-condition - Step 01: Open browser and admin site
+[2023-09-27 23:42:53,037] Pre-conditions - Step 02: Enter Username textbox with value: vunguyen
+[2023-09-27 23:42:53,243] Pre-conditions - Step 03: Enter Password textbox with value: Nguyenquocvu.111
+[2023-09-27 23:42:53,350] Pre-conditions - Step 03: Click to 'Log in' button
+[2023-09-27 23:42:55,725] Pre-condition - Step 03: Verify that Navigate to Admin Dashboard page successfully
+[2023-09-27 23:42:55,934]  -------------------------- PASSED -------------------------- 
+[2023-09-27 23:42:56,009] Create Post - Step 01: Click to 'Post' Menu link
+[2023-09-27 23:42:59,034] Create Post - Step 02: Get 'Search Posts' page Url
+[2023-09-27 23:42:59,043] Create Post - Step 02: Click to 'Add New' button
+[2023-09-27 23:43:04,346] Create Post - Step 03: Enter to post title
+[2023-09-27 23:43:06,250] Create Post - Step 04: Enter to Post body with value: Live coding Body 90419
+[2023-09-27 23:43:07,407] Create Post - Step 05: Click to 'Publish' button
+[2023-09-27 23:43:07,866] Create Post - Step 05: Click to Confirm 'Publish' button
+[2023-09-27 23:43:08,272] Create Post - Step 05: Verify 'Posted Published' message is displayed
+[2023-09-27 23:43:10,964]  -------------------------- PASSED -------------------------- 
+[2023-09-27 23:43:11,058] Search Post - Step 01: Open 'Search Posts' Page
+[2023-09-27 23:43:12,297] Search Post - Step 02: Enter to Search textbox with value: Live coding Title 90419
+[2023-09-27 23:43:12,480] Search Post - Step 03: Click to Search Posts button
+[2023-09-27 23:43:14,529] Search Post - Step 04: Verify Search table contains: 'Live coding Title 90419'
+[2023-09-27 23:43:14,635]  -------------------------- PASSED -------------------------- 
+[2023-09-27 23:43:14,635] Search Post - Step 05: Verify Search table contains: 'Vu Admin'
+[2023-09-27 23:43:14,713]  -------------------------- PASSED -------------------------- 
+[2023-09-27 23:43:14,713] Search Post - Step 05: Open end User Site
+[2023-09-27 23:43:15,947] Search Post - Step 06: Verify post infor displayed at HomePage
+[2023-09-27 23:43:16,114]  -------------------------- PASSED -------------------------- 
+[2023-09-27 23:43:16,191]  -------------------------- PASSED -------------------------- 
+[2023-09-27 23:43:16,253]  -------------------------- PASSED -------------------------- 
+[2023-09-27 23:43:16,317]  -------------------------- PASSED -------------------------- 
+[2023-09-27 23:43:16,318] Search Post - Step 06: Click to Post title
+[2023-09-27 23:43:17,363] Search Post - Step 06: Verify Post infor displayed at Post details page
+[2023-09-27 23:43:17,423]  -------------------------- PASSED -------------------------- 
+[2023-09-27 23:43:17,485]  -------------------------- PASSED -------------------------- 
+[2023-09-27 23:43:17,546]  -------------------------- PASSED -------------------------- 
+[2023-09-27 23:43:17,611]  -------------------------- PASSED -------------------------- 
+[2023-09-27 23:43:17,621] Edit Post - Step 01: Open browser and admin site
+[2023-09-27 23:43:18,850] Edit Post - Step 03: Click to 'Post' Menu link
+[2023-09-27 23:43:20,085] Edit Post - Step 03: Enter to Search textbox with value: Live coding Title 90419
+[2023-09-27 23:43:20,258] Edit Post - Step 04: Click to Search Posts button
+[2023-09-27 23:43:22,707] Edit Post - Step 05: Click Post title detail link and navigate to Edit Post page
+[2023-09-27 23:43:24,868] Edit Post - Step 06: Enter to post title
+[2023-09-27 23:43:25,457] Edit Post - Step 07: Enter to Post body with value: Live coding Body 90419edit
+[2023-09-27 23:43:26,650] Edit Post - Step 08: Click to Update button
+[2023-09-27 23:43:27,108] Edit Post - Step 09: Verify the 'Post updated' message is displayed
+[2023-09-27 23:43:29,262]  -------------------------- PASSED -------------------------- 
+[2023-09-27 23:43:29,262] Edit Post - Step 10: Open 'Search Posts' Page
+[2023-09-27 23:43:31,607] Edit Post - Step 11: Enter to Search textbox with value: Live coding Title 90419edit
+[2023-09-27 23:43:31,720] Edit Post - Step 12: Click to Search Posts button
+[2023-09-27 23:43:33,695] Edit Post - Step 13: Verify Search table contains: 'Live coding Title 90419edit'
+[2023-09-27 23:43:33,786]  -------------------------- PASSED -------------------------- 
+[2023-09-27 23:43:33,786] Edit Post - Step 14: Verify Search table contains: 'Vu Admin'
+[2023-09-27 23:43:33,864]  -------------------------- PASSED -------------------------- 
+[2023-09-27 23:43:33,864] Edit Post - Step 15: Open end User Site
+[2023-09-27 23:43:34,911] Edit Post - Step 16: Verify post infor displayed at HomePage
+[2023-09-27 23:43:35,001]  -------------------------- PASSED -------------------------- 
+[2023-09-27 23:43:35,065]  -------------------------- PASSED -------------------------- 
+[2023-09-27 23:43:35,127]  -------------------------- PASSED -------------------------- 
+[2023-09-27 23:43:35,191]  -------------------------- PASSED -------------------------- 
+[2023-09-27 23:43:35,191] Edit Post - Step 17: Click to Post title
+[2023-09-27 23:43:36,230] Edit Post - Step 18: Verify Post infor displayed at Post details page
+[2023-09-27 23:43:36,313]  -------------------------- PASSED -------------------------- 
+[2023-09-27 23:43:36,378]  -------------------------- PASSED -------------------------- 
+[2023-09-27 23:43:36,438]  -------------------------- PASSED -------------------------- 
+[2023-09-27 23:43:36,504]  -------------------------- PASSED -------------------------- 
+[2023-09-27 23:43:36,515] Delete post - Step 01: Open browser and admin site
+[2023-09-27 23:43:37,663] Delete post - Step 02: Click to 'Post' Menu link
+[2023-09-27 23:43:38,804] Delete post - Step 03: Enter to Search textbox with value: Live coding Title 90419edit
+[2023-09-27 23:43:38,923] Delete post - Step 04: Click to Search Posts button
+[2023-09-27 23:43:40,900] Delete post - Step 05: Select Post details checkbox
+[2023-09-27 23:43:41,205] Delete post - Step 06: Select 'Move to Trash' option in dropdown
+[2023-09-27 23:43:41,552] Delete Post - Step 07: Click to Appy button
+[2023-09-27 23:43:43,617] Delete Post - Step 08: Verify '1 post move to trash' message is displayed
+[2023-09-27 23:43:43,712]  -------------------------- PASSED -------------------------- 
+[2023-09-27 23:43:43,712] Delete Post - Step 09: Enter to Search textbox
+[2023-09-27 23:43:43,809] Delete post - Step 10: Click to Search Posts button
+[2023-09-27 23:43:45,614] Delete post - Step 11: Verify 'No Post found' message is displayed
+[2023-09-27 23:43:45,697]  -------------------------- PASSED -------------------------- 
+[2023-09-27 23:43:45,698] Delete post - Step 12: Open end User Site
+[2023-09-27 23:43:46,714] Delete post - Step 13: Verify post title is undisplayed at HomePage
+[2023-09-27 23:43:51,764]  -------------------------- PASSED -------------------------- 
+[2023-09-27 23:43:51,764] Delete post - Step 14: Enter to Search textbox
+[2023-09-27 23:43:51,861] Delete post - Step 15: Click to Search button
+[2023-09-27 23:43:52,833] Delete post - Step 16: Verify 'Nothing found' message is displayed
+[2023-09-27 23:43:52,905]  -------------------------- PASSED -------------------------- 
+[2023-09-27 23:43:52,914] OS name = Windows 10
+[2023-09-27 23:43:52,915] Driver instance name = firefoxdriver: firefox on windows (3cad1f86-8e29-462d-9312-97ea72d15b7b)
+[2023-09-27 23:43:54,664] Pre-condition - Step 01: Open browser and admin site
+[2023-09-27 23:43:56,871] OS name = Windows 10
+[2023-09-27 23:43:56,871] Driver instance name = firefoxdriver: firefox on windows (ea227ddd-19c9-48be-918a-29c74d403621)
+[2023-09-27 23:45:48,230] Pre-condition - Step 01: Open browser and admin site
+[2023-09-27 23:45:51,050] OS name = Windows 10
+[2023-09-27 23:45:51,050] Driver instance name = firefoxdriver: firefox on windows (41f2211e-4066-43d6-b21f-83a5b826dd54)
+[2023-09-27 23:46:56,372] Pre-condition - Step 01: Open browser and admin site
+[2023-09-27 23:46:59,043] OS name = Windows 10
+[2023-09-27 23:46:59,044] Driver instance name = firefoxdriver: firefox on windows (225c93bf-0033-410a-9d12-b7d6c19539b3)
+[2023-09-27 23:47:41,373] Pre-condition - Step 01: Open browser and admin site
+[2023-09-27 23:47:46,211] Pre-conditions - Step 02: Enter Username textbox with value: vunguyen
+[2023-09-27 23:47:46,374] Pre-conditions - Step 03: Enter Password textbox with value: Nguyenquocvu.111
+[2023-09-27 23:47:46,482] Pre-conditions - Step 03: Click to 'Log in' button
+[2023-09-27 23:47:49,014] Pre-condition - Step 03: Verify that Navigate to Admin Dashboard page successfully
+[2023-09-27 23:47:49,275]  -------------------------- PASSED -------------------------- 
+[2023-09-27 23:47:49,434] View User - Step 01: Click to 'User' Menu link
+[2023-09-27 23:47:49,921] OS name = Windows 10
+[2023-09-27 23:47:49,922] Driver instance name = firefoxdriver: firefox on windows (5a852d58-00d1-4c8f-ac62-c49b2553efcf)
+[2023-09-27 23:48:11,537] Pre-condition - Step 01: Open browser and admin site
+[2023-09-27 23:48:17,358] Pre-conditions - Step 02: Enter Username textbox with value: vunguyen
+[2023-09-27 23:48:17,521] Pre-conditions - Step 03: Enter Password textbox with value: Nguyenquocvu.111
+[2023-09-27 23:48:17,634] Pre-conditions - Step 03: Click to 'Log in' button
+[2023-09-27 23:48:19,855] Pre-condition - Step 03: Verify that Navigate to Admin Dashboard page successfully
+[2023-09-27 23:48:19,984]  -------------------------- PASSED -------------------------- 
+[2023-09-27 23:48:20,041] View User - Step 01: Click to 'User' Menu link
+[2023-09-27 23:48:21,220] View User - Step 02: Get all user from UI
+[2023-09-27 23:48:21,317] View User - Step 03: Get all user from DB
+[2023-09-27 23:48:21,601] View User - Step 04: Verify the users are matching
+[2023-09-27 23:48:21,601]  -------------------------- PASSED -------------------------- 
+[2023-09-27 23:48:21,661] OS name = Windows 10
+[2023-09-27 23:48:21,661] Driver instance name = firefoxdriver: firefox on windows (93f6c075-99c8-4134-b96b-8a6844b238e5)

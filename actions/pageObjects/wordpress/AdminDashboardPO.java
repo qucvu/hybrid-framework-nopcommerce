@@ -6,7 +6,8 @@ import commons.BasePage;
 import pageUIs.wordpress.AdminDashboardPageUI;
 
 public class AdminDashboardPO extends BasePage {
-	
+	private WebDriver driver;
+
 	public AdminDashboardPO(WebDriver driver) {
 		this.driver = driver;
 	}
@@ -23,6 +24,11 @@ public class AdminDashboardPO extends BasePage {
 		clickToElement(driver, AdminDashboardPageUI.POST_MENU_LINK);
 		return PageGeneratorManager.getAdminSearchPage(driver);
 	}
-	private WebDriver driver;
+	public AdminUserPO clickToUserLink() {
+		waitForElementClickable(driver, AdminDashboardPageUI.USER_LINK);
+		clickToElement(driver, AdminDashboardPageUI.USER_LINK);
+		return PageGeneratorManager.getAadminUserPage(driver);
+		
+	}
 
 }

@@ -36,7 +36,7 @@ public class Post_01_Create_Search_Read_Delete_Update extends BaseTest {
 		currentDay = getCurrentDay();
 
 		log.info("Pre-condition - Step 01: Open browser and admin site");
-		driver = getBrowserDriver(browserName, this.adminUrl);
+		driver = getBrowserDriverUrl(browserName, this.adminUrl);
 		adminLoginPage = PageGeneratorManager.getAdminLoginPage(driver);
 
 		log.info("Pre-conditions - Step 02: Enter Username textbox with value: " + adminUserName);

@@ -5,16 +5,16 @@
 		<listener class-name="commons.MethodListener" />
 		<listener class-name="reportConfig.ExtentReportListenerV5" />
 	</listeners>
-	<parameter name="urlAdmin" value="http://wordpress-automation-geni.com/vunguyen/wp-admin" />
-	<parameter name="urlUser" value="http://wordpress-automation-geni.com/vunguyen" />
-	<test name="Run on CHROME">
-		<parameter name="browser" value="chrome" />
+	<parameter name="urlAdmin" value="http://localhost/vunguyen/wp-admin" />
+	<parameter name="urlUser" value="http://localhost/vunguyen" />
+	<test name="Run on FIREFOX">
+		<parameter name="browser" value="firefox" />
 		<classes>
 			<!--			<class name="com.wordpress.commons.Common_01_Login_Admin" />-->
-			<!--			<class name="com.wordpress.admin.Post_01_Create_Search_Read_Delete_Update" />-->
+			<class name="com.wordpress.admin.User_01_View_User" />
 		</classes>
-		<packages>
-			<package name="com.wordpress.admin" />
-		</packages>
+		<!--		<packages>-->
+		<!--			<package name="com.wordpress.admin" />-->
+		<!--		</packages>-->
 	</test>
 </suite>

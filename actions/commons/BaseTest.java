@@ -178,14 +178,9 @@ public class BaseTest {
 		return driver;
 	}
 
-	
 	protected WebDriver getBrowserDriverUrl(String browserName, String appUrl) {
 		switch (browserName) {
 		case "firefox":
-			WebDriverManager.firefoxdriver().setup();
-			driver = new FirefoxDriver();
-			break;
-		case "h_firefox":
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
 			break;

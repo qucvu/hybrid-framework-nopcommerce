@@ -1,0 +1,13 @@
+[2023-09-27 23:48:11,537] Pre-condition - Step 01: Open browser and admin site
+[2023-09-27 23:48:17,358] Pre-conditions - Step 02: Enter Username textbox with value: vunguyen
+[2023-09-27 23:48:17,521] Pre-conditions - Step 03: Enter Password textbox with value: Nguyenquocvu.111
+[2023-09-27 23:48:17,634] Pre-conditions - Step 03: Click to 'Log in' button
+[2023-09-27 23:48:19,855] Pre-condition - Step 03: Verify that Navigate to Admin Dashboard page successfully
+[2023-09-27 23:48:19,984]  -------------------------- PASSED -------------------------- 
+[2023-09-27 23:48:20,041] View User - Step 01: Click to 'User' Menu link
+[2023-09-27 23:48:21,220] View User - Step 02: Get all user from UI
+[2023-09-27 23:48:21,317] View User - Step 03: Get all user from DB
+[2023-09-27 23:48:21,601] View User - Step 04: Verify the users are matching
+[2023-09-27 23:48:21,601]  -------------------------- PASSED -------------------------- 
+[2023-09-27 23:48:21,661] OS name = Windows 10
+[2023-09-27 23:48:21,661] Driver instance name = firefoxdriver: firefox on windows (93f6c075-99c8-4134-b96b-8a6844b238e5)

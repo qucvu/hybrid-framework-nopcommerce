@@ -2,6 +2,7 @@ package pageUIs.wordpress;
 
 public class AdminDashboardPageUI {
 	public static final String POST_MENU_LINK = "css=li#menu-posts>a.menu-icon-post";
+	public static final String USER_LINK = "css=li#menu-users>a.menu-icon-users";
 	public static final String DASHBOARD_TITLE = "xpath=//div[@id='wpbody-content']/div/h1[text()='Dashboard']";
 
 }

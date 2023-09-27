@@ -18,6 +18,11 @@ public class PageGeneratorManager {
 	public static AdminPostSearchPO getAdminSearchPage(WebDriver driver) {
 		return new AdminPostSearchPO(driver);		
 	}
+	
+	public static AdminUserPO getAadminUserPage(WebDriver driver) {
+		return new AdminUserPO(driver);		
+	}
+
 
 
 
